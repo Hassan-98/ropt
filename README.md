@@ -1,7 +1,7 @@
 # new-ropt-version 3.5
 PES Project V3.5 - log ::
 
--transfers & Awards & Rankings | New 7 pages                       
+-Transfers & Awards & Rankings | New 7 pages                       
 -Optimizing all website Images , Fasting Perfomance 70%        
 -Website Notification System                                     
 -Removing logo and editing nav bar                               
