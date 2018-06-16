@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | National Trophies</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/Ncups-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+    
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Highlights</a></li>
+            <li><a href="ccups.html">Club Trophies</a></li>
+            <li class="Clicked"><a href="ncups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="usrdata.html">Users Data</a></li>
+            <li>
+                <div class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                    <a href="transfer-rules.html">Transfer Rules</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+
+    <div class="container">
+
+        <!-- Start Header -->
+        <header>
+            <img src="imgs/header.jpg" alt="header">
+            <div>
+                <h1>Results OF PES Trophies</h1>
+                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Section -->
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fas fa-trophy fa-sm"></i> National Trophies &amp; Tournaments <i class="fas fa-trophy fa-sm"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">Cups held between national teams, where they compete between the teams selected by the players and the rest of the other teams in competitions, in a Cup system as a knockout or groups</span>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section -->
+        <section class="natcups-section">
+            <div class="Cups">
+                <h2>Available Trophies</h2>
+                <div  id="image1">
+                    <img src="imgs/caff.png" alt="caf" onclick="callCafFunctions()">
+                    <p onclick="callCafFunctions()">Africa Cup of Nations</p>
+                </div>
+                <div  id="image2">
+                    <img src="imgs/wcqq.png" alt="wcq" onclick="callWcqFunctions()">
+                    <p style="font-size:21px" onclick="callWcqFunctions()">World Cup Qualifications</p>
+                </div>
+                <div  id="image3">
+                    <img src="imgs/wcc.png" alt="wc" onclick="callWCFunctions()">
+                    <p onclick="callWCFunctions()">World Cup of Nations</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section CAF -->
+
+        <section class="Hidden-PL" id="caf" style="display:none">
+
+            <div class="hidden-header">
+                <img src="imgs/caf.png" alt="caf" id="imageHiddenCup">
+            </div><br><br>
+            <hr>
+
+            <div class="hidden-content">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px"> A Knouck-out Tournament Starts with Round of 14, Played every 2 Seasons, Starts in half season of PL</span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> Cup Rules :</h2><br><span style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> The Cup Matches difficulty is "Top Player", and Final Match is "Super Star"<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> The duration of Matches is not more than 9 minutes
+                        </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br><span style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:24px"></i> Most team won the title : </span><span style="color:brown"> Ghana &#91;1 &#93;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span><span style="color:brown">Egypt vs Mali &#91;4-0&#93;  &#40; SE. 1 &#41;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Scorer : </span><span style="color:brown"> J. Ayew &#40; 4 Goals &#41;</span>
+                    <br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Assist maker : </span><span style="color:brown"> A. Ayew &#40; 3 Assist &#41;</span>
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Seaseon :</h2>
+                    <form>
+                        <select id="cafselect" onchange="callCafFunctions()">
+                                <option value="seone">Season One</option>
+                                <option value="setwo" selected>Season Two</option>
+                                <option value="sethree" disabled>Season Three</option>
+                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sefive" disabled>Season Five</option>
+                                <option value="sesix" disabled>Season Six</option>
+                                <option value="seseven" disabled>Season Seven</option>
+                            </select>
+                    </form>
+                </div>
+                <hr>
+
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="caf-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> Season <span id="hash"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw">General Draw</button>
+                            <button id="nround">Next Round</button>
+                            <button id="gscorer">Goal Scorers</button>
+                            <button id="amaker">Assist Makers</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="cafimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section WCQ -->
+
+        <section class="Hidden-PL" id="wcq" style="display:none">
+
+            <div class="hidden-header">
+                <img src="imgs/wcq.png" alt="wcq" id="imageHiddenCup">
+            </div><br><br>
+            <hr>
+
+            <div class="hidden-content">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with 3 Groups, Played every 3 Seasons, Qualifying teams are the top three teams and The two teams with the best second place continue to the Supplement. <br> Timing of play :: Round 1 (at round 7) // Round 2 (at round 12) // Round 3 (at round 15) // Round 4 (at round 20) // Round 5 (at round 24) // Round 6 (at round 28) <br> Supplement :: Round 1 (at round 30) // Round 2 (at round 31) // Round 3 (at round 32) // Round 4 (at round 33)</span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> Cup Rules :</h2><br><span style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> First 3 Matches is "Top player", Then 3 Matches is "Super Star" ,, Supplement first 2 Matches  is "Top player", Then 2 Matches is "Super Star"<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> The duration of Matches is not more than 10 minutes
+                        </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br><span style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:24px"></i> Most qualified team : </span><span style="color:brown"> &#91;0&#93;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span><span style="color:brown">GHANA &#91;5-0&#93; SOUTH AFRICA &#40; SE. 2 &#41;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Scorer : </span><span style="color:brown"> - &#40; 0 Goals &#41;</span>
+                    <br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Assist maker : </span><span style="color:brown"> - &#40; 0 Assist &#41;</span>
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Seaseon :</h2>
+                    <form>
+                        <select id="wcqselect" onchange="callWcqFunctions()">
+                                <option value="seone">Season One</option>
+                                <option value="setwo" selected>Season Two</option>
+                                <option value="sethree" disabled>Season Three</option>
+                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sefive" disabled>Season Five</option>
+                                <option value="sesix" disabled>Season Six</option>
+                                <option value="seseven" disabled>Season Seven</option>
+                            </select>
+                    </form>
+                </div>
+                <hr>
+
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="wcq-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> Season <span id="hash1"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw1">General Draw</button>
+                            <button id="nround1">Next Round</button>
+                            <button id="gscorer1">Goal Scorers</button>
+                            <button id="amaker1">Assist Makers</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="wcqimg">
+                            <div id="wcqslidediv" style="display:none">
+                                <div class="slideshow-container">
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">1 / 4</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g1">
+                                      <div class="text">Group One</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">2 / 4</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g2">
+                                      <div class="text">Group Two</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">3 / 4</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g3">
+                                      <div class="text">Group Three</div>
+                                    </div>
+                                    
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">4 / 4</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-sup">
+                                      <div class="text">Supplement Group</div>
+                                    </div>
+
+
+                                    <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlidesa(1)">&#10095;</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                        <span class="dota" onclick="currentSlide(1)"></span> 
+                                        <span class="dota" onclick="currentSlide(2)"></span> 
+                                        <span class="dota" onclick="currentSlide(3)"></span>
+                                        <span class="dota" onclick="currentSlide(4)"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+
+        <!-- Start Section WC -->
+
+        <section class="Hidden-PL" id="wc" style="display:none">
+
+            <div class="hidden-header">
+                <img src="imgs/wc.png" alt="wc" id="imageHiddenCup">
+            </div><br><br>
+            <hr>
+
+            <div class="hidden-content">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A group then Knouck-out Tournament Starts with Round of 32, Played every 3 Seasons, Starts after the end of PL</span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> Cup Rules :</h2><br><span style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> The Cup Matches difficulty is "Super Star"<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> The duration of Matches is not more than 9 minutes
+                        </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br><span style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:24px"></i> Most team won the title : </span><span style="color:brown"> &#91;0&#93;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span><span style="color:brown">&#91;0-0&#93;  &#40; SE. 0 &#41;</span><br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Scorer : </span><span style="color:brown"> - &#40; 0 Goals &#41;</span>
+                    <br>
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The Historical Assist maker : </span><span style="color:brown"> - &#40; 0 Assist &#41;</span>
+                    </span>
+                </div>
+                <br>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Seaseon :</h2>
+                    <form>
+                        <select id="wcselect" onchange="callWCFunctions()">
+                                <option value="seone">Season One</option>
+                                <option value="setwo" selected>Season Two</option>
+                                <option value="sethree" disabled>Season Three</option>
+                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sefive" disabled>Season Five</option>
+                                <option value="sesix" disabled>Season Six</option>
+                                <option value="seseven" disabled>Season Seven</option>
+                            </select>
+                    </form>
+                </div>
+                <hr>
+
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="wc-season" style="display:none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> Season <span id="hash2"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw2">General Draw</button>
+                            <button id="nround2">Next Round</button>
+                            <button id="gscorer2">Goal Scorers</button>
+                            <button id="amaker2">Assist Makers</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="wcimg">
+                            <div id="wcslidediv" style="display:none">
+                                <div class="slideshow-container">
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 /12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g1">
+                                      <div class="text">Group One</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g2">
+                                      <div class="text">Group Two</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">3 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g3">
+                                      <div class="text">Group Three</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">4 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g4">
+                                      <div class="text">Group Four</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">5 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g5">
+                                      <div class="text">Group Five</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">6 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g6">
+                                      <div class="text">Group Six</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">7 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g7">
+                                      <div class="text">Group seven</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">8 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g8">
+                                      <div class="text">Group Eight</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">9 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r16">
+                                      <div class="text">Round of 16</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">10 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r8">
+                                      <div class="text">Quarter Final</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">11 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r4">
+                                      <div class="text">Semi-Final</div>
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">12 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-f">
+                                      <div class="text">Final</div>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span> 
+                                      <span class="dot" onclick="currentSlide(2)"></span> 
+                                      <span class="dot" onclick="currentSlide(3)"></span>
+                                      <span class="dot" onclick="currentSlide(4)"></span> 
+                                    <span class="dot" onclick="currentSlide(5)"></span> 
+                                      <span class="dot" onclick="currentSlide(6)"></span> 
+                                      <span class="dot" onclick="currentSlide(7)"></span>
+                                      <span class="dot" onclick="currentSlide(8)"></span> 
+                                        <span class="dot" onclick="currentSlide(9)"></span> 
+                                      <span class="dot" onclick="currentSlide(10)"></span> 
+                                      <span class="dot" onclick="currentSlide(11)"></span>
+                                      <span class="dot" onclick="currentSlide(12)"></span> 
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Footer -->
+        <footer>
+            <div class="social">
+                <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+                <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+                <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+                <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+                <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+                <i class="fa fa-youtube-square" style="font-size:40px"></i>
+            </div>
+            <div class="copyrights">
+                <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <script src="Js/Ncups-Scripts.js"></script>
+</body>
+
+</html>

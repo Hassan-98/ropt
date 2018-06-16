@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    cursor: url('../cursors/arrow.cur'), auto;
+    transition: all 0.5s ease-out;
+}
+a{
+    cursor: url('../cursors/link.cur'), auto;
+}
+p,span,h1,h2,h3,input,textarea{
+    cursor: url('../cursors/text.cur'), auto;
+}
+input[type="submit"]{
+    cursor: url('../cursors/link.cur'), auto;
+}
+nav{
+    background-color: #fff;
+    font-family: 'Bree Serif', serif;
+    box-shadow: 0px 7px 8px rgba(0,0,0,0.5);
+    text-align: center
+}
+nav ul {
+    margin: 20px 0;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-table;
+}
+nav ul li {
+    display:inline;
+    padding:4px 16px;
+    transition: all 0.1s ease-out;
+}
+nav ul li a {
+    color:#000;
+    text-decoration: none;
+}
+nav ul li:hover{
+    border-bottom:6px solid;
+    transition: all 0.1s ease-in;
+    border-radius:7px;
+}
+nav ul .Clicked{
+    border-bottom:6px solid;
+    border-radius:7px;
+}
+nav ul .Clicked:hover{
+    border-bottom:5px solid #848484;
+    border-radius:7px;
+}
+header{
+    position: relative;
+    color:#fff;
+    font-size:22px;
+    box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.5s ease-out;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+header:hover{
+    opacity: 0.95;
+    transition: all 0.5s ease-in;
+}
+header div {
+    background-color: rgba(0,0,0,0.7);
+    width:60%;
+    padding:25px 40px;
+    position: absolute;
+    top:30%;
+    left:18%;
+    border-radius:100px;
+}
+header img{
+    display: inline;
+    width:100%;
+    height:600px
+}
+header div p,h1 {
+    text-align: center
+}
+header div h1{
+    font-family: 'Bree Serif', serif;
+    font-size:60px
+}
+
+.dropbtn {
+    color: black;
+    padding:4px 16px;
+    border: none;
+    cursor:url(../cursors/link.cur), auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -45px;
+    border-radius:5px;
+    font-size:22px
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+    color:#fff
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.main{
+    display:inline-flex;
+    background:url(../imgs/most-awards-header.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    width:100%;
+    height:400px;
+    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
+    margin-top:30px;
+}
+.main:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 708px;
+    bottom: 0;
+    width:1350px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #374050 0%, #798696 100%);
+    opacity: 0.7;
+}
+.main .BoxDiv{
+    font-size:30px;
+    font-weight: bold;
+    padding: 100px 200px;
+    width: 100%;
+    color: white;
+    z-index: 1
+}
+.main .BoxDiv h1{
+    font-family: 'Bree Serif', serif;
+    padding:0 auto;
+    font-size:70px
+}
+.main .BoxDiv span{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.main1{
+    display:inline-flex;
+    background:url(../imgs/most-award-header.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    width:50%;
+    height:200px;
+    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
+    margin-top:30px;
+}
+.main1:hover{
+    background:#000;
+}
+
+.main1 .BoxDiv{
+    font-weight: bold;
+    padding: 55px 10px;
+    width: 100%;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 10px dashed;
+    cursor: url('../cursors/link.cur'), auto;
+}
+.main1 .BoxDiv a{
+    font-family: 'Bree Serif', serif;
+    padding:0 auto;
+    text-decoration:none;
+    color:white;
+    font-size:45px
+}
+.main1 .BoxDiv span{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-top:45px;
+    text-align: center
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    width: 49.8%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background:#000;
+    color:#fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background:#000;
+    color:#fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tabcontent{
+    font-family: 'Bree Serif', serif;
+    padding:60px 20px;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
+    margin-top:3px;
+    display: block
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    border-collapse: collapse;
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #ddd;
+}
+table th{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size:28px;
+    background-color: #FE2E2E;
+    color: white;
+}
+.p th{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size:28px;
+    background-color: #08088A;
+    color: white;
+}
+.p th{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    text-align: center
+}
+table td{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    text-align: center
+}
+
+footer{
+    background-color: black;
+    font-family: 'ABeeZee', sans-serif;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.5);
+    color:#fff;
+    text-align: center;
+    padding:20px
+}
+footer i{
+    margin:20px 20px 30px;
+    cursor: url('../cursors/link.cur'), auto;
+}
+footer i:hover{
+    color:#858487
+}
+
+@media only screen and (max-device-width : 1900px) {
+    body{
+        min-width: 1350px
+    }
+    
+@media only screen and (min-width : 1350px) {
+    .main:after {
+    width: 100%;
+    }
+}
+    #ResponsiveP{
+        min-width: 180px;!important
+    }
+}
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Most Awarded</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/MostAwarded-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Highlights</a></li>
+            <li><a href="ccups.html">Club Trophies</a></li>
+            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="usrdata.html">Users Data</a></li>
+            <li class="Clicked">
+                <div class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                    <a href="transfer-rules.html">Transfer Rules</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+
+    <div class="container">
+
+        <!-- Start Header -->
+        <header>
+            <img src="imgs/header.jpg" alt="header">
+            <div>
+                <h1>Results OF PES Trophies</h1>
+                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Section -->
+
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fa fa-star" aria-hidden="true"></i>&nbsp; FIFA MOST AWARDED &nbsp;<i class="fa fa-star" aria-hidden="true"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">The statstics of the most awarded for the best soccer teams and players of the last season</span>
+            </div>
+        </section>
+
+        <!-- End Section -->
+
+        <!-- Start Section -->
+        <section style="display: flex">
+            <div class="main1">
+                <div class="BoxDiv">
+                    <a href="tas.html"> Teams Awards System </a>
+                </div>
+            </div>
+            <div class="main1">
+                <div class="BoxDiv">
+                    <a href="pas.html"> Players Awards System </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Rules -->
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'tma')" id="clicked">TEAMS MOST AWARDED</button>
+            <button class="tablinks" onclick="openCity(event, 'pma')">PLAYERS MOST AWARDED</button>
+        </div>
+        
+        <div id="tma" class="tabcontent">
+            <table border="5">
+                <tr>
+                    <th>#</th>
+                    <th>TEAM</th>
+                    <th>AWARDS ACHIVED</th>
+                    <th>TOTAL AWARDS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>LEICESTER CITY</td>
+                    <td>UCL  &#40; 1 &#41; , FA &#40; 1 &#41; , CS &#40; 1 &#41; , USC &#40; 1 &#41;</td>
+                    <td style="font-size:35px">4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TOTENHAM HOTSPUR</td>
+                    <td>PL &#40; 1 &#41;</td>
+                    <td style="font-size:35px">1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>CHELSEA FC</td>
+                    <td>PL &#40; 1 &#41;</td>
+                    <td style="font-size:35px">1</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pma" class="tabcontent">
+            <table border="5" class="p">
+                <tr>
+                    <th>#</th>
+                    <th>PLAYER</th>
+                    <th>POSITION</th>
+                    <th>TEAM</th>
+                    <th>AWARDS ACHIVED</th>
+                    <th>TOTAL AWARDS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>R. MAHREZ</td>
+                    <td style="color:red">RWF</td>
+                    <td>LEICESTER CITY</td>
+                    <td>PL-AM  &#40; 2 &#41; , FA-AM &#40; 1 &#41; , CS-AM &#40; 1 &#41; , UCL-AM &#40; 1 &#41; , USC-AM &#40; 1 &#41;</td>
+                    <td style="font-size:35px">6</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>J. VARDY</td>
+                    <td style="color:red">CF</td>
+                    <td>LEICESTER CITY</td>
+                    <td>PL-GS  &#40; 2 &#41; , FA-GS &#40; 1 &#41; , CS-GS &#40; 1 &#41; , UCL-GS &#40; 1 &#41;</td>
+                    <td style="font-size:35px">5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>A. MUSA</td>
+                    <td style="color:red">LWF</td>
+                    <td>LEICESTER CITY</td>
+                    <td>USC-GS &#40; 1 &#41;</td>
+                    <td style="font-size:35px">1</td>
+                </tr>
+            </table>  
+        </div>
+
+        <!-- Start Footer -->
+
+        <footer>
+            <div class="social">
+                <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+                <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+                <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+                <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+                <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+                <i class="fa fa-youtube-square" style="font-size:40px"></i>
+            </div>
+            <div class="copyrights">
+                <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+    </div>
+     <script>
+        document.getElementById("clicked").click();
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>

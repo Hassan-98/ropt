@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Users Data</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/Usrdata-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa|Lalezar" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+    
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Highlights</a></li>
+            <li><a href="ccups.html">Club Trophies</a></li>
+            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li class="Clicked"><a href="usrdata.html">Users Data</a></li>
+            <li>
+                <div class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                    <a href="transfer-rules.html">Transfer Rules</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+    <div class="container">
+
+        <!-- Start Header -->
+        <header>
+            <img src="imgs/header.jpg" alt="header">
+            <div>
+                <h1>Results OF PES Trophies</h1>
+                <p style="font-family: 'Quicksand', sans-serif;">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Section -->
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fa fa-user-circle-o" style="font-size:40px"></i> Users Data &amp; Records <i class="fa fa-user-circle-o" style="font-size:40px"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">The records here contain all the data of the players participating in the competitions and all the statistics for their record in the game</span>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section -->
+        <section class="users-section">
+            <div class="users">
+                <h2>Participating Users</h2>
+                <div>
+                    <img src="imgs/nasser.jpg" alt="naser" onclick="showNdata()" id="image1">
+                    <p onclick="showNdata()" id="paragraph1">Moustafa Naser</p>
+                </div>
+                <div>
+                    <img src="imgs/hassan.jpg" alt="hassan" onclick="showHdata()" id="image2">
+                    <p onclick="showHdata()" style="font-size:36px;padding-right:90px;padding-left:90px" id="paragraph2">Hassan Ali</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        
+        
+        
+        <!-- Start Hassan Section -->
+
+        <section class="Hidden-PL" id="HassanSection" style="display:none">
+
+            <div class="hidden-header">
+                <img src="imgs/hassan.jpg" alt="hassan">
+                <p style="font-size:40px">Hassan's Data</p>
+            </div><br><br>
+            <hr>
+            <div class="hidden-content">
+                <img src="imgs/lei.png" class="gridl">
+
+                <img src="imgs/gha.png" class="gridr">
+
+            </div>
+            <br>
+            
+            <div class="hidden-content">
+                <div style="text-align:center" class="hidden-content">
+                    <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-glass" style="font-size:45px"></i> إحصائيات البطولات <i class="fa fa-glass" style="font-size:45px"></i>
+                        </span>
+                </div><br>
+                <div class="hidden-contentss">
+                            <span class="total"> العدد الكلى للبطولات المحققة :: &#91; 5 &#93; بطولة </span>
+                        </div>
+                    <!-- Start Section -->
+            <section class="Cups-section">
+                <div class="Cups">
+                    <div>
+                        <img src="imgs/pll.png" alt="pl">
+                        <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/emfa.png" alt="emfa">
+                        <p>عدد مرات الفوز | &#91; 1 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/facom.png" alt="facom">
+                        <p>عدد مرات الفوز | &#91; 1 مرة &#93; </p>
+                    </div>
+                </div>
+                <br>
+                <div class="Cups">
+                    <div>
+                        <img src="imgs/ucl.svg" alt="ucl" class="editimg">
+                        <p>عدد مرات الفوز | &#91; 1 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/uel.svg" alt="ufl" class="editimg">
+                        <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/uscc.png" alt="usc">
+                        <p>عدد مرات الفوز | &#91; 1 مرة &#93; </p>
+                    </div>
+                </div>
+                <div class="Cups">
+                <div>
+                    <img src="imgs/caff.png" alt="caf" class="editimg">
+                    <p>عدد مرات الفوز | &#91; 1 مرة &#93; </p>
+                </div>
+                <div>
+                    <img src="imgs/wcqq.png" alt="wcq" class="editimg">
+                    <p>عدد مرات التأهل | &#91; 0 مرة &#93; </p>
+                </div>
+                <div>
+                    <img src="imgs/wcc.png" alt="wc" class="editimg">
+                    <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                </div>
+            </div>
+            </section>
+            <!-- End Section -->
+            </div>
+            
+            <br>
+            
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-users" style="font-size:45px"></i> إحصائيات المباريات <i class="fa fa-users" style="font-size:45px"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="width:97%;font-family: 'Changa', sans-serif">
+                        <span style="font-size:28px;font-weight: 800;padding:10px;color:#D80004"> إجمالى عدد المباريات الملعوبة :: &#91; 127 مباراة &#93;</span><br><hr><br>
+                        <span style="font-size:30px;margin-bottom:10px;padding:10px;"><span style="color:#037814">إجمالى الانتصارات ::: &#91; 86 &#93; إنتصار 
+                                     | بمعدل &#91; 67.71% &#93; من العدد الكلي مباريات </span><br><br> 
+                        <span style="color:#A6A7A8">إجمالى التعادلات ::: &#91; 29 &#93; تعادل | بمعدل &#91; 22.83% &#93; من العدد الكلي مباريات</span><br><br> 
+                        <span style="color:#920002">إجمالى الهزائم ::: &#91; 12 &#93; هزيمة  | بمعدل &#91; 9.44% &#93; من العدد الكلي مباريات</span><br>
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-bullseye" style="font-size:45px"></i> إحصائيات الاهداف <i class="fa fa-bullseye" style="font-size:45px"></i>
+                        </span>
+                    </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px;font-weight:bold"> الاهداف المسجلة لة : &#91; 307 هدف &#93; | خلال : &#91; 127 مباراة &#93; <br> بمعدل : &#91; 2.41 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px;font-weight:bold"> الاهداف المسجلة علية : &#91; 123 هدف &#93; | خلال : &#91; 127 مباراة &#93; <br> بمعدل : &#91; 0.96 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/leiss.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-weight:bold;font-family: 'Lalezar', cursive;">مواجهات النادي المنافس</span>
+                        <img src="imgs/man_city.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 6 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:35px">الانتصارات </span><br>
+                            <span> إجمالى الانتصارات : &#91; 4 &#93;  
+                                         | بمعدل &#91; 66.67% &#93; <br>
+                                انتصارات داخل ملعبة : &#91; 2 &#93; <br> انتصارات خارج ملعبة : &#91; 2 &#93;  </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:35px">التعادلات </span><br>
+                            <span> إجمالى التعادلات : &#91; 1 &#93;  
+                                         | بمعدل &#91; 16.66% &#93;<br> 
+                                تعادلات داخل ملعبة : &#91; 1 &#93; <br> تعادلات خارج ملعبة : &#91; 0 &#93; </span><br><br>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:35px">الهزائم </span><br>
+                            <span>إجمالى الهزائم : &#91; 1 &#93;  
+                                         | بمعدل &#91; 16.66% &#93; <br>
+                                هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 0 &#93;   </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة لة : &#91; 15 اهداف &#93;  <br> بمعدل : &#91; 2.5 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة علية : &#91; 9 اهداف &#93;  <br> بمعدل : &#91; 1.5 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                </div>
+            </div>
+    </div>
+            <br>
+        <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/Ghana.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-weight:bold;font-family: 'Lalezar', cursive;">مواجهات المنتخب المنافس</span>
+                        <img src="imgs/Egypt.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 2 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:35px">الانتصارات </span><br>
+                            <span> إجمالى الانتصارات : &#91; 1 &#93;  
+                                         | بمعدل &#91; 50% &#93; <br>
+                                انتصارات داخل ملعبة : &#91; 0 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93;  </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:35px">التعادلات </span><br>
+                            <span> إجمالى التعادلات : &#91; 0 &#93;  
+                                         | بمعدل &#91; 0% &#93;<br> 
+                                تعادلات داخل ملعبة : &#91; 0 &#93; <br> تعادلات خارج ملعبة : &#91; 0 &#93; </span><br><br>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:35px">الهزائم </span><br>
+                            <span>إجمالى الهزائم : &#91; 1 &#93;  
+                                         | بمعدل &#91; 50% &#93; <br>
+                                هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 1 &#93;   </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة لة : &#91; 2 اهداف &#93;  <br> بمعدل : &#91; 1 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة علية : &#91; 1 اهداف &#93;  <br> بمعدل : &#91; 0.5 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                </div>
+            </div>
+    </div>
+    </section>
+        
+    <!-- End Section -->
+        
+        
+        
+        
+        
+
+    <!-- Start Section Naser Data -->
+
+    <section class="Hidden-PL" id="NaserSection" style="display:none">
+
+        <div class="hidden-header">
+            <img src="imgs/nasser.jpg" alt="naser">
+            <p class="firstp" style="font-size:36px">Moustafa's Data</p>
+        </div><br><br>
+        <hr>
+        <div class="hidden-content">
+            <img src="imgs/man.png" class="gridl">
+
+            <img src="imgs/egy.png" class="gridr">
+
+        </div><br>
+            <div class="hidden-content">
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                                <i class="fa fa-glass" style="font-size:45px"></i> إحصائيات البطولات <i class="fa fa-glass" style="font-size:45px"></i>
+                            </span>
+                    </div><br>
+                    <div class="hidden-contentss">
+                                <span class="total"> العدد الكلى للبطولات المحققة :: &#91; 0 &#93; بطولة </span>
+                            </div>
+                        <!-- Start Section -->
+                <section class="Cups-section">
+                    <div class="Cups">
+                        <div>
+                            <img src="imgs/pll.png" alt="pl">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                        <div>
+                            <img src="imgs/emfa.png" alt="emfa">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                        <div>
+                            <img src="imgs/facom.png" alt="facom">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Cups">
+                        <div>
+                            <img src="imgs/ucl.svg" alt="ucl" class="editimg">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                        <div>
+                            <img src="imgs/uel.svg" alt="ufl" class="editimg">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                        <div>
+                            <img src="imgs/uscc.png" alt="usc">
+                            <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                        </div>
+                    </div>
+                    <div class="Cups">
+                    <div>
+                        <img src="imgs/caff.png" alt="caf" class="editimg">
+                        <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/wcqq.png" alt="wcq" class="editimg">
+                        <p>عدد مرات التأهل | &#91; 0 مرة &#93; </p>
+                    </div>
+                    <div>
+                        <img src="imgs/wcc.png" alt="wc" class="editimg">
+                        <p>عدد مرات الفوز | &#91; 0 مرة &#93; </p>
+                    </div>
+                </div>
+                </section>
+                <!-- End Section -->
+
+                </div>
+        <br>
+        <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-users" style="font-size:45px"></i> إحصائيات المباريات <i class="fa fa-users" style="font-size:45px"></i>
+                        </span>
+                        
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="width:97%;font-family: 'Changa', sans-serif">
+                        <span style="font-size:28px;font-weight: 800;padding:10px;color:#D80004"> إجمالى عدد المباريات الملعوبة :: &#91; 116 مباراة &#93;</span><br><hr><br>
+                        <span style="font-size:30px;margin-bottom:10px;padding:10px;"><span style="color:#037814">إجمالى الانتصارات ::: &#91; 40 &#93; إنتصار 
+                                     | بمعدل &#91; 34.48% &#93; من العدد الكلي مباريات </span><br><br> 
+                        <span style="color:#A6A7A8">إجمالى التعادلات ::: &#91; 32 &#93; تعادل | بمعدل &#91; 27.58% &#93; من العدد الكلي مباريات</span><br><br> 
+                        <span style="color:#920002">إجمالى الهزائم ::: &#91; 43 &#93; هزيمة  | بمعدل &#91; 37.06% &#93; من العدد الكلي مباريات</span><br>
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-bullseye" style="font-size:45px"></i> إحصائيات الاهداف <i class="fa fa-bullseye" style="font-size:45px"></i>
+                        </span>
+                    </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px;font-weight:bold"> الاهداف المسجلة لة : &#91; 120 هدف &#93; | خلال : &#91; 116 مباراة &#93; <br> بمعدل : &#91; 1.03 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px;font-weight:bold"> الاهداف المسجلة علية : &#91; 135 هدف &#93; | خلال : &#91; 116 مباراة &#93; <br> بمعدل : &#91; 1.16 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/man_city.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-weight:bold;font-family: 'Lalezar', cursive;">مواجهات النادي المنافس</span>
+                        <img src="imgs/leiss.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 6 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:35px">الانتصارات </span><br>
+                            <span> إجمالى الانتصارات : &#91; 1 &#93;  
+                                         | بمعدل &#91; 16.66% &#93; <br>
+                                انتصارات في ملعبة : &#91; 0 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93;  </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:35px">التعادلات </span><br>
+                            <span> إجمالى التعادلات : &#91; 1 &#93;  
+                                         | بمعدل &#91; 16.66% &#93;<br> 
+                                تعادلات في ملعبة : &#91; 0 &#93; <br> تعادلات خارج ملعبة : &#91; 1 &#93; </span><br><br>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:35px">الهزائم </span><br>
+                            <span>إجمالى الهزائم : &#91; 4 &#93;  
+                                         | بمعدل &#91; 66.67% &#93; <br>
+                                هزائم داخل ملعبة : &#91; 2 &#93; <br> هزائم خارج ملعبة : &#91; 2 &#93;   </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة لة : &#91; 6 اهداف &#93;  <br> بمعدل : &#91; 1.2 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة علية : &#91; 15 اهداف &#93;  <br> بمعدل : &#91; 3 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                </div>
+            </div>
+    </div>
+        <br>
+        <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/Egypt.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-weight:bold;font-family: 'Lalezar', cursive;">مواجهات المنتخب المنافس</span>
+                        <img src="imgs/Ghana.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 2 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:35px">الانتصارات </span><br>
+                            <span> إجمالى الانتصارات : &#91; 1 &#93;  
+                                         | بمعدل &#91; 50% &#93; <br>
+                                انتصارات في ملعبة : &#91; 1 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93;  </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:35px">التعادلات </span><br>
+                            <span> إجمالى التعادلات : &#91; 0 &#93;  
+                                         | بمعدل &#91; 0% &#93;<br> 
+                                تعادلات في ملعبة : &#91; 0 &#93; <br> تعادلات خارج ملعبة : &#91; 0 &#93; </span><br><br>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:35px">الهزائم </span><br>
+                            <span>إجمالى الهزائم : &#91; 1 &#93;  
+                                         | بمعدل &#91; 50% &#93; <br>
+                                هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 0 &#93;   </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">السجل الهجومي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة لة : &#91; 1 اهداف &#93;  <br> بمعدل : &#91; 0.5 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">السجل الدفاعي</h2>
+                            <hr><br>
+
+                            <span style="font-size:24px"> الاهداف المسجلة علية : &#91; 2 اهداف &#93;  <br> بمعدل : &#91; 1 هدف لكل مباراة &#93;<br>
+                                    </span>
+                        </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="social">
+            <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+            <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+            <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+            <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+            <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+            <i class="fa fa-youtube-square" style="font-size:40px"></i>
+        </div>
+        <div class="copyrights">
+            <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    </div>
+
+    <script src="Js/Usrs-Scripts.js"></script>
+</body>
+
+</html>
