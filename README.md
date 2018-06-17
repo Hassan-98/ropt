@@ -11,3 +11,8 @@ PES Project V3.5 - log ::
 -Editing ncups backgrounds "WORLD CUP MODE"			    
 -Editing WCQ system and Timing of play   			     
 -Adding FIFA Club World Cup to ccups & seasons pages                 
+
+## update 1 - log
+
+- Editing Rankings and Most Awarded Pages
+- Fixes in transfer market page
