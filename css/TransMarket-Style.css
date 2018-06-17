@@ -283,7 +283,7 @@ header div h1{
 
 .container{
     padding:20px;
-    background: url("https://wallpapercave.com/wp/wp1830648.jpg");
+    background: url("../imgs/tranMback2.jpg");
     position: relative;
     text-align: center
 }
@@ -336,7 +336,7 @@ header div h1{
 }
 
 .row{
-    background: url("https://theeaglesbeak.com/wp-content/uploads/2016/10/TEB1-5.jpg");
+    background: url("../imgs/tranMback.jpg");
     padding:50px 0;
 }
 /* Clear floats after the columns */
