@@ -134,7 +134,7 @@ header div h1{
 }
 .main{
     display:inline-flex;
-    background:url(../imgs/transferM-header.jpg);
+    background:url(../imgs/transfer-request-header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -173,67 +173,126 @@ header div h1{
 .main .BoxDiv span{
     font-family: 'Allerta Stencil', sans-serif;
 }
-.Rnews{
-    display:inline-flex;
-    text-align:right;
-    width:100%;
-    height:500px;
-    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
-    margin-top:30px;
-    font-family: 'Tajawal', sans-serif;
+form{
+    background-color: black;
+    color: white;
+    border-bottom:10px dashed #fff;
+    padding-bottom:20px;
 }
-.Rnews .BoxDiv{
-    font-size: 22px;
-    font-weight: bold;
-    padding:50px;
-    width:68%
-}
-.Rnews .BoxDiv h2{
-    padding:0 auto;
-}
-.Rnews .BoxImg{
-    width:60%;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
+.chances p{
+    font-family: 'Changa', sans-serif;
+    font-size: 30px
 }
 
-.Lnews{
-    display:inline-flex;
-    text-align:right;
-    width:100%;
-    height:500px;
-    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
-    margin-top:30px;
-    font-family: 'Tajawal', sans-serif;
-}
-.Lnews .BoxDiv{
-    font-size: 22px;
-    font-weight: bold;
-    padding:50px;
-    width:68%
-}
-.Lnews .BoxDiv h2{
-    padding:0 auto;
-}
-.Lnews .BoxImg{
-    width:60%;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
-}
-.allnews .button{
-    text-align: center;
-    margin-bottom: 50px
-}
-.allnews button{
+fieldset{
+    margin-bottom: 10px;
     font-size:35px;
+    font-weight: bold;
     font-family: 'Bree Serif', serif;
-    background: #fff;
-    border-radius: 5px;
+    text-align: center;
+    border: 2px groove;
+    background:url(../imgs/most-award-header.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+input{
+    padding:5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    width:34%;
+    margin: 10px;
+    border: 2px dashed;
+}
+label{
+    padding:5px;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Bree Serif', serif;
+    margin: 10px
+}
+input[type="button"]{
     cursor: url('../cursors/link.cur'), auto;
-    width:49%
+    border:1px groove;
+    background-color: darkred;
+    border-radius: 25px;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+    color: #fff
 }
-.allnews button:hover{
-    background:linear-gradient(to right, #3E1CE3 , #8412F4);
-    color:#fff;
+input[type="button"]:hover{
+    background-color: #eaea
 }
+#myBtn{
+    cursor: url('../cursors/link.cur'), auto;
+    border:1px groove;
+    background-color: #848484;
+    border-radius: 25px;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+    color: #fff
+}
+#decision{
+    padding:5px;
+    border: 2px groove;
+    background: #fff;
+    color: #000;
+    margin: 5px;
+    font-size: 35px;
+    font-weight: bold
+}
+button{
+    padding:5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    width:20%;
+    margin: 10px;
+    cursor: url('../cursors/link.cur'), auto;
+}
+#certific{
+    width:100%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 50px
+}
+.certificate{
+    width:60%;
+    font-size:27px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border:3px dashed;
+    padding:10px;
+    border-radius: 25px;
+    background:url(../imgs/rankings-header.png);
+    background-position: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.certificate img{
+    margin:45px
+}
+.certificate span{
+    font-weight: bold
+}
+.certificate hr{
+    border:1px groove #000;
+    border-radius:100px
+}
+.idk{
+    padding:5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+}
+.notice{
+    padding:5px;
+    text-align: center;
+    font-size:22px;
+    font-family: 'Changa', sans-serif;
+}
+
 .dropbtn {
     color: black;
     padding:4px 16px;
@@ -389,13 +448,12 @@ header div h1{
     border:4px dashed;
     cursor: url('../cursors/link.cur'), auto;
 }
-.main1 .BoxDiv button{
+.main1 .BoxDiv a{
     font-family: 'Bree Serif', serif;
     padding:0 auto;
     text-decoration:none;
     color:white;
-    font-size:50px;
-    cursor: url('../cursors/link.cur'), auto;
+    font-size:50px
 }
 
 footer{

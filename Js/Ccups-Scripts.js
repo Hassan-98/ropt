@@ -269,16 +269,16 @@ function PLcheckSeason(){
             break;
         case "setwo":
             document.getElementById("draw").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/j11ISnQ.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/XPCYoLJ.jpg";
             }
             document.getElementById("nround").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/9WRiTgh.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/On6N2i8.png";
             }
             document.getElementById("gscorer").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/0AR8ZSo.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/OE0lWiK.png";
             }
             document.getElementById("amaker").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/w40pFAb.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/V6ilrME.png";
             }
             document.getElementById("steam").onclick = function(){
             document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
@@ -308,16 +308,16 @@ function FAcheckSeason(){
             break;
         case "setwo":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/m2I1Y2p.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/EjFCYnJ.png";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/rA6cO8d.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/HNyZzqv.png";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/zzbrbSG.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/vm4w0iY.png";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/fDiDXo9.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/MGaGzBQ.png";
             }
             break;
 }
@@ -397,31 +397,31 @@ function UCLcheckSeason(){
             document.getElementById("draw3").onclick = function(){
             document.getElementById("uclimg").style.display = "none";
             document.getElementById("uclslidediv").style.display = "block";
-            document.getElementById("ucl-g1").src = "https://i.imgur.com/WTjpsLi.png";
-            document.getElementById("ucl-g2").src = "https://i.imgur.com/MZiJu99.png";
-            document.getElementById("ucl-g3").src = "https://i.imgur.com/rKna9Co.png";
-            document.getElementById("ucl-g4").src = "https://i.imgur.com/q60kgBj.png";
-            document.getElementById("ucl-g5").src = "https://i.imgur.com/aZGbinq.png";
-            document.getElementById("ucl-g6").src = "https://i.imgur.com/PvpazLy.png";
-            document.getElementById("ucl-g7").src = "https://i.imgur.com/ezSonif.png";
-            document.getElementById("ucl-g8").src = "https://i.imgur.com/dMCXkfw.png";
-            document.getElementById("ucl-r16").src = "https://i.imgur.com/6HrDL0Q.gif";
-            document.getElementById("ucl-r8").src = "https://i.imgur.com/6HrDL0Q.gif";
-            document.getElementById("ucl-r4").src = "https://i.imgur.com/6HrDL0Q.gif";
+            document.getElementById("ucl-g1").src = "https://i.imgur.com/Io0PyhN.png";
+            document.getElementById("ucl-g2").src = "https://i.imgur.com/czwzcqe.png";
+            document.getElementById("ucl-g3").src = "https://i.imgur.com/NL4rdw1.png";
+            document.getElementById("ucl-g4").src = "https://i.imgur.com/hNrCEoH.png";
+            document.getElementById("ucl-g5").src = "https://i.imgur.com/OdHwjwf.png";
+            document.getElementById("ucl-g6").src = "https://i.imgur.com/dWIfPBi.png";
+            document.getElementById("ucl-g7").src = "https://i.imgur.com/T4N5wQW.png";
+            document.getElementById("ucl-g8").src = "https://i.imgur.com/RXwbpxh.png";
+            document.getElementById("ucl-r16").src = "https://i.imgur.com/uPVeDJw.png";
+            document.getElementById("ucl-r8").src = "https://i.imgur.com/ITVJh6R.png";
+            document.getElementById("ucl-r4").src = "https://i.imgur.com/KaEd8g7.png";
             document.getElementById("ucl-f").src = "https://i.imgur.com/6HrDL0Q.gif";
             }
             document.getElementById("nround3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/lADP45A.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/QqEaq07.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("gscorer3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/EFROJcM.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/Qx3Jken.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("amaker3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/irr5cgq.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/cRpPyO3.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
@@ -474,36 +474,36 @@ function UELcheckSeason(){
             document.getElementById("draw4").onclick = function(){
             document.getElementById("uelimg").style.display = "none";
             document.getElementById("uelslidediv").style.display = "block";
-            document.getElementById("uel-g1").src = "https://i.imgur.com/lJENGMT.png";
-            document.getElementById("uel-g2").src = "https://i.imgur.com/gEApeHl.png";
-            document.getElementById("uel-g3").src = "https://i.imgur.com/3R62Rm8.png";
-            document.getElementById("uel-g4").src = "https://i.imgur.com/eQvuGh4.png";
-            document.getElementById("uel-g5").src = "https://i.imgur.com/Zrr1hly.png";
-            document.getElementById("uel-g6").src = "https://i.imgur.com/Re4HwkM.png";
-            document.getElementById("uel-g7").src = "https://i.imgur.com/lD08knD.png";
-            document.getElementById("uel-g8").src = "https://i.imgur.com/ImDcVA7.png";
-            document.getElementById("uel-g9").src = "https://i.imgur.com/dkpzflj.png";
-            document.getElementById("uel-g10").src = "https://i.imgur.com/N0iFRCB.png";
-            document.getElementById("uel-g11").src = "https://i.imgur.com/LhUgNNkr.png";
-            document.getElementById("uel-g12").src = "https://i.imgur.com/BiZd90f.png";
-            document.getElementById("uel-r32").src = "https://i.imgur.com/aDcMHxy.gif";
-            document.getElementById("uel-r16").src = "https://i.imgur.com/aDcMHxy.gif";
-            document.getElementById("uel-r8").src = "https://i.imgur.com/aDcMHxy.gif";
-            document.getElementById("uel-r4").src = "https://i.imgur.com/aDcMHxy.gif";
-            document.getElementById("uel-f").src = "https://i.imgur.com/aDcMHxy.gif";
+            document.getElementById("uel-g1").src = "https://i.imgur.com/1L3k2C6.png";
+            document.getElementById("uel-g2").src = "https://i.imgur.com/sScNnsQ.png";
+            document.getElementById("uel-g3").src = "https://i.imgur.com/x1p5lJE.png";
+            document.getElementById("uel-g4").src = "https://i.imgur.com/HR2G5Ml.png";
+            document.getElementById("uel-g5").src = "https://i.imgur.com/CYB7i03.png";
+            document.getElementById("uel-g6").src = "https://i.imgur.com/wEQ0vVb.png";
+            document.getElementById("uel-g7").src = "https://i.imgur.com/lTYpuaw.png";
+            document.getElementById("uel-g8").src = "https://i.imgur.com/qp29ljZ.png";
+            document.getElementById("uel-g9").src = "https://i.imgur.com/Voe6jN4.png";
+            document.getElementById("uel-g10").src = "https://i.imgur.com/rfW0SxB.png";
+            document.getElementById("uel-g11").src = "https://i.imgur.com/sgwURms.png";
+            document.getElementById("uel-g12").src = "https://i.imgur.com/ruZffcu.png";
+            document.getElementById("uel-r32").src = "https://i.imgur.com/5PPbeWu.png";
+            document.getElementById("uel-r16").src = "https://i.imgur.com/Fk91Giq.png";
+            document.getElementById("uel-r8").src = "https://i.imgur.com/cf81Chn.png";
+            document.getElementById("uel-r4").src = "https://i.imgur.com/xQNy2sA.png";
+            document.getElementById("uel-f").src = "https://i.imgur.com/umZ0iPR.png";
             }
             document.getElementById("nround4").onclick = function(){
-            document.getElementById("uelimg").src = "https://i.imgur.com/P1yNtxZ.png";
+            document.getElementById("uelimg").src = "https://i.imgur.com/2rStrHa.png";
             document.getElementById("uelimg").style.display = "block";
             document.getElementById("uelslidediv").style.display = "none";
             }
             document.getElementById("gscorer4").onclick = function(){
-            document.getElementById("uelimg").src = "https://i.imgur.com/bwjieDw.png";
+            document.getElementById("uelimg").src = "https://i.imgur.com/pO6IcTU.png";
             document.getElementById("uelimg").style.display = "block";
             document.getElementById("uelslidediv").style.display = "none";
             }
             document.getElementById("amaker4").onclick = function(){
-            document.getElementById("uelimg").src = "https://i.imgur.com/7CVIIE4r.png";
+            document.getElementById("uelimg").src = "https://i.imgur.com/yoVB7Jw.png";
             document.getElementById("uelimg").style.display = "block";
             document.getElementById("uelslidediv").style.display = "none";
             }

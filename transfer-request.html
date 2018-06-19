@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Transfer Request</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/TransReq-Style.css">
+    <!-- fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!-- fontawesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Pacifico|Roboto+Mono|Bree+Serif|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Highlights</a></li>
+            <li><a href="ccups.html">Club Trophies</a></li>
+            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="usrdata.html">Users Data</a></li>
+            <li class="Clicked">
+                <div class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                    <a href="transfer-rules.html">Transfer Rules</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+
+        <!-- Start Header -->
+        <header>
+            <img src="imgs/header.jpg" alt="header">
+            <div>
+                <h1>Results OF PES Trophies</h1>
+                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Section -->
+
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fa fa-btc" aria-hidden="true"></i>&nbsp; Trasnfers Request &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">Want a new player in your team ? .. Here you can finish the deal</span>
+            </div>
+        </section>
+
+        <!-- End Section -->
+
+        <br><br><br>
+
+        <!-- Start Section -->
+
+    
+    <div class="shoow">INSERT THE SELECTED PLAYER DATA THEN MAKE YOUR CHANCES</div>
+    <div>
+        <form>
+            <fieldset>PLAYER DATA</fieldset><br>
+            <label>Player Name</label>
+            <input type="text" placeholder="Player Name" id="pname">
+            <label>Position</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Player Position" id="pos"><br>
+            <label>Player Value</label>
+            <input type="text" placeholder="Player Value" id="val">
+            <label>Season No.</label>
+            <input type="number" placeholder="Season Number" id="se"><br>
+            <label>Buying Team</label>
+            <input type="text" placeholder="Buying Team" id="buyt">
+            <label>Team Logo</label>
+            <input type="text" placeholder="logo src" id="buytsrc"><br>
+            <label>Selling Team</label>
+            <input type="text" placeholder="Selling Team" id="sellt">
+            <label>Team Logo</label>
+            <input type="text" placeholder="logo src" id="selltsrc"><br><br>
+        </form>
+        </div>
+        <div style="font-size:25px;text-align:center">
+            <span class="idk"> DON'T KNOW LOGOs SRCs GO <a href="srcs.html" target="_blank">HERE</a></span>
+        <form class="chances">
+            <fieldset>DEAL CHANCES</fieldset>
+            <p id="chances" dir="rtl" style="padding:10px">الفرص المتاحة لنجاح الصفقة :: &#40; نجاح الصفقة , فشل الصفقة &#41;</p>
+            <p id="numofchancese" dir="rtl"></p>
+            <p id="decision" dir="rtl"></p>
+            <span class="notice">* يجب إدخال كلمة مرور الادارة قبل إتخاذ قرار النادي وذلك لانتاج الشهادة الخاصة بالصفقة *</span><br>
+            <input type="password" placeholder="Certificate Password" id="rpass"><br>
+            <input id="name" type="text" placeholder="Add a Chance" />
+            <input type="button" value="أضف الفرصة" onclick="addInput()">
+            <input type="button" value="أتخذ قرار النادي" onclick="ouatRandomizer();"><br>
+            <input type="button" value="أنتج شهادة الصفقة" onclick="createCertificate();" id="myBtn" disabled><br>
+        </form>
+    </div>
+    
+    <br><br>
+    
+    <div id="certific" style="display:none">
+        <div class="certificate">
+            <img src="" height="130" width="130" id="Rbuytsrc"> <img src="imgs/trans.svg" height="80" width="110"> <img src="" height="130" width="130" id="Rselltsrc">
+            <br>
+            <div style="text-align: left">
+            &nbsp;&nbsp;<span>Player Name : <span id="Rpname" style="font-weight:400;"></span> 
+                
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+                
+            </span><span>Position : <span id="Rpos" style="font-weight:400;font-size:30px"></span></span><br><br>
+            
+            &nbsp;&nbsp;<span>Deal Value : <span id="Rval" style="font-weight:400;font-size:30px"></span> MILLION</span>
+            
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            
+            <span>In Season <span id="Rse" style="font-weight:400;font-size:30px"></span></span>
+            </div>
+            
+            <br><hr>
+            
+            <div style="padding:15px">
+                
+            <span style="font-size:24px">Buying Team</span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <span style="font-size:24px"> FIFA </span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <span style="font-size:24px">Selling Team</span>
+                
+                <br>
+                
+            <span id="Rbuyt" style="font-family: 'Pacifico', cursive;text-decoration:underline"></span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <span style="font-family: 'Pacifico', cursive;text-decoration:underline"> ROPT </span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <span id="Rsellt" style="font-family: 'Pacifico', cursive;text-decoration:underline"></span>
+            </div><br>
+        </div>
+    </div>
+    <br>
+    
+    <!-- End Section -->
+
+
+
+
+        <!-- Start Footer -->
+
+        <footer>
+            <div class="social">
+                <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+                <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+                <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+                <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+                <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+                <i class="fa fa-youtube-square" style="font-size:40px"></i>
+            </div>
+            <div class="copyrights">
+                <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+
+<script src="Js/TransReq-Scripts.js"></script>
+    
+</body>
+</html>
