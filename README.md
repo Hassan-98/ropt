@@ -16,3 +16,10 @@ PES Project V3.5 - log ::
 
 - Editing Rankings and Most Awarded Pages
 - Fixes in transfer market page
+
+## update 2 - log
+
+- Editing Rankings and Most Awarded Pages
+- Editing in transfer market page
+- Adding transfer request page
+- updating all website data to latest played session
