@@ -201,9 +201,9 @@ input{
     text-align: center;
     font-size: 25px;
     font-family: 'Bree Serif', serif;
-    width:34%;
+    width:32%;
     margin: 10px;
-    border: 2px dashed;
+    border:1px dashed;
 }
 label{
     padding:5px;
@@ -252,13 +252,12 @@ button{
     cursor: url('../cursors/link.cur'), auto;
 }
 #certific{
-    width:100%;
     text-align: center;
     font-family: 'Bree Serif', serif;
     padding: 50px
 }
 .certificate{
-    width:60%;
+    width:62%;
     font-size:27px;
     text-align: center;
     margin-left: auto;
@@ -266,12 +265,12 @@ button{
     border:3px dashed;
     padding:10px;
     border-radius: 25px;
-    background:url(../imgs/rankings-header.png);
+    background:url(../imgs/cert.jpg);
     background-position: center;
     font-family: 'Roboto Mono', monospace;
 }
 .certificate img{
-    margin:45px
+    margin:35px
 }
 .certificate span{
     font-weight: bold

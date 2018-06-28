@@ -155,23 +155,23 @@ function WCQcheckSeason(){
             document.getElementById("draw1").onclick = function(){
             document.getElementById("wcqimg").style.display = "none";
             document.getElementById("wcqslidediv").style.display = "block";
-            document.getElementById("wcq-g1").src = "https://i.imgur.com/iSD461e.png";
-            document.getElementById("wcq-g2").src = "https://i.imgur.com/iSe4rsY.png";
-            document.getElementById("wcq-g3").src = "https://i.imgur.com/ua5PblG.png";
-            document.getElementById("wcq-sup").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcq-g1").src = "https://i.imgur.com/cVYquf6.png";
+            document.getElementById("wcq-g2").src = "https://i.imgur.com/5pYQLVQ.png";
+            document.getElementById("wcq-g3").src = "https://i.imgur.com/xL6wSIq.png";
+            document.getElementById("wcq-sup").src = "https://i.imgur.com/PSKA6TG.png";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/OBcu798.png";
+            document.getElementById("wcqimg").src = "https://i.imgur.com/3jN8DPF.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/8jynToy.png";
+            document.getElementById("wcqimg").src = "https://i.imgur.com/sVDya45.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/MxkertO.png";
+            document.getElementById("wcqimg").src = "https://i.imgur.com/Vr8eU1K.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }

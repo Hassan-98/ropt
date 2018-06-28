@@ -65,7 +65,7 @@
 
         <section class="main">
             <div class="BoxDiv">
-                <h1><i class="fa fa-btc" aria-hidden="true"></i>&nbsp; Trasnfers Request &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></h1>
+                <h1><i class="fa fa-btc" aria-hidden="true"></i>&nbsp; Trasnfer Request &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></h1>
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif">Want a new player in your team ? .. Here you can finish the deal</span>
             </div>
@@ -84,20 +84,23 @@
             <fieldset>PLAYER DATA</fieldset><br>
             <label>Player Name</label>
             <input type="text" placeholder="Player Name" id="pname">
-            <label>Position</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label> Position </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Player Position" id="pos"><br>
             <label>Player Value</label>
             <input type="text" placeholder="Player Value" id="val">
             <label>Season No.</label>
             <input type="number" placeholder="Season Number" id="se"><br>
-            <label>Buying Team</label>
-            <input type="text" placeholder="Buying Team" id="buyt">
+            <label> Buyer Club &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Buyer Club Signature" id="buyt">
             <label>Team Logo</label>
-            <input type="text" placeholder="logo src" id="buytsrc"><br>
-            <label>Selling Team</label>
-            <input type="text" placeholder="Selling Team" id="sellt">
+            <input type="text" placeholder="Buyer Club src" id="buytsrc"><br>
+            <label> Seller Club &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Seller Club Signature" id="sellt">
             <label>Team Logo</label>
-            <input type="text" placeholder="logo src" id="selltsrc"><br><br>
+            <input type="text" placeholder="Seller Club src" id="selltsrc"><br><br>
+            <div style="text-align: center">
+                <label style="border:1px dashed;border-radius:30px;padding:6px 50px;">If there is an exchange, please enter the name of the replacement player</label><br><br>
+                <input type="text" placeholder="The Alternative Player" id="ssub" style="width:50%"></div><br>
         </form>
         </div>
         <div style="font-size:25px;text-align:center">
@@ -120,7 +123,7 @@
     
     <div id="certific" style="display:none">
         <div class="certificate">
-            <img src="" height="130" width="130" id="Rbuytsrc"> <img src="imgs/trans.svg" height="80" width="110"> <img src="" height="130" width="130" id="Rselltsrc">
+            <img src="" height="130" width="130" id="Rbuytsrc"> <img src="imgs/trans.png" height="120" width="140"> <img src="" height="130" width="130" id="Rselltsrc">
             <br>
             <div style="text-align: left">
             &nbsp;&nbsp;<span>Player Name : <span id="Rpname" style="font-weight:400;"></span> 
@@ -130,6 +133,7 @@
             </span><span>Position : <span id="Rpos" style="font-weight:400;font-size:30px"></span></span><br><br>
             
             &nbsp;&nbsp;<span>Deal Value : <span id="Rval" style="font-weight:400;font-size:30px"></span> MILLION</span>
+                <span id="sub" style="font-weight:400;font-size:30px"></span>
             
             &nbsp;&nbsp;|&nbsp;&nbsp;
             
@@ -140,21 +144,21 @@
             
             <div style="padding:15px">
                 
-            <span style="font-size:24px">Buying Team</span>
+            <span style="font-size:24px">Buyer Club</span>
             
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <span style="font-size:24px"> FIFA </span>
             
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
-            <span style="font-size:24px">Selling Team</span>
+            <span style="font-size:24px">Seller Club</span>
                 
                 <br>
                 
             <span id="Rbuyt" style="font-family: 'Pacifico', cursive;text-decoration:underline"></span>
             
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <span style="font-family: 'Pacifico', cursive;text-decoration:underline"> ROPT </span>
             

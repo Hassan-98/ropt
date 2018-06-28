@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Transfer News</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/TransNews-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+    
+    <!-- Start Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Highlights</a></li>
+            <li><a href="ccups.html">Club Trophies</a></li>
+            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="usrdata.html">Users Data</a></li>
+            <li class="Clicked">
+                <div class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                    <a href="transfer-rules.html">Transfer Rules</a>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+
+    <div class="container">
+
+        <!-- Start Header -->
+        <header>
+            <img src="imgs/header.jpg" alt="header">
+            <div>
+                <h1>Results OF PES Trophies</h1>
+                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Section -->
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fa fa-newspaper" style="font-size:50px"></i> Transfers News <i class="fa fa-newspaper" style="font-size:50px"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif;font-size:28px">The Latest News about players transfers and deals , with the recorded transfers certificates</span>
+            </div>
+        </section>
+        <!-- End Section -->
+        
+        
+        <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+        
+        <section class="seasons-section">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'pre')">Season Pre</button>
+                <button class="tablinks" onclick="openCity(event, 'one')">Season One</button>
+                <button class="tablinks" onclick="openCity(event, 'two')" id="clicked">Season Two</button>
+                <button class="tablinks" onclick="openCity(event, 'three')" disabled>Season Three</button>
+                <button class="tablinks" onclick="openCity(event, 'four')" disabled>Season Four</button>
+                <button class="tablinks" onclick="openCity(event, 'five')" disabled>Season Five</button>
+                <button class="tablinks" onclick="openCity(event, 'six')" disabled>Season Six</button>
+                <button class="tablinks" onclick="openCity(event, 'seven')" disabled>Season Seven</button>
+            </div>
+
+            <div id="pre" class="tabcontent pre">
+                <p style="font-size:45px">THE TRANSFERs SYSTEM DID NOT APPLIED IN THIS SEASON</p>
+            </div>
+
+
+            <!--   Season One    -->
+
+            <div id="one" class="tabcontent">
+                <p style="font-size:45px">THE TRANSFERs SYSTEM DID NOT APPLIED IN THIS SEASON</p>
+            </div>
+
+
+            <!--   Season Two    -->
+
+
+            <div id="two" class="tabcontent">
+                <p style="font-size:45px">THE TRANSFERs SYSTEM DID NOT APPLIED IN THIS SEASON</p>
+            </div>
+
+            <!--   Season Three    -->
+
+            <div id="three" class="tabcontent">
+                
+                <div class="certdiv">
+                    <img src="imgs/Capture.PNG" class="myImg" onclick="ceritificates(this);" alt="A Full Transfer | A. AYEW | LWF | 82 <br> FROM 'WEST HAM' TO 'LEICESTER CITY'">
+                    <p>
+                        A Full Transfer | A. AYEW <br>
+                        WEST HAM ---> LEICESTER CITY
+                    </p>
+                </div>
+                
+            </div>
+
+            <!--   Season Four    -->
+
+            <div id="four" class="tabcontent">
+                
+            </div>
+
+            <!--   Season FIVE    -->
+
+            <div id="five" class="tabcontent">
+                
+            </div>
+
+            <!--   Season SIX    -->
+
+            <div id="six" class="tabcontent">
+                
+            </div>
+
+            <!--   Season SEVEN    -->
+
+            <div id="seven" class="tabcontent">
+                
+            </div>
+
+
+        </section>
+
+
+        <!-- Start Footer -->
+
+        <footer>
+            <div class="social">
+                <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+                <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+                <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+                <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+                <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+                <i class="fa fa-youtube-square" style="font-size:40px"></i>
+            </div>
+            <div class="copyrights">
+                <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+
+    </div>
+    <script>
+        document.getElementById("clicked").click();
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        function ceritificates(imgs){
+            modal.style.display = "block";
+            modalImg.src = imgs.src;
+            captionText.innerHTML = imgs.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

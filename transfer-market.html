@@ -12,7 +12,7 @@
     <!-- fontawesome 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Bree+Serif|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Bubblegum+Sans|Bree+Serif|Poor+Story" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -61,6 +61,7 @@
         </header>
         <!-- End Header -->
 
+
         <!-- Start Section -->
 
         <section class="main">
@@ -73,127 +74,3977 @@
 
         <!-- End Section -->
 
-        <br><br><br>
+        <br>
 
         <!-- Start Section -->
+    
+    <!-- Start -->
+        <section class="News">
+            <div id="slideshow">
+               <div onclick="window.location.href='transfer-news.html'">
+                   <h1>SEE THE LATEST TRANSFERS NEWS</h1>
+                    <img src="imgs/1-min.png">
+               </div>
+               <div onclick="window.location.href='transfer-news.html'">
+                   <h1>SEE THE LATEST TRANSFERS NEWS</h1>
+                    <img src="imgs/2-min.png">
+               </div>
+                <div onclick="window.location.href='transfer-news.html'">
+                    <h1>SEE THE LATEST TRANSFERS NEWS</h1>
+                    <img src="imgs/3-min.png">
+               </div>
+                <div onclick="window.location.href='transfer-news.html'">
+                    <h1>SEE THE LATEST TRANSFERS NEWS</h1>
+                    <img src="imgs/4-min.jpg">
+               </div>
+            </div>
+        </section>
+        <!-- End -->
 
-        <div class="container" id="LargeNews">
-            <img src="imgs/tranMback3.jpg" id="expandedImg">
-        </div>
     <div class="main1">
                 <div class="BoxDiv">
                     <button style="background:none;border:none" onclick="window.location.href='transfer-request.html'" disabled> MAKE A TRANSFER REQUEST</button>
-                    <br><span style="font-size:22px;font-family: 'Quicksand', sans-serif">THE TRANSFER MARKET IS CURRENTLY CLOSED</span>
+                    <br><span style="font-size:22px;font-family: 'Quicksand', sans-serif">THE TRANSFER MARKET IS CURRENTLY - CLOSED -</span>
                 </div>
             </div>
-    <div class="shoow">CHOOSE THE CLUB TO SHOW PLAYERS AND BUDGETS LIST</div>
-    <div class="row">
+    <div class="shoow" id="showfirst">CHOOSE THE CLUB TO SHOW PLAYERS AND BUDGETS LIST</div>
+    <div class="row" id="clubs">
         
         
             <div class="column">
-                <img src="imgs/clubs/ars.svg" onclick="myFunction(img1);">
-                <img src="https://i.imgur.com/hRHWSLH.jpg" id="img1" style="display:none">
+                <img src="imgs/clubs/ars.svg" onclick="ars();" height="80" width="80">
               <div class="text">ARSENAL FC</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/broun.svg"  onclick="myFunction(img2);">
-                <img src="https://i.imgur.com/zw6znyI.jpg" id="img2" style="display:none">
-              <div class="text">BOURNEMOUTH</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/brighton.svg" onclick="myFunction(img3);">
-                <img src="https://i.imgur.com/Ziek14e.jpg" id="img3" style="display:none">
-              <div class="text">BRIGHTON AND HOVE ALBION</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/new%20catle.svg" onclick="myFunction(img4);">
-                <img src="https://i.imgur.com/7CuTlNE.jpg" id="img4" style="display:none">
-              <div class="text">NEWCASTLE UNITED</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/che.svg" onclick="myFunction(img5);">
-                <img src="https://i.imgur.com/Y4bOsac.jpg" id="img5" style="display:none">
+                <img src="imgs/clubs/che.svg" onclick="che();" height="80" width="80">
               <div class="text">CHELSEA FC</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/tot.svg" onclick="myFunction(img6);">
-                <img src="https://i.imgur.com/5odelHa.jpg" id="img6" style="display:none">
+                <img src="imgs/clubs/tot.svg" onclick="tot();" height="80" width="80">
               <div class="text">TOTTENHAM HOTSPUR</div>
           </div>
-            <div class="column">
-                <img src="imgs/clubs/hudder.svg" onclick="myFunction(img7);">
-                <img src="https://i.imgur.com/ceF1Vgi.jpg" id="img7" style="display:none">
-              <div class="text">HUDDERSFIELD TOWN</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/liv.svg" onclick="myFunction(img8);">
-                <img src="https://i.imgur.com/kD98WOO.jpg" id="img8" style="display:none">
-              <div class="text">LIVERPOOL FC</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/stoke.svg" onclick="myFunction(img9);">
-                <img src="https://i.imgur.com/zAnHZsa.jpg" id="img9" style="display:none">
-              <div class="text">STOKE CITY</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/west%20brom.svg" onclick="myFunction(img10);">
-                <img src="https://i.imgur.com/vhpTKmP.jpg" id="img10" style="display:none">
-              <div class="text">WEST BROMWICH ALBION</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/west.svg" onclick="myFunction(img11);">
-                <img src="https://i.imgur.com/ZNEiYGt.jpg" id="img11" style="display:none">
-              <div class="text">WEST HAM UNITED</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/eve.svg" onclick="myFunction(img12);">
-                <img src="https://i.imgur.com/CHOtxtg.jpg" id="img12" style="display:none">
-              <div class="text">EVERTON FC</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/south.svg" onclick="myFunction(img13);">
-                <img src="https://i.imgur.com/8bqwc34.jpg" id="img13" style="display:none">
-              <div class="text">SOUTHAMPTON FC</div>
-          </div>
-            <div class="column">
-                <img src="imgs/clubs/lei.svg" onclick="myFunction(img14);">
-                <img src="https://i.imgur.com/OFkpTy5.jpg" id="img14" style="display:none">
+        <div class="column">
+                <img src="imgs/clubs/lei.svg" onclick="lei();" height="80" width="80">
               <div class="text">LEICESTER CITY</div>
           </div>
         <div class="column">
-                <img src="imgs/clubs/mancity.svg" onclick="myFunction(img15);">
-                <img src="https://i.imgur.com/YiSSWaX.jpg" id="img15" style="display:none">
+                <img src="imgs/clubs/mancity.svg" onclick="city();" height="80" width="80">
               <div class="text">MANCHESTER CITY</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/manutd.svg" onclick="myFunction(img16);">
-                <img src="https://i.imgur.com/3MKwaeC.jpg" id="img16" style="display:none">
+                <img src="imgs/clubs/manutd.svg" onclick="utd();" height="80" width="80">
               <div class="text">MANCHESTER UNITED</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/burn.svg" onclick="myFunction(img17);">
-                <img src="https://i.imgur.com/5Y03ikr.jpg" id="img17" style="display:none">
+                <img src="imgs/clubs/liv.svg" onclick="liv();" height="80" width="80">
+              <div class="text">LIVERPOOL FC</div>
+          </div>
+        <div class="column">
+                <img src="imgs/clubs/broun.svg"  onclick="bour();" height="80" width="80">
+              <div class="text">BOURNEMOUTH</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/brighton.svg" onclick="brit();" height="80" width="80">
+              <div class="text">BRIGHTON AND HOVE</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/new%20catle.svg" onclick="newc();" height="80" width="80">
+              <div class="text">NEWCASTLE UNITED</div>
+          </div>
+        <div class="column">
+                <img src="imgs/clubs/hudder.svg" onclick="hud();" height="80" width="80">
+              <div class="text">HUDDERSFIELD TOWN</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/stoke.svg" onclick="stk();" height="80" width="80">
+              <div class="text">STOKE CITY</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/west%20brom.svg" onclick="wba();" height="80" width="80">
+              <div class="text">WEST BROMWICH</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/west.svg" onclick="whu();" height="80" width="80">
+              <div class="text">WEST HAM UNITED</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/eve.svg" onclick="eve();" height="80" width="80">
+              <div class="text">EVERTON FC</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/south.svg" onclick="sth();" height="80" width="80">
+              <div class="text">SOUTHAMPTON FC</div>
+          </div>
+            <div class="column">
+                <img src="imgs/clubs/burn.svg" onclick="brn();" height="80" width="80">
               <div class="text">BURNLEY FC</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/wat.svg" onclick="myFunction(img18);">
-                <img src="https://i.imgur.com/6BRnKDb.jpg" id="img18" style="display:none">
+                <img src="imgs/clubs/wat.svg" onclick="wat();" height="80" width="80">
               <div class="text">WATFORD</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/cry.svg" onclick="myFunction(img19);">
-                <img src="https://i.imgur.com/BzduHCP.jpg" id="img19" style="display:none">
+                <img src="imgs/clubs/cry.svg" onclick="cry();" height="80" width="80">
               <div class="text">CRYSTAL PALACE</div>
           </div>
             <div class="column">
-                <img src="imgs/clubs/swa.svg" onclick="myFunction(img20);">
-                <img src="https://i.imgur.com/DohBYhf.jpg" id="img20" style="display:none">
+                <img src="imgs/clubs/swa.svg" onclick="swa();" height="80" width="80">
               <div class="text">SWANSEA CITY</div>
           </div>
         </div>
         <!-- End Section -->
 
-
+    
+    <section id="AllClubs" style="padding:10px">
+        
+        <div class="lei" style="display: none" id="lei">
+            <div class="header">
+                <img src="imgs/clubs/lei.svg" height="230" width="230"><br>
+                <p>LEICESTER CITY</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 199.3$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 612.3$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 3<sup>rd</sup></span>
+                <hr>
+            </div>
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>J. VARDY</td>
+                        <td style="color:red">CF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">75.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>R. MAHREZ</td>
+                        <td style="color:red">RWF</td>
+                        <td>81</td>
+                        <td style="font-size:35px">60.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. MUSA</td>
+                        <td style="color:red">LWF</td>
+                        <td>79</td>
+                        <td style="font-size:35px">38.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>I. SLIMANI</td>
+                        <td style="color:red">CF</td>
+                        <td>81</td>
+                        <td style="font-size:35px">32.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>S. OKAZAKI</td>
+                        <td style="color:red">CF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.9$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. GRAY</td>
+                        <td style="color:red">LWF</td>
+                        <td>79</td>
+                        <td style="font-size:35px">30.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>K. IHEANACHO</td>
+                        <td style="color:green">AMF</td>
+                        <td>79</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>IBORRA</td>
+                        <td style="color:green">DMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">35.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. ALBRIGHTON</td>
+                        <td style="color:green">CMF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">25$ M</td>
+                    </tr>
+                    <tr>
+                        <td>W. NDIDI</td>
+                        <td style="color:green">DMF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">21.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. KING</td>
+                        <td style="color:green">CMF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">32.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. AMARTEY</td>
+                        <td style="color:green">DMF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">25.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. JAMES</td>
+                        <td style="color:green">CMF</td>
+                        <td>73</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>W. MORGAN</td>
+                        <td style="color:blue">CB</td>
+                        <td>79</td>
+                        <td style="font-size:35px">31.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>R. HUTH</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">25.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>C. FUCHS</td>
+                        <td style="color:blue">LB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">28.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. SIMPSON</td>
+                        <td style="color:blue">RB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">26.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. DRAGOVIC</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">22.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>H. MAGUIER</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>Y. BENALOUANE</td>
+                        <td style="color:blue">CB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>B. CHILWELL</td>
+                        <td style="color:blue">LB</td>
+                        <td>71</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>K. SCHMEICHEL</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>85</td>
+                        <td style="font-size:35px">32.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>E. JAKUPOVIC</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>75</td>
+                        <td style="font-size:35px">7.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/lei.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <div style="display: none" id="city">
+            
+            <div class="header">
+                <img src="imgs/clubs/mancity.svg" height="230" width="230"><br>
+                <p>MANCHESTER CITY</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 157.1$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 733.2$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 5<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>S. AGUERO</td>
+                        <td style="color:red">CF</td>
+                        <td>87</td>
+                        <td style="font-size:35px">66.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>BERNARDO SILVA</td>
+                        <td style="color:red">RWF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">36.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>R. STERLING</td>
+                        <td style="color:red">RWF</td>
+                        <td>83</td>
+                        <td style="font-size:35px">48.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>GABRIEL JESUS</td>
+                        <td style="color:red">CF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">33.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>DAVID SILVA</td>
+                        <td style="color:green">AMF</td>
+                        <td>87</td>
+                        <td style="font-size:35px">42.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>K. DE BRUYNE</td>
+                        <td style="color:green">AMF</td>
+                        <td>87</td>
+                        <td style="font-size:35px">45.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>Y. TOURE</td>
+                        <td style="color:green">CMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">36.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>I. GUNDOGAN</td>
+                        <td style="color:green">CMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>L. SANE</td>
+                        <td style="color:green">LMF</td>
+                        <td>83</td>
+                        <td style="font-size:35px">42.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>FERNANDINHO</td>
+                        <td style="color:green">DMF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">37.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>F. DELPH</td>
+                        <td style="color:green">CMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>O. ZINCHINKO</td>
+                        <td style="color:green">AMF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>BRAHIM DIAZ</td>
+                        <td style="color:green">AMF</td>
+                        <td>65</td>
+                        <td style="font-size:35px">600$ K</td>
+                    </tr>
+                    <tr>
+                        <td>V. KOMPANY</td>
+                        <td style="color:blue">CB</td>
+                        <td>85</td>
+                        <td style="font-size:35px">36.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>N. OTAMENDI</td>
+                        <td style="color:blue">CB</td>
+                        <td>83</td>
+                        <td style="font-size:35px">38.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>K. WALKER</td>
+                        <td style="color:blue">RB</td>
+                        <td>82</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>B. MENDY</td>
+                        <td style="color:blue">LB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">34.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. MANGALA</td>
+                        <td style="color:blue">CB</td>
+                        <td>80</td>
+                        <td style="font-size:35px">24.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>DANILO</td>
+                        <td style="color:blue">RB</td>
+                        <td>80</td>
+                        <td style="font-size:35px">27.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. STONES</td>
+                        <td style="color:blue">CB</td>
+                        <td>80</td>
+                        <td style="font-size:35px">31.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>T. ADARABIOYO</td>
+                        <td style="color:blue">CB</td>
+                        <td>64</td>
+                        <td style="font-size:35px">920$ K</td>
+                    </tr>
+                    <tr>
+                        <td>EDERSON MORAES</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>83</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>C. BRAVO</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">21.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/city.png" class="formation">
+            </div>
+        </div>
+        
+        <!--       ARSENAL       -->
+        
+        <div style="display: none" id="ars">
+            
+            <div class="header">
+                <img src="imgs/clubs/ars.svg" height="230" width="230"><br>
+                <p>ARSENAL FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 157.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 735.4$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 4<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>A. SANCHEZ</td>
+                        <td style="color:red">LWF</td>
+                        <td>89</td>
+                        <td style="font-size:35px">50.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. LACAZETTE</td>
+                        <td style="color:red">CF</td>
+                        <td>85</td>
+                        <td style="font-size:35px">45.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>O. GIROUD</td>
+                        <td style="color:red">CF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">47.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>T. WALCOTT</td>
+                        <td style="color:red">RWF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">36.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. WELBECK</td>
+                        <td style="color:red">CF</td>
+                        <td>81</td>
+                        <td style="font-size:35px">30.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. OZIL</td>
+                        <td style="color:green">AMF</td>
+                        <td>88</td>
+                        <td style="font-size:35px">50.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>SANTI CAZORLA</td>
+                        <td style="color:green">CMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">32.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. RAMZEY</td>
+                        <td style="color:green">CMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">33.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>G. XHAKA</td>
+                        <td style="color:green">DMF</td>
+                        <td>83</td>
+                        <td style="font-size:35px">30.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. WILSHERE</td>
+                        <td style="color:green">CMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>F. COQUELIN</td>
+                        <td style="color:green">DMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">29.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. ELNENY</td>
+                        <td style="color:green">DMF</td>
+                        <td>79</td>
+                        <td style="font-size:35px">25.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. IWOBI</td>
+                        <td style="color:green">LMF</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>L. KOSCIELNY</td>
+                        <td style="color:blue">CB</td>
+                        <td>85</td>
+                        <td style="font-size:35px">37.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>S. MUSTAFI</td>
+                        <td style="color:blue">CB</td>
+                        <td>84</td>
+                        <td style="font-size:35px">37$ M</td>
+                    </tr>
+                    <tr>
+                        <td>H. BELLEREN</td>
+                        <td style="color:blue">RB</td>
+                        <td>82</td>
+                        <td style="font-size:35px">39.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>NATCH MONREAL</td>
+                        <td style="color:blue">LB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">31.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>S. KOLASINAC</td>
+                        <td style="color:blue">LB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">30.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>P. MERTESACKER</td>
+                        <td style="color:blue">CB</td>
+                        <td>79</td>
+                        <td style="font-size:35px">26.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. DEBUCHY</td>
+                        <td style="color:blue">RB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">22.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>R. HOLDING</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>C. CHAMBERS</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">10.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>P. CECH</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>85</td>
+                        <td style="font-size:35px">39.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. OSPINA</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">20.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/ars.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 BOURNEMOUTH                       -->
+        
+        
+        <div style="display: none" id="bour">
+            
+            <div class="header">
+                <img src="imgs/clubs/broun.svg" height="230" width="230"><br>
+                <p>AFC BOURNEMOUTH</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 126.6$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 386.6$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 15<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>J. DEFOE</td>
+                        <td style="color:red">CF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">26.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. KING</td>
+                        <td style="color:red">SS</td>
+                        <td>79</td>
+                        <td style="font-size:35px">25.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. STAINISLAS</td>
+                        <td style="color:red">RWF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">22.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>C. WILSON</td>
+                        <td style="color:red">CF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">23.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>R. FRASER</td>
+                        <td style="color:red">LWF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">20.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>B. AFOBE</td>
+                        <td style="color:red">CF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">18.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. IBE</td>
+                        <td style="color:red">RWF</td>
+                        <td>73</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>M. PUOH</td>
+                        <td style="color:red">LWF</td>
+                        <td>72</td>
+                        <td style="font-size:35px">14.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>J. IBE</td>
+                        <td style="color:red">CF</td>
+                        <td>65</td>
+                        <td style="font-size:35px">5.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. SURMAN</td>
+                        <td style="color:green">CMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>H. ARTER</td>
+                        <td style="color:green">CMF</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>D. GOSLING</td>
+                        <td style="color:green">CMF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>L. COOK</td>
+                        <td style="color:green">CMF</td>
+                        <td>69</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>MOUSSET</td>
+                        <td style="color:green">CMF</td>
+                        <td>64</td>
+                        <td style="font-size:35px">1.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>N. AKE</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">22.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>S. COOK</td>
+                        <td style="color:blue">CB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">20.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>C. DANIELS</td>
+                        <td style="color:blue">LB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">19.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>S. FRANCIS</td>
+                        <td style="color:blue">RB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">19.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. SMITH</td>
+                        <td style="color:blue">RB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">18.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>T. MINGS</td>
+                        <td style="color:blue">CB</td>
+                        <td>72</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>B. SMITH</td>
+                        <td style="color:blue">LB</td>
+                        <td>71</td>
+                        <td style="font-size:35px">8.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. BEGOVIC</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">20.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>A. BORUC</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/bourn.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 BRIGHTON                       -->
+        
+        
+        <div style="display: none" id="brit">
+            
+            <div class="header">
+                <img src="imgs/clubs/brighton.svg" height="230" width="230"><br>
+                <p>BRIGHTON AND HOVE ALBION</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 101.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 224.2$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 16<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>t. hemed</td>
+                        <td style="color:red">cf</td>
+                        <td>72</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. murray</td>
+                        <td style="color:red">CF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">25.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. baldock</td>
+                        <td style="color:red">CF</td>
+                        <td>71</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. connolly</td>
+                        <td style="color:red">CF</td>
+                        <td>61</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>i. brown</td>
+                        <td style="color:red">ss</td>
+                        <td>71</td>
+                        <td style="font-size:35px">7.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. murphy</td>
+                        <td style="color:red">lwf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">8.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. izquierdo</td>
+                        <td style="color:red">lwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. tilley</td>
+                        <td style="color:green">aMF</td>
+                        <td>61</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. gross</td>
+                        <td style="color:green">aMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. knockaert</td>
+                        <td style="color:green">rMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. skalak</td>
+                        <td style="color:green">lMF</td>
+                        <td>70</td>
+                        <td style="font-size:35px">3.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. march</td>
+                        <td style="color:green">lMF</td>
+                        <td>69</td>
+                        <td style="font-size:35px">1.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. ahannach</td>
+                        <td style="color:green">lMF</td>
+                        <td>70</td>
+                        <td style="font-size:35px">3.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. sidwell</td>
+                        <td style="color:green">Cmf</td>
+                        <td>72</td>
+                        <td style="font-size:35px">8.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>b. kayal</td>
+                        <td style="color:green">Cmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">8.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. propper</td>
+                        <td style="color:green">cmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">22.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. stephens</td>
+                        <td style="color:green">cmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">8.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. molumby</td>
+                        <td style="color:green">cmf</td>
+                        <td>61</td>
+                        <td style="font-size:35px">850$ k</td>
+                    </tr>
+                    <tr>
+                        <td>e. schelotto</td>
+                        <td style="color:blue">RB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. rosenior</td>
+                        <td style="color:blue">rB</td>
+                        <td>72</td>
+                        <td style="font-size:35px">5.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>bruno saltor</td>
+                        <td style="color:blue">rB</td>
+                        <td>72</td>
+                        <td style="font-size:35px">4.3$ m</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>a. mateju</td>
+                        <td style="color:blue">RB</td>
+                        <td>69</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. bong</td>
+                        <td style="color:blue">lB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">6.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. suttner</td>
+                        <td style="color:blue">lB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">9.8$ m</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>u. hunemeier</td>
+                        <td style="color:blue">cB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. duffy</td>
+                        <td style="color:blue">CB</td>
+                        <td>79</td>
+                        <td style="font-size:35px">11.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. dunk</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">7.8$ m</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>c. goldson</td>
+                        <td style="color:blue">cB</td>
+                        <td>69</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. maenpaa</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>68</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. krul</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>77</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. ryan</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>78</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/brit.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 NEWCASTLE                  -->
+        
+        
+        <div style="display: none" id="newc">
+            
+            <div class="header">
+                <img src="imgs/clubs/new%20catle.svg" height="230" width="230"><br>
+                <p>NEW CASTLE UNITED</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 110.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 272.1$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 17<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>d. dayle</td>
+                        <td style="color:red">CF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. mitrovic</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">16.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>joselu</td>
+                        <td style="color:red">cf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>ayoze perez</td>
+                        <td style="color:red">ss</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. aarons</td>
+                        <td style="color:red">rwf</td>
+                        <td>72</td>
+                        <td style="font-size:35px">12.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. diame</td>
+                        <td style="color:green">AMF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. saivet</td>
+                        <td style="color:green">aMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. ritchie</td>
+                        <td style="color:green">rMF</td>
+                        <td>76</td>
+                        <td style="font-size:35px">14.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. atsu</td>
+                        <td style="color:green">rMF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>jacob murphy</td>
+                        <td style="color:green">rMF</td>
+                        <td>69</td>
+                        <td style="font-size:35px">6.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. shelvey</td>
+                        <td style="color:green">CMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">14.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>mikel merino</td>
+                        <td style="color:green">cMF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">10.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. barlaser</td>
+                        <td style="color:green">cMF</td>
+                        <td>63</td>
+                        <td style="font-size:35px">600$ K</td>
+                    </tr>
+                    <tr>
+                        <td>j. colback</td>
+                        <td style="color:green">dMF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">8.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>i. hayden</td>
+                        <td style="color:green">dMF</td>
+                        <td>72</td>
+                        <td style="font-size:35px">8.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>jesus gamez</td>
+                        <td style="color:blue">rB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>javi manquillo</td>
+                        <td style="color:blue">rB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. yedlin</td>
+                        <td style="color:blue">RB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. sterry</td>
+                        <td style="color:blue">rB</td>
+                        <td>65</td>
+                        <td style="font-size:35px">900.2$ k</td>
+                    </tr>
+                    <tr>
+                        <td>m. haidara</td>
+                        <td style="color:blue">lB</td>
+                        <td>71</td>
+                        <td style="font-size:35px">4.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. dummett</td>
+                        <td style="color:blue">lB</td>
+                        <td>72</td>
+                        <td style="font-size:35px">8.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. clark</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. lejeune</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">15.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. mbemba</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. lascelles</td>
+                        <td style="color:blue">CB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">11.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. elliot</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>70</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. darlow</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>71</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. woodman</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>66</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/newc.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 CHELSEA FC                        -->
+        
+        
+        <div style="display: none" id="che">
+            
+            <div class="header">
+                <img src="imgs/clubs/che.svg" height="230" width="230"><br>
+                <p>CHELSEA FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 192.6$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 732.4$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 1<sup>st</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>diego costa</td>
+                        <td style="color:red">CF</td>
+                        <td>86</td>
+                        <td style="font-size:35px">47.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>alvaro morata</td>
+                        <td style="color:red">cf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">40.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. batshuayi</td>
+                        <td style="color:red">cf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>willian</td>
+                        <td style="color:red">rwf</td>
+                        <td>85</td>
+                        <td style="font-size:35px">42.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>pedro</td>
+                        <td style="color:red">rwf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">40.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. hazard</td>
+                        <td style="color:red">lwf</td>
+                        <td>89</td>
+                        <td style="font-size:35px">52.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. musonda</td>
+                        <td style="color:red">lwf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">15.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>v. moses</td>
+                        <td style="color:green">rMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">32.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>marcos alonso</td>
+                        <td style="color:green">lMF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">33.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>fabregas</td>
+                        <td style="color:green">cmf</td>
+                        <td>85</td>
+                        <td style="font-size:35px">38.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. drinkwater</td>
+                        <td style="color:green">CMF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">19.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. kante</td>
+                        <td style="color:green">cMF</td>
+                        <td>86</td>
+                        <td style="font-size:35px">39.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. scott</td>
+                        <td style="color:green">cMF</td>
+                        <td>64</td>
+                        <td style="font-size:35px">600$ K</td>
+                    </tr>
+                    <tr>
+                        <td>t. bakayoko</td>
+                        <td style="color:green">dMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. zappacosta</td>
+                        <td style="color:blue">rB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">32.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. baba</td>
+                        <td style="color:blue">lB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">22.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>kenedy</td>
+                        <td style="color:blue">lB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. cahill</td>
+                        <td style="color:blue">cb</td>
+                        <td>84</td>
+                        <td style="font-size:35px">35.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>david luis</td>
+                        <td style="color:blue">cb</td>
+                        <td>84</td>
+                        <td style="font-size:35px">34.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>azpilicueta</td>
+                        <td style="color:blue">cb</td>
+                        <td>84</td>
+                        <td style="font-size:35px">36.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. christensen</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. rudiger</td>
+                        <td style="color:blue">CB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">25.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. clarke-salter</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">6.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. caballero</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>78</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>eduardo</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>75</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. courtois</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>88</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/che.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 TOTENHAM                        -->
+        
+        
+        <div style="display: none" id="tot">
+            
+            <div class="header">
+                <img src="imgs/clubs/tot.svg" height="230" width="230"><br>
+                <p>TOTENHAM HOTSPUR</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 187.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 595.4$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 7<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>llorente</td>
+                        <td style="color:red">CF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">34.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. kane</td>
+                        <td style="color:red">cf</td>
+                        <td>86</td>
+                        <td style="font-size:35px">48.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. lamela</td>
+                        <td style="color:red">rwf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>heung-min son</td>
+                        <td style="color:red">lwf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. n'koudou</td>
+                        <td style="color:red">lwf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. eriksen</td>
+                        <td style="color:green">aMF</td>
+                        <td>86</td>
+                        <td style="font-size:35px">43.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. alli</td>
+                        <td style="color:green">amf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">40.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. sissoko</td>
+                        <td style="color:green">rmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. demele</td>
+                        <td style="color:green">CMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">37.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. winks</td>
+                        <td style="color:green">cMF</td>
+                        <td>71</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>v. wanyama</td>
+                        <td style="color:green">dMF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">33$ m</td>
+                    </tr>
+                    <tr>
+                        <td>e. dier</td>
+                        <td style="color:green">dMF</td>
+                        <td>81</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. trippier</td>
+                        <td style="color:blue">rB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">20.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. walker-peters</td>
+                        <td style="color:blue">rB</td>
+                        <td>66</td>
+                        <td style="font-size:35px">1.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. aurier</td>
+                        <td style="color:blue">rb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">23.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. rose</td>
+                        <td style="color:blue">lb</td>
+                        <td>81</td>
+                        <td style="font-size:35px">25.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>b. davies</td>
+                        <td style="color:blue">lb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">14.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. alderweireld</td>
+                        <td style="color:blue">cb</td>
+                        <td>85</td>
+                        <td style="font-size:35px">36.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. sanchez</td>
+                        <td style="color:blue">CB</td>
+                        <td>80</td>
+                        <td style="font-size:35px">22.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. vertonghen</td>
+                        <td style="color:blue">CB</td>
+                        <td>84</td>
+                        <td style="font-size:35px">33.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. foyth</td>
+                        <td style="color:blue">CB</td>
+                        <td>69</td>
+                        <td style="font-size:35px">1.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. vorm</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">3.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. lloris</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>87</td>
+                        <td style="font-size:35px">35.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. gazzaniga</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>71</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/tot.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 HUDDERSFIELD                       -->
+        
+        
+        <div style="display: none" id="hud">
+            
+            <div class="header">
+                <img src="imgs/clubs/hudder.svg" height="230" width="230"><br>
+                <p>HUDDERSFIELD TOWN</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 98.8$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 231.3$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 18<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>l. depoitre</td>
+                        <td style="color:red">CF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. mounie</td>
+                        <td style="color:red">cf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. kachunga</td>
+                        <td style="color:red">cf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. quaner</td>
+                        <td style="color:red">cf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. van la parra</td>
+                        <td style="color:red">rwf</td>
+                        <td>70</td>
+                        <td style="font-size:35px">8.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. ince</td>
+                        <td style="color:red">rwf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">13.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. lolley</td>
+                        <td style="color:red">rwf</td>
+                        <td>67</td>
+                        <td style="font-size:35px">5.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. palmer</td>
+                        <td style="color:green">aMF</td>
+                        <td>72</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. sabiri</td>
+                        <td style="color:green">aMF</td>
+                        <td>62</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. whitehead</td>
+                        <td style="color:green">cmf</td>
+                        <td>70</td>
+                        <td style="font-size:35px">7.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. mooy</td>
+                        <td style="color:green">CMF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. hogg</td>
+                        <td style="color:green">cMF</td>
+                        <td>72</td>
+                        <td style="font-size:35px">9.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. p. billing</td>
+                        <td style="color:green">cMF</td>
+                        <td>67</td>
+                        <td style="font-size:35px">2.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>d. williams</td>
+                        <td style="color:green">dMF</td>
+                        <td>74</td>
+                        <td style="font-size:35px">14.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. smith</td>
+                        <td style="color:blue">rb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. haderg jonaj</td>
+                        <td style="color:blue">rb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">10.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. malone</td>
+                        <td style="color:blue">lB</td>
+                        <td>71</td>
+                        <td style="font-size:35px">6.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. lowe</td>
+                        <td style="color:blue">lb</td>
+                        <td>74</td>
+                        <td style="font-size:35px">14.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. jorgensen</td>
+                        <td style="color:blue">cb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. cranie</td>
+                        <td style="color:blue">cb</td>
+                        <td>66</td>
+                        <td style="font-size:35px">3.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. stankovic</td>
+                        <td style="color:blue">CB</td>
+                        <td>66</td>
+                        <td style="font-size:35px">2.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. schinler</td>
+                        <td style="color:blue">CB</td>
+                        <td>71</td>
+                        <td style="font-size:35px">6.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. hefele</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">5.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. green</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>74</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. j. lossl</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>76</td>
+                        <td style="font-size:35px">7.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. coleman</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>75</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/hud.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 LIVERPOOL                       -->
+        
+        
+        <div style="display: none" id="liv">
+            
+            <div class="header">
+                <img src="imgs/clubs/liv.svg" height="230" width="230"><br>
+                <p>LIVERPOOL FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 147.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 694.8$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 8<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>d. sturridge</td>
+                        <td style="color:red">CF</td>
+                        <td>82</td>
+                        <td style="font-size:35px">32.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. ings</td>
+                        <td style="color:red">cf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. solanke</td>
+                        <td style="color:red">cf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>roberto firmino</td>
+                        <td style="color:red">cf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">40.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. brewester</td>
+                        <td style="color:red">cf</td>
+                        <td>63</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. salah</td>
+                        <td style="color:red">rwf</td>
+                        <td>84</td>
+                        <td style="font-size:35px">43.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. mane</td>
+                        <td style="color:red">rwf</td>
+                        <td>84</td>
+                        <td style="font-size:35px">40.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. coutinho</td>
+                        <td style="color:red">lwf</td>
+                        <td>86</td>
+                        <td style="font-size:35px">47.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. woodburn</td>
+                        <td style="color:red">lwf</td>
+                        <td>70</td>
+                        <td style="font-size:35px">5.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. brannagan</td>
+                        <td style="color:green">aMF</td>
+                        <td>70</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>o. ejaria</td>
+                        <td style="color:green">aMF</td>
+                        <td>67</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a.o. chamberlain</td>
+                        <td style="color:green">rmf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">36.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. markovic</td>
+                        <td style="color:green">rmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. lallana</td>
+                        <td style="color:green">cmf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">36.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. henderson</td>
+                        <td style="color:green">cmf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">34.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>g. wijnaldum</td>
+                        <td style="color:green">cmf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">32.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. can</td>
+                        <td style="color:green">cmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">31.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. grujic</td>
+                        <td style="color:green">cmf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. flanagan</td>
+                        <td style="color:blue">rb</td>
+                        <td>72</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. clyne</td>
+                        <td style="color:blue">rb</td>
+                        <td>82</td>
+                        <td style="font-size:35px">27.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. arnold</td>
+                        <td style="color:blue">rb</td>
+                        <td>71</td>
+                        <td style="font-size:35px">8.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. milner</td>
+                        <td style="color:blue">lb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>alberto moreno</td>
+                        <td style="color:blue">lb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">20.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. robertson</td>
+                        <td style="color:blue">lb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">16.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>r. klavan</td>
+                        <td style="color:blue">cb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. lovren</td>
+                        <td style="color:blue">cb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">25.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. matip</td>
+                        <td style="color:blue">CB</td>
+                        <td>83</td>
+                        <td style="font-size:35px">30.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. gomez</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">6.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. bogdan</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>73</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. mignolet</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">25.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. karius</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">25.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/liv.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 STOKE CITY                       -->
+        
+        
+        <div style="display: none" id="stk">
+            
+            <div class="header">
+                <img src="imgs/clubs/stoke.svg" height="230" width="230"><br>
+                <p>STOKE CITY</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 124.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 347.5$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 19<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>p. crouch</td>
+                        <td style="color:red">CF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. berahino</td>
+                        <td style="color:red">cf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. diouf</td>
+                        <td style="color:red">cf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">20.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. ngoy</td>
+                        <td style="color:red">cf</td>
+                        <td>64</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. verlinden</td>
+                        <td style="color:red">rwf</td>
+                        <td>63</td>
+                        <td style="font-size:35px">1.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. choupo-moting</td>
+                        <td style="color:red">lwf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">21.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>jese</td>
+                        <td style="color:red">lwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>i. afellay</td>
+                        <td style="color:green">amf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. ireland</td>
+                        <td style="color:green">amf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">9.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. shenton</td>
+                        <td style="color:green">amf</td>
+                        <td>63</td>
+                        <td style="font-size:35px">1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>x. shaqiri</td>
+                        <td style="color:green">rmf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>ramadan sobhi</td>
+                        <td style="color:green">lmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. fletcher</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">14.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>c. adam</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. allen</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. cameron</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. johnson</td>
+                        <td style="color:blue">rb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. edwards</td>
+                        <td style="color:blue">rb</td>
+                        <td>60</td>
+                        <td style="font-size:35px">500$ k</td>
+                    </tr>
+                    <tr>
+                        <td>e. pieters</td>
+                        <td style="color:blue">lb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">8.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. tymon</td>
+                        <td style="color:blue">lb</td>
+                        <td>61</td>
+                        <td style="font-size:35px">850$ k</td>
+                    </tr>
+                    <tr>
+                        <td>r. shawcross</td>
+                        <td style="color:blue">cb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">16.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>b. martins indi</td>
+                        <td style="color:blue">cb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. zouma</td>
+                        <td style="color:blue">cb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. wimmer</td>
+                        <td style="color:blue">CB</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. souttar</td>
+                        <td style="color:blue">CB</td>
+                        <td>61</td>
+                        <td style="font-size:35px">700$ k</td>
+                    </tr>
+                    <tr>
+                        <td>j. butland</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>81</td>
+                        <td style="font-size:35px">22.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. haugaard</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>70</td>
+                        <td style="font-size:35px">3.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. grant</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>75</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/stk.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 WEST BROMWITCH                   -->
+        
+        
+        <div style="display: none" id="wba">
+            
+            <div class="header">
+                <img src="imgs/clubs/west%20brom.svg" height="230" width="230"><br>
+                <p>WEST BROMWICH ALBION</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 137.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 300.8$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 13<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>s. rondon</td>
+                        <td style="color:red">CF</td>
+                        <td>78</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. robson-kanu</td>
+                        <td style="color:red">cf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">8.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>o. burke</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. rodriguez</td>
+                        <td style="color:red">rwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">14.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. chadli</td>
+                        <td style="color:red">lwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">16.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. brunt</td>
+                        <td style="color:green">amf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">11.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. phillips</td>
+                        <td style="color:green">amf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. phillips</td>
+                        <td style="color:green">amf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. mcclean</td>
+                        <td style="color:green">lmf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. mcclean</td>
+                        <td style="color:green">lmf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. morrison</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">13.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. field</td>
+                        <td style="color:green">cmf</td>
+                        <td>66</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. field</td>
+                        <td style="color:green">cmf</td>
+                        <td>66</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. barry</td>
+                        <td style="color:green">dmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. livermore</td>
+                        <td style="color:green">dmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">13.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. krychowiak</td>
+                        <td style="color:green">dmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">21.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. yacop</td>
+                        <td style="color:green">dmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. dawson</td>
+                        <td style="color:blue">rb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">13.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. gibbs</td>
+                        <td style="color:blue">lb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. nyom</td>
+                        <td style="color:blue">lb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. melbourne</td>
+                        <td style="color:blue">lb</td>
+                        <td>61</td>
+                        <td style="font-size:35px">800$ k</td>
+                    </tr>
+                    <tr>
+                        <td>j. evans</td>
+                        <td style="color:blue">cb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">16.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>g. mcauley</td>
+                        <td style="color:blue">cb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>ahmed hegazi</td>
+                        <td style="color:blue">cb</td>
+                        <td>70</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. o'shea</td>
+                        <td style="color:blue">CB</td>
+                        <td>60</td>
+                        <td style="font-size:35px">400$ k</td>
+                    </tr>
+                    <tr>
+                        <td>b. foster</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. myhill</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>73</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. palmer</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>60</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/wba.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 WEST HAM UNITED                    -->
+        
+        
+        <div style="display: none" id="whu">
+            
+            <div class="header">
+                <img src="imgs/clubs/west.svg" height="230" width="230"><br>
+                <p>WEST HAM UNITED</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 135.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 400.4$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 10<sup>th  </sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>a. carroll</td>
+                        <td style="color:red">CF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. hernandez</td>
+                        <td style="color:red">cf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">27.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. sakho</td>
+                        <td style="color:red">cf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. antonio</td>
+                        <td style="color:red">rwf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. ayew</td>
+                        <td style="color:red">lwf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">30.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. lanzini</td>
+                        <td style="color:green">amf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">17.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>domingos quina</td>
+                        <td style="color:green">amf</td>
+                        <td>61</td>
+                        <td style="font-size:35px">1.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. fernandes</td>
+                        <td style="color:green">amf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">8.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. arnautovic</td>
+                        <td style="color:green">lmf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. haksabanovic</td>
+                        <td style="color:green">lmf</td>
+                        <td>64</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. noble</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">14.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>pedro obiang</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. rice</td>
+                        <td style="color:green">cmf</td>
+                        <td>61</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. kouyate</td>
+                        <td style="color:green">dmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. zabaleta</td>
+                        <td style="color:blue">rb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. byram</td>
+                        <td style="color:blue">rb</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. masuaku</td>
+                        <td style="color:blue">lb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. cresswell</td>
+                        <td style="color:blue">lb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. collins</td>
+                        <td style="color:blue">cb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">13.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>jose fonte</td>
+                        <td style="color:blue">cb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">24.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. ogbonna</td>
+                        <td style="color:blue">cb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">23.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. reid</td>
+                        <td style="color:blue">CB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">23.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. hart</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>81</td>
+                        <td style="font-size:35px">26.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>adrian</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>78</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. trott</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>62</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/whu.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 EVERTON FC                      -->
+        
+        
+        <div style="display: none" id="eve">
+            
+            <div class="header">
+                <img src="imgs/clubs/eve.svg" height="230" width="230"><br>
+                <p>EVERTON FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 138.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 550.3$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 9<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>sandro ramirez</td>
+                        <td style="color:red">CF</td>
+                        <td>81</td>
+                        <td style="font-size:35px">30.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>o. niasse</td>
+                        <td style="color:red">cf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. calvert-lewin</td>
+                        <td style="color:red">ss</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. lennon</td>
+                        <td style="color:red">rwf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. mirallas</td>
+                        <td style="color:red">rwf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>y. bolasie</td>
+                        <td style="color:red">lwf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">25.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. lookman</td>
+                        <td style="color:red">lwf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">15.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. rooney</td>
+                        <td style="color:green">amf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">25.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>g. sigurdsson</td>
+                        <td style="color:green">amf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. barkley</td>
+                        <td style="color:green">amf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">33.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. klaassen</td>
+                        <td style="color:green">amf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">32.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. vlasic</td>
+                        <td style="color:green">amf</td>
+                        <td>69</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. mccarthy</td>
+                        <td style="color:green">cmf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>i. gueye</td>
+                        <td style="color:green">cmf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">32.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. davies</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. schneiderlin</td>
+                        <td style="color:green">dmf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">28.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. besic</td>
+                        <td style="color:green">dmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. coleman</td>
+                        <td style="color:blue">rb</td>
+                        <td>81</td>
+                        <td style="font-size:35px">27.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. kenny</td>
+                        <td style="color:blue">rb</td>
+                        <td>69</td>
+                        <td style="font-size:35px">2.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>r. martina</td>
+                        <td style="color:blue">rb</td>
+                        <td>74</td>
+                        <td style="font-size:35px">14.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. baines</td>
+                        <td style="color:blue">lb</td>
+                        <td>82</td>
+                        <td style="font-size:35px">28.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>p. jagielka</td>
+                        <td style="color:blue">cb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">27.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. williams</td>
+                        <td style="color:blue">cb</td>
+                        <td>82</td>
+                        <td style="font-size:35px">27.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. funes mori</td>
+                        <td style="color:blue">cb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. keane</td>
+                        <td style="color:blue">CB</td>
+                        <td>80</td>
+                        <td style="font-size:35px">23.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. holgate</td>
+                        <td style="color:blue">CB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. stekelenburg</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>76</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>joel robles</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>77</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. pickford</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">23.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/eve.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 SOUTHAMPTON                     -->
+        
+        
+        <div style="display: none" id="sth">
+            
+            <div class="header">
+                <img src="imgs/clubs/south.svg" height="230" width="230"><br>
+                <p>SOUTHAMPTON FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 133.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 441.9$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 11<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>s. long</td>
+                        <td style="color:red">CF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">20.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. gabbiadini</td>
+                        <td style="color:red">cf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">35.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. austin</td>
+                        <td style="color:red">cf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. sims</td>
+                        <td style="color:red">rwf</td>
+                        <td>66</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. redmond</td>
+                        <td style="color:red">lwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">19.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. boufal</td>
+                        <td style="color:red">lwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. tadic</td>
+                        <td style="color:green">amf</td>
+                        <td>81</td>
+                        <td style="font-size:35px">25.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. hesketh</td>
+                        <td style="color:green">amf</td>
+                        <td>66</td>
+                        <td style="font-size:35px">2.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. pied</td>
+                        <td style="color:green">rmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">10.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. davis</td>
+                        <td style="color:green">cmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. ward- prowse</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. lemina</td>
+                        <td style="color:green">cmf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">20.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. hojbjerg</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>oriol romru</td>
+                        <td style="color:green">dmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>cedric soares</td>
+                        <td style="color:blue">rb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">27.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. bertrand</td>
+                        <td style="color:blue">lb</td>
+                        <td>80</td>
+                        <td style="font-size:35px">22.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. targett</td>
+                        <td style="color:blue">lb</td>
+                        <td>72</td>
+                        <td style="font-size:35px">11.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. mcqueen</td>
+                        <td style="color:blue">lb</td>
+                        <td>69</td>
+                        <td style="font-size:35px">4.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. yoshida</td>
+                        <td style="color:blue">cb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. gardos</td>
+                        <td style="color:blue">cb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>v. van dijk</td>
+                        <td style="color:blue">CB</td>
+                        <td>83</td>
+                        <td style="font-size:35px">36.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. stephens</td>
+                        <td style="color:blue">CB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12$ m</td>
+                    </tr>
+                    <tr>
+                        <td>w. hoedt</td>
+                        <td style="color:blue">CB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. bednarek</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">12.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. taylor</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>67</td>
+                        <td style="font-size:35px">5.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. forster</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. mccarthy</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>74</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/sth.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 MANCHESTER UTD                       -->
+        
+        
+        
+        <div style="display: none" id="utd">
+            
+            <div class="header">
+                <img src="imgs/clubs/manutd.svg" height="230" width="230"><br>
+                <p>MANCHESTER UNITED</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 158.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 785.6$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 2<sup>nd</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>z. ibrahimovic</td>
+                        <td style="color:red">CF</td>
+                        <td>90</td>
+                        <td style="font-size:35px">70.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. lukaku</td>
+                        <td style="color:red">cf</td>
+                        <td>87</td>
+                        <td style="font-size:35px">61.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. rashford</td>
+                        <td style="color:red">cf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">25.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. mctominay</td>
+                        <td style="color:red">cf</td>
+                        <td>63</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. martial</td>
+                        <td style="color:red">lwf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">27.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>mata</td>
+                        <td style="color:green">amf</td>
+                        <td>85</td>
+                        <td style="font-size:35px">37.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>h. mkhitaryan</td>
+                        <td style="color:green">amf</td>
+                        <td>85</td>
+                        <td style="font-size:35px">38.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. lingard</td>
+                        <td style="color:green">rmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. young</td>
+                        <td style="color:green">lmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. fellaini</td>
+                        <td style="color:green">cmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">21.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>ander herrera</td>
+                        <td style="color:green">cmf</td>
+                        <td>83</td>
+                        <td style="font-size:35px">35.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. pogba</td>
+                        <td style="color:green">cmf</td>
+                        <td>88</td>
+                        <td style="font-size:35px">50.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. carrick</td>
+                        <td style="color:green">dMF</td>
+                        <td>80</td>
+                        <td style="font-size:35px">32.6$ m</td>
+                    </tr>
+                    <tr>
+                        <td>n. matic</td>
+                        <td style="color:green">dMF</td>
+                        <td>84</td>
+                        <td style="font-size:35px">37.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. valencia</td>
+                        <td style="color:blue">rB</td>
+                        <td>83</td>
+                        <td style="font-size:35px">35.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. darmain</td>
+                        <td style="color:blue">lb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">17.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. blind</td>
+                        <td style="color:blue">lb</td>
+                        <td>81</td>
+                        <td style="font-size:35px">28.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. shaw</td>
+                        <td style="color:blue">lb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">20.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>d. mitchell</td>
+                        <td style="color:blue">lb</td>
+                        <td>64</td>
+                        <td style="font-size:35px">4.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. smalling</td>
+                        <td style="color:blue">cb</td>
+                        <td>83</td>
+                        <td style="font-size:35px">32.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. rojo</td>
+                        <td style="color:blue">CB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">29.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. jones</td>
+                        <td style="color:blue">CB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">30.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. bailly</td>
+                        <td style="color:blue">CB</td>
+                        <td>82</td>
+                        <td style="font-size:35px">30.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>v. lindelof</td>
+                        <td style="color:blue">CB</td>
+                        <td>81</td>
+                        <td style="font-size:35px">29.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. tuanzebe</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">4.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. romero</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">4.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>david de gea</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>88</td>
+                        <td style="font-size:35px">40.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>joel castro</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>70</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/utd.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 BOURNLEY FC                       -->
+        
+        
+        
+        <div style="display: none" id="brn">
+            
+            <div class="header">
+                <img src="imgs/clubs/burn.svg" height="230" width="230"><br>
+                <p>BOURNLEY FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 132.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 284.4$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 12<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>s. vokes</td>
+                        <td style="color:red">CF</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. wood</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. walters</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. wells</td>
+                        <td style="color:red">cf</td>
+                        <td>72</td>
+                        <td style="font-size:35px">11.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. barnes</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">11.8$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. gudmundsson</td>
+                        <td style="color:red">rwf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. brady</td>
+                        <td style="color:green">lmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">13.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. arfield</td>
+                        <td style="color:green">lmf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. marney</td>
+                        <td style="color:green">cmf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. defour</td>
+                        <td style="color:green">cmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. hendrick</td>
+                        <td style="color:green">cmf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. ulvestad</td>
+                        <td style="color:green">cmf</td>
+                        <td>69</td>
+                        <td style="font-size:35px">7.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. cork</td>
+                        <td style="color:green">dmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. westwood</td>
+                        <td style="color:green">dmf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">13.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>p. bardsley</td>
+                        <td style="color:blue">rb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">13.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. lowton</td>
+                        <td style="color:blue">rb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">18.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. ward</td>
+                        <td style="color:blue">lb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>b. mee</td>
+                        <td style="color:blue">lb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>c. taylor</td>
+                        <td style="color:blue">lb</td>
+                        <td>74</td>
+                        <td style="font-size:35px">11.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. long</td>
+                        <td style="color:blue">cb</td>
+                        <td>65</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. tarkowski</td>
+                        <td style="color:blue">CB</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. legzdins</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>65</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. heaton</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">22.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. pope</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>63</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/burn.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 WATFORD FC                      -->
+        
+        
+        
+        <div style="display: none" id="wat">
+            
+            <div class="header">
+                <img src="imgs/clubs/wat.svg" height="230" width="230"><br>
+                <p>WATFORD FC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 135.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 440.7$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 6<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>s. okaka</td>
+                        <td style="color:red">CF</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. sinclair</td>
+                        <td style="color:red">cf</td>
+                        <td>64</td>
+                        <td style="font-size:35px">1.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. deeney</td>
+                        <td style="color:red">cf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. gray</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">13.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>richarlison</td>
+                        <td style="color:red">cf</td>
+                        <td>69</td>
+                        <td style="font-size:35px">7.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. zarate</td>
+                        <td style="color:red">ss</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.8$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. carrillo</td>
+                        <td style="color:red">rwf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>i. success</td>
+                        <td style="color:green">lmf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. pereyra</td>
+                        <td style="color:green">amf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">20.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>b. watson</td>
+                        <td style="color:green">cmf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. cleverley</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. doucoure</td>
+                        <td style="color:green">cmf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">11.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. hughes</td>
+                        <td style="color:green">cmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. capoue</td>
+                        <td style="color:green">dmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. chalobah</td>
+                        <td style="color:green">dmf</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. janmaat</td>
+                        <td style="color:blue">rb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>kiko femenia</td>
+                        <td style="color:blue">rb</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>b. bja djedje</td>
+                        <td style="color:blue">rb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. holebas</td>
+                        <td style="color:blue">lb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. zeegelaar</td>
+                        <td style="color:blue">lb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>b. mason</td>
+                        <td style="color:blue">lb</td>
+                        <td>68</td>
+                        <td style="font-size:35px">5.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>y. kaboul</td>
+                        <td style="color:blue">cb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. mariappa</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">10.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>s. prodl</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. britos</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>c. cathcart</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">13.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>t. hoban</td>
+                        <td style="color:blue">CB</td>
+                        <td>70</td>
+                        <td style="font-size:35px">9.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. wague</td>
+                        <td style="color:blue">CB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>c. kabasele</td>
+                        <td style="color:blue">CB</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.5$ m</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>gomes</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>o. karnezis</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>d. bachmann</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>64</td>
+                        <td style="font-size:35px">1.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/wat.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 CRYSTAL PALACE                     -->
+        
+        
+        
+        <div style="display: none" id="cry">
+            
+            <div class="header">
+                <img src="imgs/clubs/cry.svg" height="230" width="230"><br>
+                <p>CRYSTAL PALACE</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 127.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 373.05$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 20<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>c. benteke</td>
+                        <td style="color:red">CF</td>
+                        <td>83</td>
+                        <td style="font-size:35px">37.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c. wickham</td>
+                        <td style="color:red">cf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. ladapo</td>
+                        <td style="color:red">cf</td>
+                        <td>62</td>
+                        <td style="font-size:35px">2.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>eyenga-lokilo</td>
+                        <td style="color:red">ss</td>
+                        <td>65</td>
+                        <td style="font-size:35px">5.8$ M</td>
+                    </tr>
+                    <tr>
+                        <td>chung-yong lee</td>
+                        <td style="color:red">rwf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">16.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. townsend</td>
+                        <td style="color:red">rwf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">19.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. zaha</td>
+                        <td style="color:red">rwf</td>
+                        <td>82</td>
+                        <td style="font-size:35px">26.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. kaikai</td>
+                        <td style="color:red">rwf</td>
+                        <td>69</td>
+                        <td style="font-size:35px">9.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>b. sako</td>
+                        <td style="color:green">lmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>r. loftus-cheek</td>
+                        <td style="color:green">amf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. lumeka</td>
+                        <td style="color:green">lmf</td>
+                        <td>62</td>
+                        <td style="font-size:35px">1.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>y. cabaye</td>
+                        <td style="color:green">cmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">25.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. mcarthur</td>
+                        <td style="color:green">cmf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. puncheon</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. mutch</td>
+                        <td style="color:green">cmf</td>
+                        <td>70</td>
+                        <td style="font-size:35px">9.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. milivojevic</td>
+                        <td style="color:green">dmf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. fosu-mensah</td>
+                        <td style="color:green">dmf</td>
+                        <td>71</td>
+                        <td style="font-size:35px">10.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. kelly</td>
+                        <td style="color:blue">rb</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. ward</td>
+                        <td style="color:blue">rb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>p. souare</td>
+                        <td style="color:blue">lb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>p. van aanholt</td>
+                        <td style="color:blue">lb</td>
+                        <td>78</td>
+                        <td style="font-size:35px">17.8$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. schlupp</td>
+                        <td style="color:blue">lb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.2$ m</td>
+                    </tr>
+                    <tr>
+                        <td>m. sakho</td>
+                        <td style="color:blue">cb</td>
+                        <td>82</td>
+                        <td style="font-size:35px">27.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. tomkins</td>
+                        <td style="color:blue">cb</td>
+                        <td>77</td>
+                        <td style="font-size:35px">16.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. dann</td>
+                        <td style="color:blue">CB</td>
+                        <td>79</td>
+                        <td style="font-size:35px">18.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. riedewald</td>
+                        <td style="color:blue">CB</td>
+                        <td>77</td>
+                        <td style="font-size:35px">14.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>d. delaney</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">12.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>j. speroni</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. hennessey</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>78</td>
+                        <td style="font-size:35px">15.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/cry.png" class="formation">
+            </div>
+        </div>
+        
+        
+        
+        <!--                 SWANSEA CITY AFC                       -->
+        
+        
+        
+        <div style="display: none" id="swa">
+            
+            <div class="header">
+                <img src="imgs/clubs/swa.svg" height="230" width="230"><br>
+                <p>SWANSEA CITY AFC</p><hr>
+                <span>BUDGET &nbsp;|&nbsp; 132.4$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; 448.6$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 14<sup>th</sup></span>
+                <hr>
+            </div>
+            
+            <div class="players">
+                <h2>PLAYERS LIST</h2>
+                
+                <table border="5" class="p">
+                    <tr>
+                        <th>NAME</th>
+                        <th>POS</th>
+                        <th>PWR</th>
+                        <th>MARKET VALUE</th>
+                    </tr>
+                    <tr>
+                        <td>w. bony</td>
+                        <td style="color:red">CF</td>
+                        <td>79</td>
+                        <td style="font-size:35px">22.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>j. ayew</td>
+                        <td style="color:red">cf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">24.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. abraham</td>
+                        <td style="color:red">cf</td>
+                        <td>75</td>
+                        <td style="font-size:35px">13.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>c.b. richardson</td>
+                        <td style="color:red">cf</td>
+                        <td>59</td>
+                        <td style="font-size:35px">150$ k</td>
+                    </tr>
+                    <tr>
+                        <td>l. narsingh</td>
+                        <td style="color:red">rwf</td>
+                        <td>78</td>
+                        <td style="font-size:35px">18.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>n. dyer</td>
+                        <td style="color:red">rwf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>w. routledge</td>
+                        <td style="color:green">lmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>s. clucas</td>
+                        <td style="color:green">lmf</td>
+                        <td>76</td>
+                        <td style="font-size:35px">15.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. britton</td>
+                        <td style="color:green">cmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>l. fer</td>
+                        <td style="color:green">cmf</td>
+                        <td>77</td>
+                        <td style="font-size:35px">17.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>t. carroll</td>
+                        <td style="color:green">cmf</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>roque mesa</td>
+                        <td style="color:green">cmf</td>
+                        <td>80</td>
+                        <td style="font-size:35px">22.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>a. king</td>
+                        <td style="color:green">cmf</td>
+                        <td>57</td>
+                        <td style="font-size:35px">100$ k</td>
+                    </tr>
+                    <tr>
+                        <td>j. fulton</td>
+                        <td style="color:green">cmf</td>
+                        <td>60</td>
+                        <td style="font-size:35px">1.1$ M</td>
+                    </tr>
+                    <tr>
+                        <td>renato sanches</td>
+                        <td style="color:green">cmf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">20.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>sung-yeung ki</td>
+                        <td style="color:green">dmf</td>
+                        <td>79</td>
+                        <td style="font-size:35px">19.4$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. naughton</td>
+                        <td style="color:blue">rb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.5$ M</td>
+                    </tr>
+                    <tr>
+                        <td>angel rangel</td>
+                        <td style="color:blue">rb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>martin olsson</td>
+                        <td style="color:blue">lb</td>
+                        <td>73</td>
+                        <td style="font-size:35px">12.1$ m</td>
+                    </tr>
+                    <tr>
+                        <td>k. bartley</td>
+                        <td style="color:blue">cb</td>
+                        <td>75</td>
+                        <td style="font-size:35px">14.7$ M</td>
+                    </tr>
+                    <tr>
+                        <td>f. fernandez</td>
+                        <td style="color:blue">cb</td>
+                        <td>79</td>
+                        <td style="font-size:35px">19.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>m. van der hoorn</td>
+                        <td style="color:blue">CB</td>
+                        <td>74</td>
+                        <td style="font-size:35px">12.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>a. mawson</td>
+                        <td style="color:blue">CB</td>
+                        <td>75</td>
+                        <td style="font-size:35px">13.5$ m</td>
+                    </tr>
+                    <tr>
+                        <td>l. fabianski</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>80</td>
+                        <td style="font-size:35px">20.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>e. mulder</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>74</td>
+                        <td style="font-size:35px">13.2$ M</td>
+                    </tr>
+                    <tr>
+                        <td>k. nordfeldt</td>
+                        <td style="color:goldenrod">GK</td>
+                        <td>72</td>
+                        <td style="font-size:35px">10.2$ M</td>
+                    </tr>
+            </table> 
+            </div>
+            <div class="formimg">
+                <h2>TEAM MAIN SQUAD</h2>
+                <img src="imgs/clubs/formations/swa.png" class="formation">
+            </div>
+        </div>
+        
+        
+    </section>
 
 
         <!-- Start Footer -->
@@ -213,18 +4064,10 @@
         </footer>
 
         <!-- End Footer -->
-
-    <script>
-
-        function myFunction(imgs) {
-            var expandImg = document.getElementById("expandedImg");
-            var imgText = document.getElementById("imgtext");
-            document.body.scrollTop = document.documentElement.scrollTop = 1100;
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-        }
-
-    </script>
+    
+        <!-- JS Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Js/TransMarket-Scripts.js"></script>
+    
 </body>
 </html>

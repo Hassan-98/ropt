@@ -283,7 +283,7 @@ header div h1{
 
 .container{
     padding:20px;
-    background: linear-gradient(to bottom, #000428, #fff);
+    background: linear-gradient(to bottom, #000428, #004e92);
     position: relative;
 }
 .container img{
@@ -350,7 +350,29 @@ header div h1{
     background:rgba(0,0,0,0.6);
     border-radius:4px
 }
-
+.buttons{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    
+}
+.buttons button{
+    padding:5px;
+    margin: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    width: 45%;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    background: linear-gradient(to bottom, #004e92);
+    border-radius: 25px;
+    cursor: url('../cursors/link.cur'), auto; 
+    border:2px groove #fff;
+}
+.buttons button:hover{
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    background: #fff;
+    
+}
 footer{
     background-color: black;
     font-family: 'ABeeZee', sans-serif;

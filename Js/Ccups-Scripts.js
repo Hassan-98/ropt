@@ -269,16 +269,16 @@ function PLcheckSeason(){
             break;
         case "setwo":
             document.getElementById("draw").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/XPCYoLJ.jpg";
+            document.getElementById("plimg").src = "https://i.imgur.com/jhxrLjr.png";
             }
             document.getElementById("nround").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/On6N2i8.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/RZ7hUuV.png";
             }
             document.getElementById("gscorer").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/OE0lWiK.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/kOK5qlI.png";
             }
             document.getElementById("amaker").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/V6ilrME.png";
+            document.getElementById("plimg").src = "https://i.imgur.com/X1S5ZzA.png";
             }
             document.getElementById("steam").onclick = function(){
             document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
@@ -308,16 +308,16 @@ function FAcheckSeason(){
             break;
         case "setwo":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/EjFCYnJ.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/2UQlD3a.png";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/HNyZzqv.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/ceKYjA1.png";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/vm4w0iY.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/gPUiXH1.png";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/MGaGzBQ.png";
+            document.getElementById("faimg").src = "https://i.imgur.com/SG7whZ0.png";
             }
             break;
 }
@@ -407,21 +407,21 @@ function UCLcheckSeason(){
             document.getElementById("ucl-g8").src = "https://i.imgur.com/RXwbpxh.png";
             document.getElementById("ucl-r16").src = "https://i.imgur.com/uPVeDJw.png";
             document.getElementById("ucl-r8").src = "https://i.imgur.com/ITVJh6R.png";
-            document.getElementById("ucl-r4").src = "https://i.imgur.com/KaEd8g7.png";
+            document.getElementById("ucl-r4").src = "https://i.imgur.com/TYbxvMi.png";
             document.getElementById("ucl-f").src = "https://i.imgur.com/6HrDL0Q.gif";
             }
             document.getElementById("nround3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/QqEaq07.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/DAM5dvY.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("gscorer3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/Qx3Jken.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/o2ekkuz.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("amaker3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/cRpPyO3.png";
+            document.getElementById("uclimg").src = "https://i.imgur.com/pC13V7v.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }

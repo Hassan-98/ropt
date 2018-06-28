@@ -53,21 +53,29 @@ function checkSuccess(){
     
 function createCertificate(){
     document.getElementById("certific").style.display = "block";
-    document.getElementById("Rpname").innerHTML = document.getElementById("pname").value
-    document.getElementById("Rpos").innerHTML = document.getElementById("pos").value
-    document.getElementById("Rse").innerHTML = document.getElementById("se").value
-    document.getElementById("Rsellt").innerHTML = document.getElementById("sellt").value
-    document.getElementById("Rbuyt").innerHTML = document.getElementById("buyt").value
-    document.getElementById("Rbuytsrc").src = document.getElementById("selltsrc").value
-    document.getElementById("Rselltsrc").src = document.getElementById("buytsrc").value
+    document.getElementById("Rpname").innerHTML = document.getElementById("pname").value;
+    document.getElementById("Rpos").innerHTML = document.getElementById("pos").value;
+    document.getElementById("Rse").innerHTML = document.getElementById("se").value;
+    document.getElementById("Rsellt").innerHTML = document.getElementById("sellt").value;
+    document.getElementById("Rbuyt").innerHTML = document.getElementById("buyt").value;
+    document.getElementById("Rbuytsrc").src = document.getElementById("selltsrc").value;
+    document.getElementById("Rselltsrc").src = document.getElementById("buytsrc").value;
 
          if (num.innerHTML === "هذه هي المحاولة رقم 1"){
             document.getElementById("Rval").innerHTML = vale.value;
             }
     else if (num.innerHTML === "هذه هي المحاولة رقم 2"){
-            document.getElementById("Rval").innerHTML = Number(vale.value) + Number( Number(vale.value * 0.25).toFixed(2) );
+            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.25) + Number(vale.value)).toFixed(1);
             }
     else if (num.innerHTML === "هذه هي المحاولة رقم 3"){
-            document.getElementById("Rval").innerHTML = Number(vale.value) + Number( Number(vale.value * 0.5).toFixed(2) );
+            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.5) + Number(vale.value)).toFixed(1);
             }
+    
+        if (document.getElementById("ssub").value == ""){
+            document.getElementById("sub").innerHTML = "" ;
+       }
+    else if (document.getElementById("ssub").value !== "") {
+        document.getElementById("sub").innerHTML = " + " + document.getElementById("ssub").value + "<br>" ;
+    }
+    
 }

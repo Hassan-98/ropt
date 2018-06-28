@@ -23,3 +23,9 @@ PES Project V3.5 - log ::
 - Editing in transfer market page
 - Adding transfer request page
 - updating all website data to latest played session
+ 
+## update 3 - log
+
+- Full update of Transfer Market Page
+- New Transfer News Page
+- Small Edites in ncups , ccups, seasons pages

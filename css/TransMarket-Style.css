@@ -51,19 +51,6 @@ nav ul .Clicked:hover{
     border-bottom:5px solid #848484;
     border-radius:7px;
 }
-header{
-    position: relative;
-    color:#fff;
-    font-size:22px;
-    box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.5);
-    transition: all 0.5s ease-out;
-    font-family: 'Allerta Stencil', sans-serif;
-}
-header:hover{
-    opacity: 0.95;
-    transition: all 0.5s ease-in;
-} transition: all 0.5s ease-in;
-}
 nav{
     background-color: #fff;
     font-family: 'Bree Serif', serif;
@@ -173,67 +160,6 @@ header div h1{
 .main .BoxDiv span{
     font-family: 'Allerta Stencil', sans-serif;
 }
-.Rnews{
-    display:inline-flex;
-    text-align:right;
-    width:100%;
-    height:500px;
-    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
-    margin-top:30px;
-    font-family: 'Tajawal', sans-serif;
-}
-.Rnews .BoxDiv{
-    font-size: 22px;
-    font-weight: bold;
-    padding:50px;
-    width:68%
-}
-.Rnews .BoxDiv h2{
-    padding:0 auto;
-}
-.Rnews .BoxImg{
-    width:60%;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
-}
-
-.Lnews{
-    display:inline-flex;
-    text-align:right;
-    width:100%;
-    height:500px;
-    box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
-    margin-top:30px;
-    font-family: 'Tajawal', sans-serif;
-}
-.Lnews .BoxDiv{
-    font-size: 22px;
-    font-weight: bold;
-    padding:50px;
-    width:68%
-}
-.Lnews .BoxDiv h2{
-    padding:0 auto;
-}
-.Lnews .BoxImg{
-    width:60%;
-    box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
-}
-.allnews .button{
-    text-align: center;
-    margin-bottom: 50px
-}
-.allnews button{
-    font-size:35px;
-    font-family: 'Bree Serif', serif;
-    background: #fff;
-    border-radius: 5px;
-    cursor: url('../cursors/link.cur'), auto;
-    width:49%
-}
-.allnews button:hover{
-    background:linear-gradient(to right, #3E1CE3 , #8412F4);
-    color:#fff;
-}
 .dropbtn {
     color: black;
     padding:4px 16px;
@@ -276,9 +202,10 @@ header div h1{
 .column {
     position: relative;
     float: left;
-    width: 18.51%;
-    padding: 10px;
+    width:9%;
+    padding:5px;
     text-align: center;
+    margin-bottom:20px
 }
 
 .container{
@@ -304,15 +231,13 @@ header div h1{
 
 /* Style the images inside the grid */
 .column img {
-    opacity: 0.95; 
+    opacity: 0.9; 
     cursor: url('../cursors/link.cur'), auto; 
     box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.5);
     background: #FFF;
     transition: all 0.4s ease-out;
-    width: 70%;
-    height: 210px;
-    padding: 10px 20px;
-    border-radius:20px
+    padding: 10px;
+    border-radius:30px
 }
 
 .column img:hover {
@@ -321,22 +246,23 @@ header div h1{
 }
 
 .column .text {
-    width:94%;
     color: #000;
-    font-size:19px;
+    font-size:11px;
     font-weight: bold;
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
-    padding:8px;
+    padding:3px 8px;
     font-family: 'Tajawal', sans-serif;
     direction: rtl;
     background:rgba(255,255,255,0.95);
     text-align: center;
-    border-radius:10px;
+    border-radius:30px;
     margin-top:5px
 }
 
 .row{
-    background: url("../imgs/tranMback.jpg");
+    background:linear-gradient(to right, #870000, #190a05);
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.5);
+    border-radius: 50px;
     padding:50px 0;
 }
 /* Clear floats after the columns */
@@ -397,7 +323,172 @@ header div h1{
     font-size:50px;
     cursor: url('../cursors/link.cur'), auto;
 }
+ .header{
+    text-align: center;
+    font-size:30px;
+    font-family: 'Bree Serif', serif;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto
+}
+ .players{
+    font-size:26px;
+    font-family: 'Bree Serif', serif;
+    width:100%;
+}
+ hr{
+    margin:20px;
+    box-shadow: none
+}
+ .header img{
+    padding: 10px
+}
+ .header p{
+    padding:6px;
+    border:1px dashed;
+    color: #424242;
+    margin: 5px;
+    border-radius: 25px;
+    background:#F2F2F2;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:32px
+}
+ .header span{
+    padding:5px 15px;
+    border:1px dashed;
+    color: #424242;
+    margin: 5px;
+    border-radius:10px;
+    background:#F2F2F2;
+    font-size:23px
+}
+ .header button{
+    padding:6px;
+    border:1px dashed;
+    color: #424242;
+    border-radius: 25px;
+    width:50%;
+    cursor: url('../cursors/link.cur'), auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+ .header button:hover{
+    padding:6px;
+    border:1px dashed;
+    background: #000;
+    color:#fff; 
+    border-radius: 25px;
+    width:45%;
+    
+}
+ .players h2{
+    padding:5px;
+    border:1px dashed;
+    border-radius:5px;
+    text-align: center;
+    color: #fff;
+    background:#2E2E2E;
+    margin-bottom: 25px
+}
+ .players .player{
+    text-align: center;
+    margin-bottom:15px;
+}
+ .players .player span{
+    padding:5px 35px;
+    border:2px inset #29088A;
+    text-align: center;
+    font-size:25px
+}
 
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width:97%;
+    border-collapse: collapse;
+}
+
+table th{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size:28px;
+    background-color: #2E2E2E;
+    color: white;
+}
+table td{
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formimg{
+    width:100%;
+}
+.formation{
+    width:100%;
+    height:650px;
+    border-radius:70px;
+    border: 3px inset;
+    margin-top: 20px;
+}
+ .formimg h2{
+    padding:5px;
+    border:1px dashed;
+    border-radius:5px;
+    text-align: center;
+    color: #fff;
+    background:#2E2E2E;
+    margin:10px 0;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    font-size:35px;
+}
+
+#slideshow {
+    margin:40px auto;
+    position: relative;
+    width:98%;
+    height:600px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius:20px;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden
+}
+
+#slideshow  div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+#slideshow img {
+    width: 100%;
+    height:600px;
+    border-radius:20px;
+    cursor: url('../cursors/link.cur'), auto;
+}
+.News div h1{
+    position: absolute;
+    bottom: 0;
+    background:rgba(0,0,0,0.7);
+    color: #E6E6E6;
+    width: 98.9%;
+    border:1px dashed #000;
+    padding: 7px;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align: center;
+    font-size:60px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    letter-spacing:3px;
+}
 footer{
     background-color: black;
     font-family: 'ABeeZee', sans-serif;
