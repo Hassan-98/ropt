@@ -65,10 +65,10 @@ function createCertificate(){
             document.getElementById("Rval").innerHTML = vale.value;
             }
     else if (num.innerHTML === "هذه هي المحاولة رقم 2"){
-            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.25) + Number(vale.value)).toFixed(1);
+            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.1) + Number(vale.value)).toFixed(1);
             }
     else if (num.innerHTML === "هذه هي المحاولة رقم 3"){
-            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.5) + Number(vale.value)).toFixed(1);
+            document.getElementById("Rval").innerHTML = (Number(vale.value * 0.2) + Number(vale.value)).toFixed(1);
             }
     
         if (document.getElementById("ssub").value == ""){

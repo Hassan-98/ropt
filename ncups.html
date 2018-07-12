@@ -100,7 +100,7 @@
 
             <div class="hidden-content">
                 <div>
-                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px"> A Knouck-out Tournament Starts with Round of 14, Played every 2 Seasons, Starts in half season of PL</span>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px"> A Knouck-out Tournament Starts with 3 Groups, Played every 2 Seasons, Starts in half season of PL</span>
                 </div>
                 <br>
                 <div>
@@ -133,8 +133,8 @@
                     <form>
                         <select id="cafselect" onchange="callCafFunctions()">
                                 <option value="seone">Season One</option>
-                                <option value="setwo" selected>Season Two</option>
-                                <option value="sethree" disabled>Season Three</option>
+                                <option value="setwo">Season Two</option>
+                                <option value="sethree" selected>Season Three</option>
                                 <option value="sefour" disabled>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
@@ -159,6 +159,46 @@
                         </div><br>
                         <div style="text-align:center">
                             <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="cafimg">
+                            <div id="cafSlides" style="display:none">
+                                <div class="slideshow-container">
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">1 / 4</div>
+                                      <img src="" id="caf-g1">
+                                      <div class="text">Group One</div>
+                                    </div>
+
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">2 / 4</div>
+                                      <img src="" id="caf-g2">
+                                      <div class="text">Group Two</div>
+                                    </div>
+
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">3 / 4</div>
+                                      <img src="" id="caf-g3">
+                                      <div class="text">Group Three</div>
+                                    </div>
+                                    
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">4 / 4</div>
+                                      <img src="" id="caf-ko">
+                                      <div class="text">Knock Out Draw</div>
+                                    </div>
+
+
+                                    <a class="prev" onclick="plusSlidesas(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlidesas(1)">&#10095;</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                        <span class="dotas" onclick="currentSlide(1)"></span> 
+                                        <span class="dotas" onclick="currentSlide(2)"></span> 
+                                        <span class="dotas" onclick="currentSlide(3)"></span>
+                                        <span class="dotas" onclick="currentSlide(4)"></span>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -179,12 +219,13 @@
 
             <div class="hidden-content">
                 <div>
-                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with 3 Groups, Played every 3 Seasons, Qualifying teams are the top three teams and The two teams with the best second place in the Supplement. <br> Timing of play :: Round 1 (at round 7) // Round 2 (at round 12) // Round 3 (at round 15) // Round 4 (at round 20) // Round 5 (at round 24) // Round 6 (at round 28) <br> Supplement :: Round 1 (at round 30) // Round 2 (at round 31) // Round 3 (at round 32) // Round 4 (at round 33)</span>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with 2 Preliminary Groups in a Season, Then A Single Final Group of 10 Teams in the Next Season, Qualifying teams are the top five teams of the Final Group.
+                    <br><strong>Timing of Play ::</strong><br> <strong>Preliminary Group ::</strong> Round 1 (at round 7) // Round 2 (at round 12) // Round 3 (at round 15) // Round 4 (at round 20) // Round 5 (at round 24) // Round 6 (at round 28) <br> <strong>Final Qualifications Group ::</strong> Round 1 (at round 2) // Round 2 (at round 4) // Round 3 (at round 6) // Round 4 (at round 8) // Round 5 (at round 10) // Round 6 (at round 12) // Round 7 (at round 14) // Round 8 (at round 16) // Round 9 (at round 18) // Round 10 (at round 19) // Round 11 (at round 21) // Round 12 (at round 23) // Round 13 (at round 25) // Round 14 (at round 27) // Round 15 (at round 29) // Round 16 (at round 31) // Round 17 (at round 33) // Round 18 (at round 35)</span>
                 </div>
                 <br>
                 <div>
                     <h2><i class="fa fa-edit" style="font-size:24px"></i> Cup Rules :</h2><br><span style="font-size:20px">
-                        <i class="fa fa-gavel" style="font-size:20px"></i>Difficulty : 4 Matches is "Top player" and 2 Matches is "Super Star" , Home Matches is "Top player", Away Matches is "Super Star", The Team Ranked Last's Matches is "Top Player"<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i>Difficulty of Matches is "Top player" except the first 5 teams in the ranking away matches<br>
                         <i class="fa fa-gavel" style="font-size:20px"></i> The duration of Matches is not more than 10 minutes </span>
                 </div>
                 <br>
@@ -192,7 +233,7 @@
                     <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br>
                     <div style="font-size:20px">
                         <span><i class="fa fa-glass" style="font-size:20px"></i> Most Qualified Teams : </span>
-                        <span style="color:brown">[TUN, ALG, GHA] [1]</span><hr>
+                        <span style="color:brown">[TUN, ALG, GHA , SEN, EGY] [1]</span><hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span>
                         <span style="color:brown">GHANA &#91;5-0&#93; SOUTH AFRICA &#40; SE. 2 &#41;</span><hr>
@@ -211,8 +252,8 @@
                     <form>
                         <select id="wcqselect" onchange="callWcqFunctions()">
                                 <option value="seone">Season One</option>
-                                <option value="setwo" selected>Season Two</option>
-                                <option value="sethree" disabled>Season Three</option>
+                                <option value="setwo">Season Two</option>
+                                <option value="sethree" selected>Season Three</option>
                                 <option value="sefour" disabled>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
@@ -240,29 +281,16 @@
                             <div id="wcqslidediv" style="display:none">
                                 <div class="slideshow-container">
                                     <div class="mySlidesa fade">
-                                      <div class="numbertext">1 / 4</div>
-                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g1">
-                                      <div class="text">Group One</div>
+                                      <div class="numbertext">1 / 2</div>
+                                      <img src="" id="wcq-g1">
+                                      <div class="text" id="wcqf">Group One</div>
                                     </div>
 
                                     <div class="mySlidesa fade">
-                                      <div class="numbertext">2 / 4</div>
-                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g2">
+                                      <div class="numbertext">2 / 2</div>
+                                      <img src="" id="wcq-g2">
                                       <div class="text">Group Two</div>
                                     </div>
-
-                                    <div class="mySlidesa fade">
-                                      <div class="numbertext">3 / 4</div>
-                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-g3">
-                                      <div class="text">Group Three</div>
-                                    </div>
-                                    
-                                    <div class="mySlidesa fade">
-                                      <div class="numbertext">4 / 4</div>
-                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="wcq-sup">
-                                      <div class="text">Supplement Group</div>
-                                    </div>
-
 
                                     <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlidesa(1)">&#10095;</a>
@@ -272,9 +300,7 @@
 
                                     <div style="text-align:center">
                                         <span class="dota" onclick="currentSlide(1)"></span> 
-                                        <span class="dota" onclick="currentSlide(2)"></span> 
-                                        <span class="dota" onclick="currentSlide(3)"></span>
-                                        <span class="dota" onclick="currentSlide(4)"></span>
+                                        <span class="dota" onclick="currentSlide(2)"></span>
                                     </div>
                                 </div>
                         </div>
@@ -313,17 +339,17 @@
                     <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br>
                     <div style="font-size:20px">
                         <span><i class="fa fa-glass" style="font-size:20px"></i> Most team won the title : </span>
-                        <span style="color:brown">- [-]</span><hr>
+                        <span style="color:brown">ARGENTINA [1]</span><hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span>
-                        <span style="color:brown">- &#91;0-0&#93; - &#40; SE. - &#41;</span><hr>
+                        <span style="color:brown">BRAZIL &#91;4-0&#93; JAPAN &#40; SE. 2 &#41;</span><hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> Record the highest No. of Goals in a season : </span>
-                        <span style="color:brown"> - [- Goals] &#40; SE. - &#41;</span>
+                        <span style="color:brown"> J. AYEW | GHANA | [7 Goals] &#40; SE. 2 &#41;</span>
                     <hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> Making the highest No. of Assists in a season : </span>
-                        <span style="color:brown"> -  [- Assist] &#40; SE. - &#41;</span>
+                        <span style="color:brown"> RENATO AUGUSTO | BRAZIL | [4 Assist] &#40; SE. 2 &#41;</span>
                     </div>
                 </div>
                 <br>
@@ -332,8 +358,8 @@
                     <form>
                         <select id="wcselect" onchange="callWCFunctions()">
                                 <option value="seone">Season One</option>
-                                <option value="setwo" selected>Season Two</option>
-                                <option value="sethree" disabled>Season Three</option>
+                                <option value="setwo">Season Two</option>
+                                <option value="sethree" selected>Season Three</option>
                                 <option value="sefour" disabled>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
@@ -362,74 +388,56 @@
                                 <div class="slideshow-container">
                                     <div class="mySlides fade">
                                       <div class="numbertext">1 /12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g1">
+                                      <img src="" id="wc-g1">
                                       <div class="text">Group One</div>
                                     </div>
 
                                     <div class="mySlides fade">
                                       <div class="numbertext">2 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g2">
+                                      <img src="" id="wc-g2">
                                       <div class="text">Group Two</div>
                                     </div>
 
                                     <div class="mySlides fade">
                                       <div class="numbertext">3 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g3">
+                                      <img src="" id="wc-g3">
                                       <div class="text">Group Three</div>
                                     </div>
 
                                     <div class="mySlides fade">
                                       <div class="numbertext">4 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g4">
+                                      <img src="" id="wc-g4">
                                       <div class="text">Group Four</div>
                                     </div>
                                     
                                     <div class="mySlides fade">
                                       <div class="numbertext">5 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g5">
+                                      <img src="" id="wc-g5">
                                       <div class="text">Group Five</div>
                                     </div>
                                     
                                     <div class="mySlides fade">
                                       <div class="numbertext">6 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g6">
+                                      <img src="" id="wc-g6">
                                       <div class="text">Group Six</div>
                                     </div>
                                     
                                     <div class="mySlides fade">
                                       <div class="numbertext">7 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g7">
+                                      <img src="" id="wc-g7">
                                       <div class="text">Group seven</div>
                                     </div>
                                     
                                     <div class="mySlides fade">
                                       <div class="numbertext">8 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-g8">
+                                      <img src="" id="wc-g8">
                                       <div class="text">Group Eight</div>
                                     </div>
                                     
                                     <div class="mySlides fade">
                                       <div class="numbertext">9 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r16">
-                                      <div class="text">Round of 16</div>
-                                    </div>
-                                    
-                                    <div class="mySlides fade">
-                                      <div class="numbertext">10 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r8">
-                                      <div class="text">Quarter Final</div>
-                                    </div>
-                                    
-                                    <div class="mySlides fade">
-                                      <div class="numbertext">11 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-r4">
-                                      <div class="text">Semi-Final</div>
-                                    </div>
-                                    
-                                    <div class="mySlides fade">
-                                      <div class="numbertext">12 / 12</div>
-                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="wc-f">
-                                      <div class="text">Final</div>
+                                      <img src="" id="wc-ko">
+                                      <div class="text">Knock Out Draw</div>
                                     </div>
 
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -447,10 +455,7 @@
                                       <span class="dot" onclick="currentSlide(6)"></span> 
                                       <span class="dot" onclick="currentSlide(7)"></span>
                                       <span class="dot" onclick="currentSlide(8)"></span> 
-                                        <span class="dot" onclick="currentSlide(9)"></span> 
-                                      <span class="dot" onclick="currentSlide(10)"></span> 
-                                      <span class="dot" onclick="currentSlide(11)"></span>
-                                      <span class="dot" onclick="currentSlide(12)"></span> 
+                                        <span class="dot" onclick="currentSlide(9)"></span>
                                     </div>
                                 </div>
                         </div>
