@@ -171,15 +171,39 @@ function CAFcheckSeason(){
             document.getElementById("draw").onclick = function(){
             document.getElementById("cafimg").style.display = "none";
             document.getElementById("cafSlides").style.display = "block";
-            document.getElementById("caf-g1").src = "https://image.ibb.co/bxV5U8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_09_01_43_15_86_min.png";
-            document.getElementById("caf-g2").src = "https://image.ibb.co/h2Ys98/Pro_Evolution_Soccer_2018_Screenshot_2018_07_09_01_43_16_81_min.png";
-            document.getElementById("caf-g3").src = "https://image.ibb.co/hCoQU8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_09_01_43_17_77_min.png";
-            document.getElementById("caf-ko").src = "https://i.imgur.com/FuQtL3S.gif";
+            document.getElementById("caf-g1").src = "https://image.ibb.co/cU3CPT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_45_42_min.png";
+            document.getElementById("caf-g2").src = "https://image.ibb.co/hgfRjT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_46_53_min.png";
+            document.getElementById("caf-g3").src = "https://image.ibb.co/mxroyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_47_44_min.png";
+            document.getElementById("caf-g4").src = "https://image.ibb.co/mtzK4T/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_48_41_min.png";
+            document.getElementById("caf-g5").src = "https://image.ibb.co/gSsiW8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_50_70_min.png";
+            document.getElementById("caf-ko").src = "https://image.ibb.co/iWhHr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_43_60_min.png";
             }
             document.getElementById("nround").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
             document.getElementById("cafSlides").style.display = "none";
-            document.getElementById("cafimg").src = "https://image.ibb.co/c2Kzp8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_09_01_42_27_20_min.png";
+            document.getElementById("cafimg").src = "https://image.ibb.co/n6zxr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_36_84_min.png";
+            }
+            document.getElementById("gscorer").onclick = function(){
+            document.getElementById("cafimg").style.display = "block";
+            document.getElementById("cafSlides").style.display = "none";
+            document.getElementById("cafimg").src = "https://image.ibb.co/g6QsPT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_49_24_min.png";
+            }
+            document.getElementById("amaker").onclick = function(){
+            document.getElementById("cafimg").style.display = "block";
+            document.getElementById("cafSlides").style.display = "none";
+            document.getElementById("cafimg").src = "https://image.ibb.co/mmj8yo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_53_29_min.png";
+            }
+            break;
+        case "sefour":
+            document.getElementById("draw").onclick = function(){
+            document.getElementById("cafimg").style.display = "block";
+            document.getElementById("cafSlides").style.display = "none";
+            document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
+            }
+            document.getElementById("nround").onclick = function(){
+            document.getElementById("cafimg").style.display = "block";
+            document.getElementById("cafSlides").style.display = "none";
+            document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
             }
             document.getElementById("gscorer").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
@@ -223,8 +247,8 @@ function WCQcheckSeason(){
             document.getElementById("draw1").onclick = function(){
             document.getElementById("wcqimg").style.display = "none";
             document.getElementById("wcqslidediv").style.display = "block";
-            document.getElementById("wcq-g1").src = "https://image.ibb.co/dEVThT/Untitled_1_min.png";
-            document.getElementById("wcq-g2").src = "https://image.ibb.co/eWuohT/Untitled_2_min.png";
+            document.getElementById("wcq-s1").src = "https://image.ibb.co/dEVThT/Untitled_1_min.png";
+            document.getElementById("wcq-s2").src = "https://image.ibb.co/eWuohT/Untitled_2_min.png";
             }
             document.getElementById("nround1").onclick = function(){
             document.getElementById("wcqimg").src = "https://image.ibb.co/d8zJGd/Pro_Evolution_Soccer_2018_Screenshot_2018_06_30_23_58_08_45_min.png";
@@ -244,35 +268,34 @@ function WCQcheckSeason(){
             break;
         case "sethree":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/g79zyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_11_55_37_min.jpg";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/mHEXJo/ins_r2_min.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/b8reyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_11_55_44_min.jpg";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/mbkiPT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_11_55_48_min.jpg";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             break;
         case "sefour":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("wcqimg").style.display = "none";
-            document.getElementById("wcqslidediv").style.display = "block";
-            document.getElementById("wcq-g1").src = "https://i.imgur.com/uu0yH57.gif";
-            document.getElementById("wcq-g2").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/mTOJr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_42_52_19_min.png";
+            document.getElementById("wcqimg").style.display = "block";
+            document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/c1L9yo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_43_22_02_min.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
@@ -367,6 +390,27 @@ function WCcheckSeason(){
             }
             break;
         case "sethree":
+            document.getElementById("draw2").onclick = function(){
+            document.getElementById("wcimg").style.display = "block";
+            document.getElementById("wcslidediv").style.display = "none";
+            }
+            document.getElementById("nround2").onclick = function(){
+            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
+            document.getElementById("wcimg").style.display = "block";
+            document.getElementById("wcslidediv").style.display = "none";
+            }
+            document.getElementById("gscorer2").onclick = function(){
+            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
+            document.getElementById("wcimg").style.display = "block";
+            document.getElementById("wcslidediv").style.display = "none";
+            }
+            document.getElementById("amaker2").onclick = function(){
+            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
+            document.getElementById("wcimg").style.display = "block";
+            document.getElementById("wcslidediv").style.display = "none";
+            }
+            break;
+        case "sefour":
             document.getElementById("draw2").onclick = function(){
             document.getElementById("wcimg").style.display = "block";
             document.getElementById("wcslidediv").style.display = "none";

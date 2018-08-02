@@ -131,6 +131,10 @@ function showPlSeason(){
             document.getElementById("pl-season").style.display = "block";
             document.getElementById("hash").innerHTML = " Three";
              break;
+        case "sefour":
+            document.getElementById("pl-season").style.display = "block";
+            document.getElementById("hash").innerHTML = " Four";
+             break;
 
      }
     
@@ -149,6 +153,10 @@ function showFaSeason(){
         case "sethree":
             document.getElementById("fa-season").style.display = "block";
              document.getElementById("hash1").innerHTML = " Three";
+             break;
+        case "sefour":
+            document.getElementById("fa-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " Four";
              break;
 
      }
@@ -169,6 +177,10 @@ function showCsSeason(){
             document.getElementById("cs-season").style.display = "block";
              document.getElementById("hash2").innerHTML = " Three";
              break;
+        case "sefour":
+            document.getElementById("cs-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " Four";
+             break;
 
      }
     
@@ -187,6 +199,10 @@ function showUclSeason(){
         case "sethree":
             document.getElementById("ucl-season").style.display = "block";
              document.getElementById("hash3").innerHTML = " Three";
+             break;
+        case "sefour":
+            document.getElementById("ucl-season").style.display = "block";
+             document.getElementById("hash3").innerHTML = " Four";
              break;
 
      }
@@ -207,6 +223,10 @@ function showUelSeason(){
             document.getElementById("uel-season").style.display = "block";
              document.getElementById("hash4").innerHTML = " Three";
              break;
+        case "sefour":
+            document.getElementById("uel-season").style.display = "block";
+             document.getElementById("hash4").innerHTML = " Four";
+             break;
 
      }
     
@@ -226,6 +246,10 @@ function showUscSeason(){
             document.getElementById("usc-season").style.display = "block";
              document.getElementById("hash5").innerHTML = " Three";
              break;
+        case "sefour":
+            document.getElementById("usc-season").style.display = "block";
+             document.getElementById("hash5").innerHTML = " Four";
+             break;
 
      }
     
@@ -244,6 +268,10 @@ function showFcwcSeason(){
         case "sethree":
             document.getElementById("fcwc-season").style.display = "block";
              document.getElementById("hash6").innerHTML = " Three";
+             break;
+        case "sefour":
+            document.getElementById("fcwc-season").style.display = "block";
+             document.getElementById("hash6").innerHTML = " Four";
              break;
 
      }
@@ -316,24 +344,45 @@ function PLcheckSeason(){
             }
             break;
             
-            case "sethree":
+        case "sethree":
             document.getElementById("draw").onclick = function(){
-            document.getElementById("plimg").src = "https://image.ibb.co/kKeNCJ/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_30_07_76_min.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/jjCfr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_40_46_min.jpg";
             }
             document.getElementById("nround").onclick = function(){
-            document.getElementById("plimg").src = "https://image.ibb.co/c2jYKy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_29_56_03_min.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/j8opJo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_41_06_18_min.png";
             }
             document.getElementById("gscorer").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/j5x24T/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_43_03_23_min.png";
             }
             document.getElementById("amaker").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/iDFByo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_42_24_09_min.png";
             }
             document.getElementById("steam").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/b15ddo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_42_07_04_min.png";
             }
             document.getElementById("sbeast").onclick = function(){
-            document.getElementById("plimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("plimg").src = "https://image.ibb.co/fhXfr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_30_22_42_17_71_min.png";
+            }
+            break;
+        
+        case "sefour":
+            document.getElementById("draw").onclick = function(){
+            document.getElementById("plimg").src = "https://image.ibb.co/hq9Ryo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_27_12_16.png";
+            }
+            document.getElementById("nround").onclick = function(){
+            document.getElementById("plimg").src = "https://image.ibb.co/cTtKJo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_27_06_14.png";
+            }
+            document.getElementById("gscorer").onclick = function(){
+            document.getElementById("plimg").src = "";
+            }
+            document.getElementById("amaker").onclick = function(){
+            document.getElementById("plimg").src = "";
+            }
+            document.getElementById("steam").onclick = function(){
+            document.getElementById("plimg").src = "";
+            }
+            document.getElementById("sbeast").onclick = function(){
+            document.getElementById("plimg").src = "";
             }
             break;
 }
@@ -372,16 +421,30 @@ function FAcheckSeason(){
             break;
         case "sethree":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("faimg").src = "https://image.ibb.co/inMfzy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_28_59_02_min.png";
+            document.getElementById("faimg").src = "https://image.ibb.co/encgPT/fa_gd_min.png";
             }
             document.getElementById("nround1").onclick = function(){
-            document.getElementById("faimg").src = "https://image.ibb.co/cpKB6d/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_28_48_73_min.png";
+            document.getElementById("faimg").src = "https://image.ibb.co/hKto4T/fa_nr_min.png";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("faimg").src = "https://image.ibb.co/ksaqJo/fa_gs_min.png";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("faimg").src = "https://i.imgur.com/6SQ4Dvr.png";
+            document.getElementById("faimg").src = "https://image.ibb.co/d2nsW8/fa_ar_min.png";
+            }
+            break;
+        case "sefour":
+            document.getElementById("draw1").onclick = function(){
+            document.getElementById("faimg").src = "https://image.ibb.co/i3Bvr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_44_22_59.png";
+            }
+            document.getElementById("nround1").onclick = function(){
+            document.getElementById("faimg").src = "https://image.ibb.co/ih2PjT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_46_13_91.png";
+            }
+            document.getElementById("gscorer1").onclick = function(){
+            document.getElementById("faimg").src = "";
+            }
+            document.getElementById("amaker1").onclick = function(){
+            document.getElementById("faimg").src = "";
             }
             break;
 }
@@ -419,6 +482,20 @@ function CScheckSeason(){
             }
             break;
         case "sethree":
+            document.getElementById("draw2").onclick = function(){
+            document.getElementById("csimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("nround2").onclick = function(){
+            document.getElementById("csimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("gscorer2").onclick = function(){
+            document.getElementById("csimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("amaker2").onclick = function(){
+            document.getElementById("csimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            break;
+        case "sefour":
             document.getElementById("draw2").onclick = function(){
             document.getElementById("csimg").src = "https://i.imgur.com/E26q62r.png";
             }
@@ -508,31 +585,65 @@ function UCLcheckSeason(){
             document.getElementById("draw3").onclick = function(){
             document.getElementById("uclimg").style.display = "none";
             document.getElementById("uclslidediv").style.display = "block";
-            document.getElementById("ucl-g1").src = "https://image.ibb.co/bywKsJ/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_32_66_min.png";
-            document.getElementById("ucl-g2").src = "https://image.ibb.co/hWX3Ky/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_33_59_min.png";
-            document.getElementById("ucl-g3").src = "https://image.ibb.co/ikjiKy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_34_33_min.png";
-            document.getElementById("ucl-g4").src = "https://image.ibb.co/eVRKsJ/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_35_05_min.png";
-            document.getElementById("ucl-g5").src = "https://image.ibb.co/dOOAzy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_35_92_min.png";
-            document.getElementById("ucl-g6").src = "https://image.ibb.co/e6ziKy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_36_75_min.png";
-            document.getElementById("ucl-g7").src = "https://image.ibb.co/fWwxey/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_37_54_min.png";
-            document.getElementById("ucl-g8").src = "https://image.ibb.co/bE4uRd/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_38_32_min.png";
-            document.getElementById("ucl-r16").src = "https://i.imgur.com/E26q62r.png";
-            document.getElementById("ucl-r8").src = "https://i.imgur.com/E26q62r.png";
-            document.getElementById("ucl-r4").src = "https://i.imgur.com/E26q62r.png";
-            document.getElementById("ucl-f").src = "https://i.imgur.com/E26q62r.png";
+            document.getElementById("ucl-g1").src = "https://image.ibb.co/i3xk6y/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_29_05_min.png";
+            document.getElementById("ucl-g2").src = "https://image.ibb.co/iJrjzJ/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_30_86_min.png";
+            document.getElementById("ucl-g3").src = "https://image.ibb.co/gWkoRy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_32_92_min.png";
+            document.getElementById("ucl-g4").src = "https://image.ibb.co/nRmjzJ/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_34_53_min.png";
+            document.getElementById("ucl-g5").src = "https://image.ibb.co/gtrCmy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_20_50_min.png";
+            document.getElementById("ucl-g6").src = "https://image.ibb.co/j4HJRy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_22_23_min.png";
+            document.getElementById("ucl-g7").src = "https://image.ibb.co/f3wpYd/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_24_89_min.png";
+            document.getElementById("ucl-g8").src = "https://image.ibb.co/nHjbDd/Pro_Evolution_Soccer_2018_Screenshot_2018_07_23_04_33_26_64_min.png";
+            document.getElementById("ucl-r16").src = "https://image.ibb.co/eLQwr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_28_00_36_10_35_min.png";
+            document.getElementById("ucl-r8").src = "https://image.ibb.co/mFrfJo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_28_00_36_11_51_min.png";
+            document.getElementById("ucl-r4").src = "https://image.ibb.co/b6qHjT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_12_40_53_77_min.png";
+            document.getElementById("ucl-f").src = "https://image.ibb.co/jc9zyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_12_40_51_88_min.png";
             }
             document.getElementById("nround3").onclick = function(){
-            document.getElementById("uclimg").src = "https://image.ibb.co/eTV7ey/Pro_Evolution_Soccer_2018_Screenshot_2018_07_03_02_31_06_18_min.png";
+            document.getElementById("uclimg").src = "https://image.ibb.co/iAztPT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_12_40_46_64_min.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("gscorer3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/E26q62r.png";
+            document.getElementById("uclimg").src = "https://image.ibb.co/hZ6ZW8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_12_40_57_41_min.png";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
             document.getElementById("amaker3").onclick = function(){
-            document.getElementById("uclimg").src = "https://i.imgur.com/E26q62r.png";
+            document.getElementById("uclimg").src = "https://image.ibb.co/etjA4T/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_12_41_01_30_min.png";
+            document.getElementById("uclimg").style.display = "block";
+            document.getElementById("uclslidediv").style.display = "none";
+            }
+            break;
+            
+        case "sefour":
+            document.getElementById("draw3").onclick = function(){
+            document.getElementById("uclimg").style.display = "none";
+            document.getElementById("uclslidediv").style.display = "block";
+            document.getElementById("ucl-g1").src = "https://image.ibb.co/kKkido/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_34_56_13.png";
+            document.getElementById("ucl-g2").src = "";
+            document.getElementById("ucl-g3").src = "";
+            document.getElementById("ucl-g4").src = "";
+            document.getElementById("ucl-g5").src = "";
+            document.getElementById("ucl-g6").src = "";
+            document.getElementById("ucl-g7").src = "";
+            document.getElementById("ucl-g8").src = "";
+            document.getElementById("ucl-r16").src = "";
+            document.getElementById("ucl-r8").src = "";
+            document.getElementById("ucl-r4").src = "";
+            document.getElementById("ucl-f").src = "";
+            }
+            document.getElementById("nround3").onclick = function(){
+            document.getElementById("uclimg").src = "https://image.ibb.co/jzMH4T/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_35_33_03.png";
+            document.getElementById("uclimg").style.display = "block";
+            document.getElementById("uclslidediv").style.display = "none";
+            }
+            document.getElementById("gscorer3").onclick = function(){
+            document.getElementById("uclimg").src = "";
+            document.getElementById("uclimg").style.display = "block";
+            document.getElementById("uclslidediv").style.display = "none";
+            }
+            document.getElementById("amaker3").onclick = function(){
+            document.getElementById("uclimg").src = "";
             document.getElementById("uclimg").style.display = "block";
             document.getElementById("uclslidediv").style.display = "none";
             }
@@ -559,7 +670,8 @@ function UELcheckSeason(){
             document.getElementById("uel-g10").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g11").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g12").src = "https://i.imgur.com/h1QybZ9.gif";
-            document.getElementById("uel-r32").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uel-r321").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uel-r322").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r16").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r8").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r4").src = "https://i.imgur.com/h1QybZ9.gif";
@@ -597,7 +709,8 @@ function UELcheckSeason(){
             document.getElementById("uel-g10").src = "https://i.imgur.com/rfW0SxB.png";
             document.getElementById("uel-g11").src = "https://i.imgur.com/sgwURms.png";
             document.getElementById("uel-g12").src = "https://i.imgur.com/ruZffcu.png";
-            document.getElementById("uel-r32").src = "https://i.imgur.com/5PPbeWu.png";
+            document.getElementById("uel-r321").src = "https://i.imgur.com/5PPbeWu.png";
+            document.getElementById("uel-r322").src = "https://i.imgur.com/5PPbeWu.png";
             document.getElementById("uel-r16").src = "https://i.imgur.com/Fk91Giq.png";
             document.getElementById("uel-r8").src = "https://i.imgur.com/cf81Chn.png";
             document.getElementById("uel-r4").src = "https://i.imgur.com/xQNy2sA.png";
@@ -623,7 +736,47 @@ function UELcheckSeason(){
             document.getElementById("draw4").onclick = function(){
             document.getElementById("uelimg").style.display = "none";
             document.getElementById("uelslidediv").style.display = "block";
-            document.getElementById("uel-g1").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uel-g1").src = "https://image.ibb.co/ezrPHT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_16_67_min.png";
+            document.getElementById("uel-g2").src = "https://image.ibb.co/e7Mfro/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_18_02_min.png";
+            document.getElementById("uel-g3").src = "https://image.ibb.co/ffWPHT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_19_40_min.png";
+            document.getElementById("uel-g4").src = "https://image.ibb.co/dwR248/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_20_73_min.png";
+            document.getElementById("uel-g5").src = "https://image.ibb.co/iiTFP8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_21_96_min.png";
+            document.getElementById("uel-g6").src = "https://image.ibb.co/gdnaP8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_23_63_min.png";
+            document.getElementById("uel-g7").src = "https://image.ibb.co/hEEdcT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_24_97_min.png";
+            document.getElementById("uel-g8").src = "https://image.ibb.co/m4EYBo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_27_46_min.png";
+            document.getElementById("uel-g9").src = "https://image.ibb.co/gwNLro/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_28_73_min.png";
+            document.getElementById("uel-g10").src = "https://image.ibb.co/nR2ycT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_29_81_min.png";
+            document.getElementById("uel-g11").src = "https://image.ibb.co/ku6DBo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_30_93_min.png";
+            document.getElementById("uel-g12").src = "https://image.ibb.co/cX3X48/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_32_04_min.png";
+            document.getElementById("uel-r321").src = "https://image.ibb.co/n37QP8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_55_53_min.png";
+            document.getElementById("uel-r322").src = "https://image.ibb.co/n37QP8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_55_53_min.png";
+            document.getElementById("uel-r16").src = "https://image.ibb.co/g4dzj8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_57_04_90_min.png";
+            document.getElementById("uel-r8").src = "https://image.ibb.co/guS3Bo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_57_06_19_min.png";
+            document.getElementById("uel-r4").src = "https://image.ibb.co/hXfOBo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_57_07_19_min.png";
+            document.getElementById("uel-f").src = "https://image.ibb.co/iQSEHT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_56_52_89_min.png";
+            }
+            document.getElementById("nround4").onclick = function(){
+            document.getElementById("uelimg").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uelimg").style.display = "block";
+            document.getElementById("uelslidediv").style.display = "none";
+            }
+            document.getElementById("gscorer4").onclick = function(){
+            document.getElementById("uelimg").src = "https://image.ibb.co/dA6wWo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_57_17_02_min.png";
+            document.getElementById("uelimg").style.display = "block";
+            document.getElementById("uelslidediv").style.display = "none";
+            }
+            document.getElementById("amaker4").onclick = function(){
+            document.getElementById("uelimg").src = "https://image.ibb.co/macEHT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_15_02_57_21_52_min.png";
+            document.getElementById("uelimg").style.display = "block";
+            document.getElementById("uelslidediv").style.display = "none";
+            }
+            break;
+        
+        case "sefour":
+            document.getElementById("draw4").onclick = function(){
+            document.getElementById("uelimg").style.display = "none";
+            document.getElementById("uelslidediv").style.display = "block";
+            document.getElementById("uel-g1").src = "https://image.ibb.co/f70c4T/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_29_29_13.png";
             document.getElementById("uel-g2").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g3").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g4").src = "https://i.imgur.com/h1QybZ9.gif";
@@ -635,14 +788,15 @@ function UELcheckSeason(){
             document.getElementById("uel-g10").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g11").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-g12").src = "https://i.imgur.com/h1QybZ9.gif";
-            document.getElementById("uel-r32").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uel-r321").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uel-r322").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r16").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r8").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-r4").src = "https://i.imgur.com/h1QybZ9.gif";
             document.getElementById("uel-f").src = "https://i.imgur.com/h1QybZ9.gif";
             }
             document.getElementById("nround4").onclick = function(){
-            document.getElementById("uelimg").src = "https://i.imgur.com/h1QybZ9.gif";
+            document.getElementById("uelimg").src = "https://image.ibb.co/jqw0PT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_31_11_30_04_19.png";
             document.getElementById("uelimg").style.display = "block";
             document.getElementById("uelslidediv").style.display = "none";
             }
@@ -705,6 +859,20 @@ function USCcheckSeason(){
             document.getElementById("uscimg").src = "https://i.imgur.com/E26q62r.png";
             }
             break;
+        case "sefour":
+            document.getElementById("draw5").onclick = function(){
+            document.getElementById("uscimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("nround5").onclick = function(){
+            document.getElementById("uscimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("gscorer5").onclick = function(){
+            document.getElementById("uscimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            document.getElementById("amaker5").onclick = function(){
+            document.getElementById("uscimg").src = "https://i.imgur.com/E26q62r.png";
+            }
+            break;
 }
 }
 
@@ -740,6 +908,20 @@ function FcwccheckSeason(){
             }
             break;
         case "sethree":
+            document.getElementById("draw6").onclick = function(){
+            document.getElementById("fcwcimg").src = "https://image.ibb.co/fUWqM8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_27_16_01_min.png";
+            }
+            document.getElementById("nround6").onclick = function(){
+            document.getElementById("fcwcimg").src = "https://i.imgur.com/Z8gcTG1.png";
+            }
+            document.getElementById("gscorer6").onclick = function(){
+            document.getElementById("fcwcimg").src = "https://image.ibb.co/b6cYPT/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_27_50_61_min.png";
+            }
+            document.getElementById("amaker6").onclick = function(){
+            document.getElementById("fcwcimg").src = "https://image.ibb.co/d4Xpyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_27_57_30_min.png";
+            }
+            break;
+        case "sefour":
             document.getElementById("draw6").onclick = function(){
             document.getElementById("fcwcimg").src = "https://i.imgur.com/Z8gcTG1.png";
             }

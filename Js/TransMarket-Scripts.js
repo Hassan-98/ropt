@@ -499,3 +499,264 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 }, 4000);
+
+                    /*     SUMMING ALL PLAYERS VALUE       */
+   
+(function leiSum() {
+
+   var sum = 0;
+
+   var cells = document.getElementById("leiP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("leiSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function citySum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("cityP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("citySum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function arsSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("arsP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("arsSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function cheSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("cheP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("cheSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function totSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("totP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("totSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function utdSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("utdP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("utdSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function livSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("livP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("livSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function bournSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("bournP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("bournSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function brightSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("brightP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("brightSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function newcSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("newcP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("newcSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function hudSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("hudP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("hudSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function stkSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("stkP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("stkSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function wbaSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("wbaP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("wbaSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function whuSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("whuP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("whuSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function eveSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("eveP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("eveSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function sthSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("sthP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("sthSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function burnSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("burnP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("burnSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function watSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("watP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("watSum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function crySum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("cryP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("crySum").innerHTML = sum.toFixed(1);
+})();
+
+
+(function swaSum() {
+
+   var sum = 0;
+    
+   var cells = document.getElementById("swaP").querySelectorAll("td + td + td + td");
+
+   for (var i = 0; i < cells.length; i++)
+      sum+=parseFloat(cells[i].firstChild.data);
+    
+    document.getElementById("swaSum").innerHTML = sum.toFixed(1);
+})();

@@ -100,7 +100,7 @@
 
             <div class="hidden-content">
                 <div>
-                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px"> A Knouck-out Tournament Starts with 3 Groups, Played every 2 Seasons, Starts in half season of PL</span>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px"> A Knouck-out Tournament Starts with 5 Groups, Played every 2 Seasons, Starts in half season of PL</span>
                 </div>
                 <br>
                 <div>
@@ -114,17 +114,17 @@
                     <h2><i class="fa fa-bullseye" style="font-size:24px"></i> Recorded Results :</h2><br>
                     <div style="font-size:20px">
                         <span><i class="fa fa-glass" style="font-size:20px"></i> Most Team won the Title : </span>
-                        <span style="color:brown">[GHANA] [1]</span><hr>
+                        <span style="color:brown">[GHA , EGY] [1]</span><hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> The biggest Score of a match is : </span>
-                        <span style="color:brown">EGYPT &#91;4-0&#93; MALI &#40; SE. 1 &#41;</span><hr>
+                        <span style="color:brown">GHANA &#91;6-1&#93; NIGERIA &#40; SE. 3 &#41;</span><hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> Record the highest No. of Goals in a season : </span>
-                        <span style="color:brown"> J. AYEW | GHANA | [4 Goals] &#40; SE. 1 &#41;</span>
+                        <span style="color:brown"> J. AYEW | GHANA | [10 Goals] &#40; SE. 3 &#41;</span>
                     <hr>
                     
                     <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> Making the highest No. of Assists in a season : 
-                        </span><span style="color:brown"> A. AYEW | GHANA | [3 Assist] &#40; SE. 1 &#41;</span>
+                        </span><span style="color:brown"> A. WARIS | GHANA | [7 Assist] &#40; SE. 3 &#41;</span>
                     </div>
                 </div>
                 <br>
@@ -134,8 +134,8 @@
                         <select id="cafselect" onchange="callCafFunctions()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
-                                <option value="sethree" selected>Season Three</option>
-                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sethree">Season Three</option>
+                                <option value="sefour" selected>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
                                 <option value="seseven" disabled>Season Seven</option>
@@ -162,25 +162,37 @@
                             <div id="cafSlides" style="display:none">
                                 <div class="slideshow-container">
                                     <div class="mySlidesas fade">
-                                      <div class="numbertext">1 / 4</div>
+                                      <div class="numbertext">1 / 6</div>
                                       <img src="" id="caf-g1">
                                       <div class="text">Group One</div>
                                     </div>
 
                                     <div class="mySlidesas fade">
-                                      <div class="numbertext">2 / 4</div>
+                                      <div class="numbertext">2 / 6</div>
                                       <img src="" id="caf-g2">
                                       <div class="text">Group Two</div>
                                     </div>
 
                                     <div class="mySlidesas fade">
-                                      <div class="numbertext">3 / 4</div>
+                                      <div class="numbertext">3 / 6</div>
                                       <img src="" id="caf-g3">
                                       <div class="text">Group Three</div>
                                     </div>
                                     
                                     <div class="mySlidesas fade">
-                                      <div class="numbertext">4 / 4</div>
+                                      <div class="numbertext">4 / 6</div>
+                                      <img src="" id="caf-g4">
+                                      <div class="text">Group Four</div>
+                                    </div>
+                                    
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">5 / 6</div>
+                                      <img src="" id="caf-g5">
+                                      <div class="text">Group Five</div>
+                                    </div>
+                                    
+                                    <div class="mySlidesas fade">
+                                      <div class="numbertext">6 / 6</div>
                                       <img src="" id="caf-ko">
                                       <div class="text">Knock Out Draw</div>
                                     </div>
@@ -197,6 +209,8 @@
                                         <span class="dotas" onclick="currentSlide(2)"></span> 
                                         <span class="dotas" onclick="currentSlide(3)"></span>
                                         <span class="dotas" onclick="currentSlide(4)"></span>
+                                        <span class="dotas" onclick="currentSlide(5)"></span>
+                                        <span class="dotas" onclick="currentSlide(6)"></span>
                                     </div>
                                 </div>
                         </div>
@@ -219,13 +233,16 @@
 
             <div class="hidden-content">
                 <div>
-                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with 2 Preliminary Groups in a Season, Then A Single Final Group of 10 Teams in the Next Season, Qualifying teams are the top five teams of the Final Group.
-                    <br><strong>Timing of Play ::</strong><br> <strong>Preliminary Group ::</strong> Round 1 (at round 7) // Round 2 (at round 12) // Round 3 (at round 15) // Round 4 (at round 20) // Round 5 (at round 24) // Round 6 (at round 28) <br> <strong>Final Qualifications Group ::</strong> Round 1 (at round 2) // Round 2 (at round 4) // Round 3 (at round 6) // Round 4 (at round 8) // Round 5 (at round 10) // Round 6 (at round 12) // Round 7 (at round 14) // Round 8 (at round 16) // Round 9 (at round 18) // Round 10 (at round 19) // Round 11 (at round 21) // Round 12 (at round 23) // Round 13 (at round 25) // Round 14 (at round 27) // Round 15 (at round 29) // Round 16 (at round 31) // Round 17 (at round 33) // Round 18 (at round 35)</span>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with a Preliminary Home And Away Matches in a Season, Then A Single Final Group of 10 Teams in the Next two Seasons, Qualifying teams are the top five teams of the Final Group.<br>
+                    <br><strong style="font-size:23px">Timing of Play ::</strong><br><br> 
+                    <strong style="border-bottom:1px solid">Preliminary Matches ::</strong> Round 1 (at round 32) || Round 2 (at round 34) <br> 
+                    <strong style="border-bottom:1px solid">Final Qualifications Group ::</strong><br> <strong>1<sup>ST</sup> SEASON MATCHES :: </strong> <strong>Round 1</strong> (at round 4) // <strong>Round 2</strong> (at round 7) // <strong>Round 3</strong> (at round 10) // <strong>Round 4</strong> (at round 14) // <strong>Round 5</strong> (at round 19) // <strong>Round 6</strong> (at round 23) // <strong>Round 7</strong> (at round 27) // <strong>Round 8</strong> (at round 31) // <strong>Round 9</strong> (at round 34) <br> <strong>2<sup>ND</sup> SEASON MATCHES :: </strong> 
+                    <strong>Round 10</strong> (at round 4) // <strong>Round 11</strong> (at round 7) // <strong>Round 12</strong> (at round 10) // <strong>Round 13</strong> (at round 14) // <strong>Round 14</strong> (at round 19) // <strong>Round 15</strong> (at round 22) // <strong>Round 16</strong> (at round 26) // <strong>Round 17</strong> (at round 30) // <strong>Round 18</strong> (at round 33)</span>
                 </div>
                 <br>
                 <div>
                     <h2><i class="fa fa-edit" style="font-size:24px"></i> Cup Rules :</h2><br><span style="font-size:20px">
-                        <i class="fa fa-gavel" style="font-size:20px"></i>Difficulty of Matches is "Top player" except the first 5 teams in the ranking away matches<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i>Difficulty of Final Matches is [12] "TP" and [6] "SS" , Difficulty of Preliminary Matches is Home "TP" and Away "SS"<br>
                         <i class="fa fa-gavel" style="font-size:20px"></i> The duration of Matches is not more than 10 minutes </span>
                 </div>
                 <br>
@@ -253,8 +270,8 @@
                         <select id="wcqselect" onchange="callWcqFunctions()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
-                                <option value="sethree" selected>Season Three</option>
-                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sethree">Season Three</option>
+                                <option value="sefour" selected>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
                                 <option value="seseven" disabled>Season Seven</option>
@@ -282,14 +299,14 @@
                                 <div class="slideshow-container">
                                     <div class="mySlidesa fade">
                                       <div class="numbertext">1 / 2</div>
-                                      <img src="" id="wcq-g1">
-                                      <div class="text" id="wcqf">Group One</div>
+                                      <img src="" id="wcq-s1">
+                                      <div class="text" id="wcqf">STAGE ONE -PRELIMINARY-</div>
                                     </div>
 
                                     <div class="mySlidesa fade">
                                       <div class="numbertext">2 / 2</div>
-                                      <img src="" id="wcq-g2">
-                                      <div class="text">Group Two</div>
+                                      <img src="" id="wcq-s2">
+                                      <div class="text">STAGE TWO -FINAL DRAW-</div>
                                     </div>
 
                                     <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
@@ -359,8 +376,8 @@
                         <select id="wcselect" onchange="callWCFunctions()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
-                                <option value="sethree" selected>Season Three</option>
-                                <option value="sefour" disabled>Season Four</option>
+                                <option value="sethree">Season Three</option>
+                                <option value="sefour" selected>Season Four</option>
                                 <option value="sefive" disabled>Season Five</option>
                                 <option value="sesix" disabled>Season Six</option>
                                 <option value="seseven" disabled>Season Seven</option>
