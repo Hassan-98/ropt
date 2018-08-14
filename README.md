@@ -1,14 +1,14 @@
 ## v3.5 Update-Pack 4 - log
 
--New Gallery Mode with Long Articles
--New Header to every Cup in ccups & ncups
--New Auto Transfer Request Page
--New Styles in Transfer-Market Page
--New Styles in Most-Awarded Page
--New Styles in Rankings Page
--New N&L Matches in Ccups Page
--New N&L Matches in Ncups Page
--Re-Build Usrdata Page
+-New Gallery Mode with Long Articles <br>
+-New Header to every Cup in ccups & ncups <br>
+-New Auto Transfer Request Page <br>
+-New Styles in Transfer-Market Page <br>
+-New Styles in Most-Awarded Page <br>
+-New Styles in Rankings Page <br>
+-New N&L Matches in Ccups Page <br>
+-New N&L Matches in Ncups Page <br>
+-Re-Build Usrdata Page <br>
 -Remove Transfer Rules from Nav Bar
 
 ## v3.5 Update-Pack 3 - log
