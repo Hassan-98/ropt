@@ -164,9 +164,7 @@ header div h1{
 
 .main1{
     display:inline-flex;
-    background:url(../imgs/most-award-header.png);
-    background-attachment: fixed;
-    background-position: center;
+    background:url(../imgs/mo.jpg);
     background-size: cover;
     color:#fff;
     text-align: center;
@@ -175,10 +173,6 @@ header div h1{
     box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
     margin-top:30px;
 }
-.main1:hover{
-    background:#000;
-}
-
 .main1 .BoxDiv{
     font-weight: bold;
     padding: 55px 10px;
@@ -186,20 +180,34 @@ header div h1{
     color: white;
     z-index: 1;
     text-align: center;
-    border: 10px dashed;
+    border: 5px inset;
     cursor: url('../cursors/link.cur'), auto;
+    position: relative;
 }
-.main1 .BoxDiv a{
+.main1 .BoxDiv p{
     font-family: 'Bree Serif', serif;
     padding:0 auto;
     text-decoration:none;
     color:white;
-    font-size:45px
+    font-size:55px;
+    cursor: url('../cursors/link.cur'), auto;
 }
 .main1 .BoxDiv span{
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+.main1 .BoxDiv .m-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.main1 .BoxDiv:hover .m-overlay{
+    background: rgba(0,0,0,0.4);
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -253,7 +261,7 @@ header div h1{
 
 .tabcontent{
     font-family: 'Bree Serif', serif;
-    padding:60px 20px;
+    padding:40px 0px;
     box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
     margin-top:3px;
     display: block
@@ -273,7 +281,7 @@ table tr:hover {
 table th{
     padding:10px;
     font-family: 'Bree Serif', serif;
-    font-size:28px;
+    font-size:30px;
     background-color: #FE2E2E;
     color: white;
 }
@@ -293,7 +301,7 @@ table th{
 table td{
     padding:10px;
     font-family: 'Bree Serif', serif;
-    font-size: 25px;
+    font-size: 27px;
     text-align: center
 }
 .exp{

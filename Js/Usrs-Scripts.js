@@ -5,12 +5,12 @@
 function showHdata(){
     document.getElementById("HassanSection").style.display = "block";
     document.getElementById("NaserSection").style.display = "none";
-    return fixedHover()
+    return fixedHover();
 }
 function showNdata(){
     document.getElementById("HassanSection").style.display = "none";
     document.getElementById("NaserSection").style.display = "block";
-    return fixedHover()
+    return fixedHover();
 }
 
 
@@ -30,6 +30,7 @@ function fixedHover(){
         document.getElementById("image1").style.color = "#000";
         document.getElementById("paragraph1").style.background = "#fff";
         document.getElementById("paragraph1").style.color = "#000";
+        $('html, body').animate({scrollTop: $("#HassanSection").offset().top}, 1000);
        }
     else if(naser == "block"){
         document.getElementById("image1").style.background = "linear-gradient(to bottom right, #200122 , #6f0000)";
@@ -41,5 +42,17 @@ function fixedHover(){
         document.getElementById("image2").style.color = "#000";
         document.getElementById("paragraph2").style.background = "#fff";
         document.getElementById("paragraph2").style.color = "#000";
-            }
+    $('html, body').animate({scrollTop: $("#NaserSection").offset().top}, 1000);
+        }
 }
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 4000);

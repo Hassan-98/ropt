@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>ROPT | Transfer Market</title>
+    <!-- Website Icon -->
     <link rel="shortcut icon" href="imgs/logo.png" />
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/transmarket-Style.css">
-    <!-- fontawesome 5 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <!-- fontawesome 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Bubblegum+Sans|Bree+Serif|Poor+Story" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Bubblegum+Sans|Bree+Serif|Tajawal|Poor+Story" rel="stylesheet">
+    <!-- Notifications System Scripts -->
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
-    });
-  });
-</script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+        });
+      });
+    </script>
 </head>
 
 <body>
@@ -43,7 +44,6 @@
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
-                    <a href="transfer-rules.html">Transfer Rules</a>
                   </div>
                 </div>
             </li>
@@ -65,7 +65,7 @@
         <!-- Start Section -->
 
         <section class="main">
-            <div class="BoxDiv">
+            <div class="BoxDiv" style="position: relative;">
                 <h1><i class="fa fa-btc" aria-hidden="true"></i>&nbsp; Trasnfers Market &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></h1>
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif">Transfers of players between clubs, contains all premier league clubs budgets and its players pricing lists</span>
@@ -80,33 +80,78 @@
     
     <!-- Start -->
         <section class="News">
-            <div id="slideshow">
-               <div onclick="window.location.href='transfer-news.html'">
-                   <h1>SEE THE LATEST TRANSFERS NEWS</h1>
-                    <img src="imgs/1-min.png">
-               </div>
-               <div onclick="window.location.href='transfer-news.html'">
-                   <h1>SEE THE LATEST TRANSFERS NEWS</h1>
-                    <img src="imgs/2-min.png">
-               </div>
-                <div onclick="window.location.href='transfer-news.html'">
-                    <h1>SEE THE LATEST TRANSFERS NEWS</h1>
-                    <img src="imgs/3-min.png">
-               </div>
-                <div onclick="window.location.href='transfer-news.html'">
-                    <h1>SEE THE LATEST TRANSFERS NEWS</h1>
-                    <img src="imgs/4-min.jpg">
-               </div>
+        
+            <div class="slideshow-container">
+                <div class="s-overlay" onclick="window.location.href='transfer-news.html'"></div>
+                <div class="mySlides fade">
+                  <img src="imgs/1-min.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/2-min.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/3-min.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/4-min.jpg" style="width:100%">
+                </div>
             </div>
+            <div style="text-align:center;display:none">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+            </div>
+            <h1 onclick="window.location.href='transfer-news.html'">SEE THE LATEST TRANSFERS NEWS</h1>
         </section>
         <!-- End -->
 
+    
+    
     <div class="main1">
-                <div class="BoxDiv">
-                    <button style="background:none;border:none" onclick="window.location.href='transfer-request.html'" disabled> MAKE A TRANSFER REQUEST</button>
-                    <br><span style="font-size:22px;font-family: 'Quicksand', sans-serif">THE TRANSFER MARKET IS CURRENTLY - CLOSED -</span>
+                <div class="BoxDiv" onclick="/* window.location.href='transfer-request.html' */ alert('THE TRANSFER MARKET IS CURRENTLY CLOSED');">
+                    <p>MAKE A TRANSFER REQUEST</p>
+                    <div class="m-overlay"></div>
                 </div>
-            </div>
+    </div>
+    <div class="shoow" style="border:5px inset;background:#eee;margin:10px auto;box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);">
+        Read The Full Transfer Rules &amp; Obligations >>> <a href="transfer-rules.html" style="text-decoration:none;color:#DF0101">TRANSFER RULES</a>
+    </div>
     <div class="shoow" id="showfirst">CHOOSE THE CLUB TO SHOW PLAYERS AND BUDGETS LIST</div>
     <div class="row" id="clubs">
         
@@ -202,7 +247,7 @@
             <div class="header">
                 <img src="imgs/clubs/lei.svg" height="230" width="230"><br>
                 <p>LEICESTER CITY</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 135.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="leiSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 1<sup>st</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 135.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="leiSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 1<sup>st</sup></span>
                 <hr>
             </div>
             <div class="players">
@@ -404,7 +449,7 @@
             <div class="header">
                 <img src="imgs/clubs/mancity.svg" height="230" width="230"><br>
                 <p>MANCHESTER CITY</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 150.8$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="citySum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 7<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 150.8$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="citySum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 7<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -565,7 +610,7 @@
             <div class="header">
                 <img src="imgs/clubs/ars.svg" height="230" width="230"><br>
                 <p>ARSENAL FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 261.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="arsSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 5<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 261.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="arsSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 5<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -746,7 +791,7 @@
             <div class="header">
                 <img src="imgs/clubs/che.svg" height="230" width="230"><br>
                 <p>CHELSEA FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 349.4$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="cheSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 3<sup>rd</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 349.4$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="cheSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 3<sup>rd</sup></span>
                 <hr>
             </div>
             
@@ -934,7 +979,7 @@
             <div class="header">
                 <img src="imgs/clubs/tot.svg" height="230" width="230"><br>
                 <p>TOTENHAM HOTSPUR</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 221.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="totSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 6<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 221.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="totSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 6<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -1123,7 +1168,7 @@
             <div class="header">
                 <img src="imgs/clubs/manutd.svg" height="230" width="230"><br>
                 <p>MANCHESTER UNITED</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 173.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="utdSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 4<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 173.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="utdSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 4<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -1323,7 +1368,7 @@
             <div class="header">
                 <img src="imgs/clubs/liv.svg" height="230" width="230"><br>
                 <p>LIVERPOOL FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 183.0$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="livSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 2<sup>nd</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 183.0$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="livSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 2<sup>nd</sup></span>
                 <hr>
             </div>
             
@@ -1548,7 +1593,7 @@
             <div class="header">
                 <img src="imgs/clubs/broun.svg" height="230" width="230"><br>
                 <p>AFC BOURNEMOUTH</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 111.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="bournSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 13<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 111.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="bournSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 13<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -1730,7 +1775,7 @@
             <div class="header">
                 <img src="imgs/clubs/brighton.svg" height="230" width="230"><br>
                 <p>BRIGHTON AND HOVE ALBION</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 103.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="brightSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 19<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 103.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="brightSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 19<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -1957,7 +2002,7 @@
             <div class="header">
                 <img src="imgs/clubs/new%20catle.svg" height="230" width="230"><br>
                 <p>NEW CASTLE UNITED</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 72.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="newcSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 18<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 72.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="newcSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 18<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -2168,7 +2213,7 @@
             <div class="header">
                 <img src="imgs/clubs/hudder.svg" height="230" width="230"><br>
                 <p>HUDDERSFIELD TOWN</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 84.4$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="hudSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 16<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 84.4$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="hudSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 16<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -2373,7 +2418,7 @@
             <div class="header">
                 <img src="imgs/clubs/stoke.svg" height="230" width="230"><br>
                 <p>STOKE CITY</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 128.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="stkSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 14<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 128.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="stkSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 14<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -2561,7 +2606,7 @@
             <div class="header">
                 <img src="imgs/clubs/west%20brom.svg" height="230" width="230"><br>
                 <p>WEST BROMWICH ALBION</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 141.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="wbaSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 12<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 141.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="wbaSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 12<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -2743,7 +2788,7 @@
             <div class="header">
                 <img src="imgs/clubs/west.svg" height="230" width="230"><br>
                 <p>WEST HAM UNITED</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 170.7$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="whuSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 8<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 170.7$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="whuSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 8<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -2925,7 +2970,7 @@
             <div class="header">
                 <img src="imgs/clubs/eve.svg" height="230" width="230"><br>
                 <p>EVERTON FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 114.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="eveSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 10<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 114.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="eveSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 10<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -3125,7 +3170,7 @@
             <div class="header">
                 <img src="imgs/clubs/south.svg" height="230" width="230"><br>
                 <p>SOUTHAMPTON FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 145.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="sthSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 9<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 145.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="sthSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 9<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -3314,7 +3359,7 @@
             <div class="header">
                 <img src="imgs/clubs/burn.svg" height="230" width="230"><br>
                 <p>BOURNLEY FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 112.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="burnSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 20<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 112.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="burnSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 20<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -3497,7 +3542,7 @@
             <div class="header">
                 <img src="imgs/clubs/wat.svg" height="230" width="230"><br>
                 <p>WATFORD FC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 142.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="watSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 17<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 142.5$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="watSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 17<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -3717,7 +3762,7 @@
             <div class="header">
                 <img src="imgs/clubs/cry.svg" height="230" width="230"><br>
                 <p>CRYSTAL PALACE</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 131.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="crySum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 11<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 131.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="crySum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 11<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -3918,7 +3963,7 @@
             <div class="header">
                 <img src="imgs/clubs/swa.svg" height="230" width="230"><br>
                 <p>SWANSEA CITY AFC</p><hr>
-                <span>BUDGET &nbsp;|&nbsp; 110.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="border:none;padding:0" id="swaSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 15<sup>th</sup></span>
+                <span>BUDGET &nbsp;|&nbsp; 110.2$ Million</span> <span>PLAYERS VALUE &nbsp;|&nbsp; <span style="box-shadow:none;padding:0" id="swaSum"></span>$ Million</span> <span>LAST LEAGUE RANK &nbsp;|&nbsp; 15<sup>th</sup></span>
                 <hr>
             </div>
             
@@ -4106,11 +4151,8 @@
                 <h2>TEAM MAIN SQUAD</h2>
                 <img src="imgs/clubs/formations/swa.png" class="formation">
             </div>
-        </div>
-        
-        
+        </div> 
     </section>
-
 
         <!-- Start Footer -->
 
@@ -4133,6 +4175,27 @@
         <!-- JS Plugins -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="Js/TransMarket-Scripts.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
     
 </body>
 </html>

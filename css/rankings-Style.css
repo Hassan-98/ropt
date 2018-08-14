@@ -123,7 +123,6 @@ header div h1{
 .main{
     display:inline-flex;
     background:url(../imgs/rankings-header.png);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -163,9 +162,7 @@ header div h1{
 
 .main1{
     display:inline-flex;
-    background:url(../imgs/most-award-header.png);
-    background-attachment: fixed;
-    background-position: center;
+    background:url(../imgs/mo.jpg);
     background-size: cover;
     color:#fff;
     text-align: center;
@@ -173,10 +170,10 @@ header div h1{
     height:200px;
     box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.5);
     margin-top:30px;
+    opacity: 0.8
 }
 .main1:hover{
-    background:url(../imgs/most-award-header.png);
-    background-size: cover;
+    opacity: 1
 }
 
 .main1 .BoxDiv{
@@ -186,7 +183,7 @@ header div h1{
     color: white;
     z-index: 1;
     text-align: center;
-    border: 10px dashed;
+    border: 10px inset;
     cursor: url('../cursors/link.cur'), auto;
 }
 .main1 .BoxDiv a{
@@ -253,15 +250,13 @@ header div h1{
 
 .tabcontent{
     font-family: 'Bree Serif', serif;
-    padding:60px 20px;
+    padding:0px 0px;
     box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
     margin-top:3px;
     display: block
 }
 table{
-    margin-left: auto;
-    margin-right: auto;
-    width:90%;
+    width:100%;
     border-collapse: collapse;
 }
 table tr:nth-child(even){
@@ -283,7 +278,7 @@ table th{
 table td{
     padding:10px;
     font-family: 'Bree Serif', serif;
-    font-size: 25px;
+    font-size: 33px;
     text-align: center
 }
 

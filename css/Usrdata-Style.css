@@ -9,7 +9,11 @@ p,span,h1,h2,h3{
     cursor: url('../cursors/text.cur'), auto;
 }
 hr{
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+    border: none;
+    background: #A4A4A4;
+    border-radius: 50%;
+    height: 2px;
+    margin-top: 20px
 }
 nav{
     background-color: #fff;
@@ -225,63 +229,68 @@ header div h1{
 
 .Cups-section{
     text-align:center;
-    box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.3);
 }
 .Cups-section p{
-    font-size:20px;
+        font-size: 15px;
     font-weight: bold;
     font-family: 'Changa', sans-serif;
-    direction:rtl;
-    text-align: center;
-    border-radius:10px;
-    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+    direction: rtl;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+    padding: 2px 0px;
+    min-width: 200px;
 }
 .Cups-section .Cups{
-    padding-bottom: 40px;
-    padding-top: 40px
+    padding-bottom: 30px;
+    padding-top: 20px
 }
 
 .Cups-section .Cups div {
-    max-width:200px;
     display: inline-block;
-    margin: 0 90px
+    margin: 0px 50px 30px;
+    border-radius: 50px;
+    padding: 0px 30px;
 }
 .Cups-section .Cups img{
-    border-radius: 35px;
-    width: 195px;
-    height: 210px;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
-    margin: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    width: 140px;
+    height: 160px;
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.7);
+    margin: 20px 5px;
+    padding: 10px;
     transition: all 0.5s ease-out;
 }
 
 .Hidden-PL{
     font-family: 'Bree Serif', serif;
     padding:60px 20px;
-    background:linear-gradient(to bottom right, #200122 , #6f0000);
+    background:linear-gradient(to right, #550505, #6f0000);
     box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
 }
 .Hidden-PL .hidden-header{
-    margin:10px 500px 50px;
+    text-align: center
 }
 .Hidden-PL .hidden-header img {
-    border:1px solid #000;
-    border-radius:100%;
-    width:400px;
-    height:400px;
+    border: 3px inset #eee;
+    border-radius: 20%;
+    width: 400px;
+    height: 400px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
-    margin:20px;
-    padding: 15px;
+    padding: 5px;
     background-color: #fff;
+    margin: 20px auto;
 }
 .Hidden-PL .hidden-header p{
-    font-size:40px;
     box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
-    border-radius:15px;
+    border-radius: 15px;
     font-family: 'Bree Serif', serif;
-    padding:5px 120px;
+    padding: 10px 25px;
+    width: 420px;
     background-color: #fff;
+    margin: 0 auto;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .Hidden-PL .hidden-content{
     font-family: 'Bree Serif', serif;
@@ -312,6 +321,21 @@ header div h1{
     background-color:#fff;
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
     text-align: center
+}
+.Hidden-PL .hidden-contentsss{
+    padding:10px 20px;
+    background-color:#fff;
+    box-shadow:inset 0px 0px 5px 2px rgba(0,0,0,0.5);
+    text-align: center
+}
+.Hidden-PL .hidden-contentsss h2{
+    padding:5px 10px;
+    font-size: 35px;
+    font-family: 'Changa', sans-serif;
+    direction:rtl;
+    border-bottom: 2px inset rgba(0,0,0,0.5);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .hidden-content .total{
     font-size:35px;
@@ -352,6 +376,130 @@ footer i{
 }
 footer i:hover{
     color:#858487
+}
+
+ 
+.progress{
+    height: 30px;
+    background: #eee;
+    overflow: visible;
+    box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+    border-radius:5px;
+    width:70%;
+    margin: 0 auto 30px;
+}
+
+.progress .progress-bar{
+    position: relative;
+    border-radius:5px;
+    animation: animate-positive 2s;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    border-bottom-right-radius:15px;
+    box-shadow:0px 0px 5px 1px rgba(0,0,0,0.2);
+}
+
+.progress .progress-bar:after{
+    content: "";
+    display: inline-block;
+    width:15px;
+    height:50px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+.progress .progress-value{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+}
+
+.progress-title{
+    font-size: 25px
+}
+
+
+.progress-2{
+    height: 30px;
+    background: #eee;
+    overflow: visible;
+    box-shadow:inset 0px 0px 8px 2px rgba(0,0,0,0.3);
+    border-radius:5px;
+    width:90%;
+    position: relative;
+    margin: 0 auto; 
+}
+
+.progress-2 .progress-bar-2{
+    position: relative;
+    border-radius:5px;
+    animation: animate-positive 2s;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    border-bottom-right-radius:15px;
+    box-shadow:inset 0px 0px 8px 2px rgba(0,0,0,0.3);
+}
+
+.progress-2 .progress-bar-2:after{
+    content: "";
+    display: inline-block;
+    width:25px;
+    height:80px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+}
+
+.progress-2 .progress-value-2{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+    top: -30px;
+    right: -35px;
+}
+
+.progress-title{
+    font-size: 25px
+}
+
+@keyframes animate-positive {
+    0%{ width: 0; }
 }
 
 @media only screen and (max-device-width : 1900px) {

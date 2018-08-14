@@ -12,7 +12,7 @@
     <!-- fontawesome 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Pacifico|Roboto+Mono|Bree+Serif|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Pacifico|Roboto+Mono|Concert+One|Shadows+Into+Light|Lobster|Bree+Serif|Poor+Story" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -43,7 +43,6 @@
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
-                    <a href="transfer-rules.html">Transfer Rules</a>
                   </div>
                 </div>
             </li>
@@ -73,99 +72,568 @@
 
         <!-- End Section -->
 
-        <br><br><br>
 
         <!-- Start Section -->
 
+    <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'lcom')" id="clicked">Local COM-Side Transfer</button>
+                <button class="tablinks" onclick="openCity(event, 'gcom')">Global COM-Side Transfer</button>
+                <button class="tablinks" onclick="openCity(event, 'usr')">User-Side Transfer</button>
+                <button class="tablinks" onclick="openCity(event, 'sell')">Free-Sell Transfer</button>
+            </div>
     
-    <div class="shoow">INSERT THE SELECTED PLAYER DATA THEN MAKE YOUR CHANCES</div>
-    <div>
-        <form>
-            <fieldset>PLAYER DATA</fieldset><br>
-            <label>Player Name</label>
-            <input type="text" placeholder="Player Name" id="pname">
-            <label> Position </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" placeholder="Player Position" id="pos"><br>
-            <label>Player Value</label>
-            <input type="text" placeholder="Player Value" id="val">
-            <label>Season No.</label>
-            <input type="number" placeholder="Season Number" id="se"><br>
-            <label> Buyer Club &nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="Buyer Club Signature" id="buyt">
-            <label>Team Logo</label>
-            <input type="text" placeholder="Buyer Club src" id="buytsrc"><br>
-            <label> Seller Club &nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="Seller Club Signature" id="sellt">
-            <label>Team Logo</label>
-            <input type="text" placeholder="Seller Club src" id="selltsrc"><br><br>
-            <div style="text-align: center">
-                <label style="border:1px dashed;border-radius:30px;padding:6px 50px;">If there is an exchange, please enter the name of the replacement player</label><br><br>
-                <input type="text" placeholder="The Alternative Player" id="ssub" style="width:50%"></div><br>
-        </form>
+    
+    
+    
+            <div id="lcom" class="tabcontent">
+                
+                <input type="text" placeholder="Registered Player Name" id="lcom-pname-s">
+                
+                <input type="number" placeholder="Deal Value" id="lcom-dealvalue-s" style="width:15%" max="100" min="50">
+                
+                <input type="number" placeholder="Overall-Power" id="lcom-pwr-s" style="width:15%">
+                
+                <select id="lcom-pos-s">
+                    <optgroup label="FORWARDS">
+                        <option value="cf">CF</option>
+                        <option value="rwf">RWF</option>
+                        <option value="lwf">LWF</option>
+                        </optgroup>
+                        <optgroup label="MIDFIELDERS">
+                        <option value="amf">AMF</option>
+                        <option value="rmf">RMF</option>
+                        <option value="lmf">LMF</option>
+                        <option value="cmf">CMF</option>
+                        <option value="dmf">DMF</option>
+                    </optgroup>
+                    <optgroup label="DEFENDERS">
+                        <option value="lb">LB</option>
+                        <option value="rb">RB</option>
+                        <option value="cb">CB</option>
+                    </optgroup>
+                    <optgroup label="GOALKEEPERS">
+                        <option value="gk">GK</option>
+                    </optgroup>
+                </select>
+                
+                <br><hr>
+                
+                <input type="radio" name="player-participating-statue" id="lcom-mainplayer-s"> <p>Main Squad Player</p>
+                <input type="radio" name="player-participating-statue" id="lcom-altplayer-s"> <p>Alternative Player</p>
+                <input type="radio" name="player-participating-statue" id="lcom-outplayer-s"> <p>Out-Squad Player</p>
+                
+                <br><hr>
+                
+                <div class="buyerclub">
+                    
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">BUYER CLUB TEAM</p><br>
+                <select style="width:40%" id="lcom-buyername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                        <option value="ARSENAL FC">ARSENAL FC</option>
+                        <option value="CHELSEA FC">CHELSEA FC</option>
+                        <option value="TOTENHAM HOTSPUR">TOTENHAM HOTSPUR</option>
+                        <option value="MANCHESTER UNITED">MANCHESTER UNITED</option>
+                        <option value="LIVERPOOL FC">LIVERPOOL FC</option>
+                        <option value="EVERTON FC">EVERTON FC</option>
+                        <option value="WEST HAM UNITED">WEST HAM UNITED</option>
+                        <option value="SWANSEA CITY">SWANSEA CITY</option>
+                        <option value="SOUTHAMPTON FC">SOUTHAMPTON FC</option>
+                        <option value="AFC BOURNEMOTH">AFC BOURNEMOTH</option>
+                        <option value="NEWCASTLE UNITED">NEWCASTLE UNITED</option>
+                        <option value="BURNLEY FC">BURNLEY FC</option>
+                        <option value="HUDDERSFIELD TWON">HUDDERSFIELD TWON</option>
+                        <option value="WEST BROMWITCH ALBION">WEST BROMWITCH ALBION</option>
+                        <option value="WATFORD FC">WATFORD FC</option>
+                        <option value="CRYSTAL PALACE">CRYSTAL PALACE</option>
+                        <option value="STOKE CITY">STOKE CITY</option>
+                        <option value="BRIGHTON AND HOVE">BRIGHTON AND HOVE ALBION</option>
+                </select>
+                <br><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">LAST LEAGUE RANK</p><br>
+                <select style="width:40%" id="lcom-buyerrank-s">
+                        <option value="1">Rank : 1</option>
+                        <option value="2">Rank : 2</option>
+                        <option value="3">Rank : 3</option>
+                        <option value="4">Rank : 4</option>
+                        <option value="5">Rank : 5</option>
+                        <option value="6">Rank : 6</option>
+                        <option value="7">Rank : 7</option>
+                        <option value="8">Rank : 8</option>
+                        <option value="9">Rank : 9</option>
+                        <option value="10">Rank : 10</option>
+                        <option value="11">Rank : 11</option>
+                        <option value="12">Rank : 12</option>
+                        <option value="13">Rank : 13</option>
+                        <option value="14">Rank : 14</option>
+                        <option value="15">Rank : 15</option>
+                        <option value="16">Rank : 16</option>
+                        <option value="17">Rank : 17</option>
+                        <option value="18">Rank : 18</option>
+                        <option value="19">Rank : 19</option>
+                        <option value="20">Rank : 20</option>
+                </select>
+                    <br><br>
+                    
+                    <p>Next UCL</p> <input type="checkbox" name="nucl" id="lcom-buyer-nucl-s"> <p>Next UEL</p> <input type="checkbox" name="nuel" id="lcom-buyer-nuel-s">
+                    
+                    <br><br>
+                    
+                    <p>Last UCL</p> 
+                    <select style="width:30%" id="lcom-buyer-lucl-s">
+                        <option value="not">NOT QUAILFIED</option>
+                        <option value="g">ELIMINATED FROM Group Stage</option>
+                        <option value="r16">ELIMINATED FROM Round of 16</option>
+                        <option value="q">ELIMINATED FROM Quarter Final</option>
+                        <option value="s">ELIMINATED FROM Semi Final</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    <p>Last UEL</p> 
+                    <select style="width:30%" id="lcom-buyer-luel-s">
+                        <option value="not">NOT QUAILFIED</option>
+                        <option value="g">ELIMINATED FROM Group Stage</option>
+                        <option value="r32">ELIMINATED FROM Round of 32</option>
+                        <option value="r16">ELIMINATED FROM Round of 16</option>
+                        <option value="q">ELIMINATED FROM Quarter Final</option>
+                        <option value="s">ELIMINATED FROM Semi Final</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <p>Last FA</p> 
+                    <select style="width:30%" id="lcom-buyer-lfa-s">
+                        <option value="r32">ELIMINATED FROM Round of 32</option>
+                        <option value="r16">ELIMINATED FROM Round of 16</option>
+                        <option value="q">ELIMINATED FROM Quarter Final</option>
+                        <option value="s">ELIMINATED FROM Semi Final</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    <p>Last FCWC</p> 
+                    <select style="width:30%" id="lcom-buyer-lfcwc-s">
+                        <option value="not">NOT QUAILFIED</option>
+                        <option value="g">ELIMINATED FROM First Round</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    
+                    <p style="padding:2px 10%;border:1px dashed;border-radius:20px">PAY MORE MONEY</p><br>
+                    <select style="width:30%" id="lcom-buyer-paymore-s">
+                        <option value="nopay">Don't PAY More</option>
+                        <option value="25">PAY 25% More</option>
+                        <option value="50">PAY 50% More</option>
+                        <option value="75">PAY 75% More</option>
+                        <option value="100">PAY 100% More</option>
+                        <option value="125">PAY 125% More</option>
+                        <option value="150">PAY 150% More</option>
+                        <option value="175">PAY 175% More</option>
+                        <option value="200">PAY 200% More</option>
+                        <option value="225">PAY 225% More</option>
+                        <option value="250">PAY 250% More</option>
+                        <option value="275">PAY 275% More</option>
+                        <option value="300">PAY 300% More</option>
+                    </select>
+                    
+                </div>
+                
+                <br><hr><br><br>
+                
+                
+                <div class="sellerclub">
+                    
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">SELLER CLUB TEAM</p><br>
+                <select style="width:40%" id="lcom-sellername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                        <option value="ARSENAL FC">ARSENAL FC</option>
+                        <option value="CHELSEA FC">CHELSEA FC</option>
+                        <option value="TOTENHAM HOTSPUR">TOTENHAM HOTSPUR</option>
+                        <option value="MANCHESTER UNITED">MANCHESTER UNITED</option>
+                        <option value="LIVERPOOL FC">LIVERPOOL FC</option>
+                        <option value="EVERTON FC">EVERTON FC</option>
+                        <option value="WEST HAM UNITED">WEST HAM UNITED</option>
+                        <option value="SWANSEA CITY">SWANSEA CITY</option>
+                        <option value="SOUTHAMPTON FC">SOUTHAMPTON FC</option>
+                        <option value="AFC BOURNEMOTH">AFC BOURNEMOTH</option>
+                        <option value="NEWCASTLE UNITED">NEWCASTLE UNITED</option>
+                        <option value="BURNLEY FC">BURNLEY FC</option>
+                        <option value="HUDDERSFIELD TWON">HUDDERSFIELD TWON</option>
+                        <option value="WEST BROMWITCH ALBION">WEST BROMWITCH ALBION</option>
+                        <option value="WATFORD FC">WATFORD FC</option>
+                        <option value="CRYSTAL PALACE">CRYSTAL PALACE</option>
+                        <option value="STOKE CITY">STOKE CITY</option>
+                        <option value="BRIGHTON AND HOVE">BRIGHTON AND HOVE ALBION</option>
+                </select>
+                <br><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">LAST LEAGUE RANK</p><br>
+                <select style="width:40%" id="lcom-sellerrank-s">
+                        <option value="1">Rank : 1</option>
+                        <option value="2">Rank : 2</option>
+                        <option value="3">Rank : 3</option>
+                        <option value="4">Rank : 4</option>
+                        <option value="5">Rank : 5</option>
+                        <option value="6">Rank : 6</option>
+                        <option value="7">Rank : 7</option>
+                        <option value="8">Rank : 8</option>
+                        <option value="9">Rank : 9</option>
+                        <option value="10">Rank : 10</option>
+                        <option value="11">Rank : 11</option>
+                        <option value="12">Rank : 12</option>
+                        <option value="13">Rank : 13</option>
+                        <option value="14">Rank : 14</option>
+                        <option value="15">Rank : 15</option>
+                        <option value="16">Rank : 16</option>
+                        <option value="17">Rank : 17</option>
+                        <option value="18">Rank : 18</option>
+                        <option value="19">Rank : 19</option>
+                        <option value="20">Rank : 20</option>
+                </select>
+                    <br><br>
+                    
+                    <p>Next UCL</p> <input type="checkbox" name="nucl" id="lcom-seller-nucl-s"> <p>Next UEL</p> <input type="checkbox" name="nuel" id="lcom-seller-nuel-s">
+                    
+                </div>
+                
+                <br><hr><br>
+              
+            <p id="lcom-chances" class="chancess" dir="rtl">الفرص المتاحة لنجاح الصفقة :: &#40; 1 نجاح الصفقة , 1 فشل الصفقة &#41;</p><br><br>    
+            <p id="numofchanceselcom" dir="rtl" class="par2">عدد المحاولات المتاحة للصفقة هي 3 محاولات</p> <br><br>
+            <p id="decisionlcom" dir="rtl" class="par">هنا يظهر قرار النادي البائع</p> <br><br>
+                
+            <input type="button" value="Submit Your Data" onclick="addInputlcom();" id="submitting-lcom">
+            <input type="button" value="Make The Club Decision" onclick="lcomRandomizer();"><br>
+            <input type="button" value="Generate The Certificate" onclick="createlcomCertificate();" id="Lcom-Cert-Button" disabled>
+            
+            </div>
+
+
+    
+    
+    
+    
+            <!--   G-COM-SIDE TRANSFER    -->
+    
+    
+    
+    
+
+            <div id="gcom" class="tabcontent">   
+                
+                <input type="text" placeholder="Registered Player Name" id="gcom-pname-s">
+                
+                <input type="number" placeholder="Deal Value" id="gcom-dealvalue-s" style="width:15%" max="100" min="50">
+                
+                <input type="number" placeholder="Overall-Power" id="gcom-pwr-s" style="width:15%">
+                
+                <select id="gcom-pos-s">
+                    <optgroup label="FORWARDS">
+                        <option value="cf">CF</option>
+                        <option value="rwf">RWF</option>
+                        <option value="lwf">LWF</option>
+                        </optgroup>
+                        <optgroup label="MIDFIELDERS">
+                        <option value="amf">AMF</option>
+                        <option value="rmf">RMF</option>
+                        <option value="lmf">LMF</option>
+                        <option value="cmf">CMF</option>
+                        <option value="dmf">DMF</option>
+                    </optgroup>
+                    <optgroup label="DEFENDERS">
+                        <option value="lb">LB</option>
+                        <option value="rb">RB</option>
+                        <option value="cb">CB</option>
+                    </optgroup>
+                    <optgroup label="GOALKEEPERS">
+                        <option value="gk">GK</option>
+                    </optgroup>
+                </select>
+                
+                <br><hr>
+                
+                <input type="radio" name="player-participating-statue" id="gcom-mainplayer-s"> <p>Main Squad Player</p>
+                <input type="radio" name="player-participating-statue" id="gcom-altplayer-s"> <p>Alternative Player</p>
+                <input type="radio" name="player-participating-statue" id="gcom-outplayer-s"> <p>Out-Squad Player</p>
+                
+                <br><hr>
+                
+                <div class="buyerclub">
+                    
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">BUYER CLUB TEAM</p><br>
+                <select style="width:40%" id="gcom-buyername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                        <option value="ARSENAL FC">ARSENAL FC</option>
+                        <option value="CHELSEA FC">CHELSEA FC</option>
+                        <option value="TOTENHAM HOTSPUR">TOTENHAM HOTSPUR</option>
+                        <option value="MANCHESTER UNITED">MANCHESTER UNITED</option>
+                        <option value="LIVERPOOL FC">LIVERPOOL FC</option>
+                        <option value="EVERTON FC">EVERTON FC</option>
+                        <option value="WEST HAM UNITED">WEST HAM UNITED</option>
+                        <option value="SWANSEA CITY">SWANSEA CITY</option>
+                        <option value="SOUTHAMPTON FC">SOUTHAMPTON FC</option>
+                        <option value="AFC BOURNEMOTH">AFC BOURNEMOTH</option>
+                        <option value="NEWCASTLE UNITED">NEWCASTLE UNITED</option>
+                        <option value="BURNLEY FC">BURNLEY FC</option>
+                        <option value="HUDDERSFIELD TWON">HUDDERSFIELD TWON</option>
+                        <option value="WEST BROMWITCH ALBION">WEST BROMWITCH ALBION</option>
+                        <option value="WATFORD FC">WATFORD FC</option>
+                        <option value="CRYSTAL PALACE">CRYSTAL PALACE</option>
+                        <option value="STOKE CITY">STOKE CITY</option>
+                        <option value="BRIGHTON AND HOVE">BRIGHTON AND HOVE ALBION</option>
+                </select>
+                    <br><br>
+                    
+                    <p>Next UCL</p> <input type="checkbox" name="nucl" id="gcom-buyer-nucl-s"> 
+                    <p>Next UEL</p> <input type="checkbox" name="nuel" id="gcom-buyer-nuel-s">
+                    
+                    <br><br>
+                    
+                    <p>Last UCL</p> 
+                    <select style="width:30%" id="gcom-buyer-lucl-s">
+                        <option value="not">NOT QUAILFIED</option>
+                        <option value="g">ELIMINATED FROM Group Stage</option>
+                        <option value="r16">ELIMINATED FROM Round of 16</option>
+                        <option value="q">ELIMINATED FROM Quarter Final</option>
+                        <option value="s">ELIMINATED FROM Semi Final</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    <p>Last UEL</p> 
+                    <select style="width:30%" id="gcom-buyer-luel-s">
+                        <option value="not">NOT QUAILFIED</option>
+                        <option value="g">ELIMINATED FROM Group Stage</option>
+                        <option value="r32">ELIMINATED FROM Round of 32</option>
+                        <option value="r16">ELIMINATED FROM Round of 16</option>
+                        <option value="q">ELIMINATED FROM Quarter Final</option>
+                        <option value="s">ELIMINATED FROM Semi Final</option>
+                        <option value="f">ELIMINATED FROM Final</option>
+                        <option value="w">The Cup Winner</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <p style="padding:2px 10%;border:1px dashed;border-radius:20px">PAY MORE MONEY</p><br>
+                    <select style="width:30%" id="gcom-buyer-paymore-s">
+                        <option value="nopay">Don't PAY More</option>
+                        <option value="25">PAY 25% More</option>
+                        <option value="50">PAY 50% More</option>
+                        <option value="75">PAY 75% More</option>
+                        <option value="100">PAY 100% More</option>
+                        <option value="125">PAY 125% More</option>
+                        <option value="150">PAY 150% More</option>
+                        <option value="175">PAY 175% More</option>
+                        <option value="200">PAY 200% More</option>
+                        <option value="225">PAY 225% More</option>
+                        <option value="250">PAY 250% More</option>
+                        <option value="275">PAY 275% More</option>
+                        <option value="300">PAY 300% More</option>
+                    </select>
+                    
+                </div>
+                
+                <br><hr><br><br>
+                
+                
+                <div class="sellerclub">
+                    
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">SELLER CLUB TEAM</p><br>
+                    
+                    <input type="text" placeholder="Seller Club Team" style="width:40%" id="gcom-sellername-s">
+                
+                    <br><br>
+                    
+                    <p style="padding:2px 10%;border:1px dashed;border-radius:20px">SELLER CLUB LOGO SRC</p><br>
+                    
+                    <input type="text" placeholder="Seller Club Logo Src" style="width:40%" id="gcom-sellersrc-s">
+                    
+                    <br><br>
+                    
+                    <p>Next UCL</p> <input type="checkbox" name="nucl" id="gcom-seller-nucl-s"> 
+                    <p>Next UEL</p> <input type="checkbox" name="nuel" id="gcom-seller-nuel-s">
+                    
+                </div>
+                
+                <br><hr><br>
+            <p id="gcom-chances" class="chancess" dir="rtl">الفرص المتاحة لنجاح الصفقة :: &#40; 1 نجاح الصفقة , 1 فشل الصفقة &#41;</p><br><br>
+            <p id="numofchancesegcom" dir="rtl" class="par2">عدد المحاولات المتاحة للصفقة هي 3 محاولات</p> <br><br>
+            <p id="decisiongcom" dir="rtl" class="par">هنا يظهر قرار النادي البائع</p> <br><br>
+                
+            <input type="button" value="Submit Your Data" id="submitting-gcom" onclick="addInputgcom();">
+            <input type="button" value="Make The Club Decision" onclick="gcomRandomizer();"><br>
+            <input type="button" value="Generate The Certificate" onclick="creategcomCertificate();" id="Gcom-Cert-Button" disabled>
+                
         </div>
-        <div style="font-size:25px;text-align:center">
-            <span class="idk"> DON'T KNOW LOGOs SRCs GO <a href="srcs.html" target="_blank">HERE</a></span>
-        <form class="chances">
-            <fieldset>DEAL CHANCES</fieldset>
-            <p id="chances" dir="rtl" style="padding:10px">الفرص المتاحة لنجاح الصفقة :: &#40; نجاح الصفقة , فشل الصفقة &#41;</p>
-            <p id="numofchancese" dir="rtl"></p>
-            <p id="decision" dir="rtl"></p>
-            <span class="notice">* يجب إدخال كلمة مرور الادارة قبل إتخاذ قرار النادي وذلك لانتاج الشهادة الخاصة بالصفقة *</span><br>
-            <input type="password" placeholder="Certificate Password" id="rpass"><br>
-            <input id="name" type="text" placeholder="Add a Chance" />
-            <input type="button" value="أضف الفرصة" onclick="addInput()">
-            <input type="button" value="أتخذ قرار النادي" onclick="ouatRandomizer();"><br>
-            <input type="button" value="أنتج شهادة الصفقة" onclick="createCertificate();" id="myBtn" disabled><br>
-        </form>
-    </div>
+
     
-    <br><br>
+    
+    
+    
+    
+            <!--   USER-SIDE TRANSFER    -->
+    
+    
+    
+    
+
+            <div id="usr" class="tabcontent">
+                
+                <input type="text" placeholder="Registered Player Name" id="usr-pname-s">
+                
+                <input type="number" placeholder="Deal Value" id="usr-dealvalue-s" style="width:15%" max="100" min="50">
+                
+                <input type="number" placeholder="Overall-Power" id="usr-pwr-s" style="width:15%">
+                
+                 <select id="usr-pos-s">
+                    <optgroup label="FORWARDS">
+                        <option value="cf">CF</option>
+                        <option value="rwf">RWF</option>
+                        <option value="lwf">LWF</option>
+                        </optgroup>
+                        <optgroup label="MIDFIELDERS">
+                        <option value="amf">AMF</option>
+                        <option value="rmf">RMF</option>
+                        <option value="lmf">LMF</option>
+                        <option value="cmf">CMF</option>
+                        <option value="dmf">DMF</option>
+                    </optgroup>
+                    <optgroup label="DEFENDERS">
+                        <option value="lb">LB</option>
+                        <option value="rb">RB</option>
+                        <option value="cb">CB</option>
+                    </optgroup>
+                    <optgroup label="GOALKEEPERS">
+                        <option value="gk">GK</option>
+                    </optgroup>
+                </select>
+                
+                <br><hr><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">BUYER CLUB TEAM</p><br>
+                <select style="width:40%" id="usr-buyername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                </select>
+                <br><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">SELLER CLUB TEAM</p><br>
+                <select style="width:40%" id="usr-sellername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                </select>
+                <br><br>
+                
+            <input type="button" value="Generate The Certificate" onclick="createusrCertificate();" id="Usr-Cert-Button">
+                
+            </div>
+
+    
+    
+    
+    
+    
+            <!--   FREE-SELL TRANSFER    -->
+    
+    
+    
+    
+
+            <div id="sell" class="tabcontent">
+                
+                <input type="text" placeholder="Registered Player Name" id="sell-pname-s">
+                
+                <input type="number" placeholder="Deal Value" id="sell-dealvalue-s" style="width:15%" max="100" min="50">
+                
+                <input type="number" placeholder="Overall-Power" id="sell-pwr-s" style="width:15%">
+                
+                 <select id="sell-pos-s">
+                    <optgroup label="FORWARDS">
+                        <option value="cf">CF</option>
+                        <option value="rwf">RWF</option>
+                        <option value="lwf">LWF</option>
+                        </optgroup>
+                        <optgroup label="MIDFIELDERS">
+                        <option value="amf">AMF</option>
+                        <option value="rmf">RMF</option>
+                        <option value="lmf">LMF</option>
+                        <option value="cmf">CMF</option>
+                        <option value="dmf">DMF</option>
+                    </optgroup>
+                    <optgroup label="DEFENDERS">
+                        <option value="lb">LB</option>
+                        <option value="rb">RB</option>
+                        <option value="cb">CB</option>
+                    </optgroup>
+                    <optgroup label="GOALKEEPERS">
+                        <option value="gk">GK</option>
+                    </optgroup>
+                </select>
+                
+                <br><hr><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">BUYER CLUB TEAM</p><br>
+                <select style="width:40%" id="sell-buyername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                        <option value="ARSENAL FC">ARSENAL FC</option>
+                        <option value="CHELSEA FC">CHELSEA FC</option>
+                        <option value="TOTENHAM HOTSPUR">TOTENHAM HOTSPUR</option>
+                        <option value="MANCHESTER UNITED">MANCHESTER UNITED</option>
+                        <option value="LIVERPOOL FC">LIVERPOOL FC</option>
+                        <option value="EVERTON FC">EVERTON FC</option>
+                        <option value="WEST HAM UNITED">WEST HAM UNITED</option>
+                        <option value="SWANSEA CITY">SWANSEA CITY</option>
+                        <option value="SOUTHAMPTON FC">SOUTHAMPTON FC</option>
+                        <option value="AFC BOURNEMOTH">AFC BOURNEMOTH</option>
+                        <option value="NEWCASTLE UNITED">NEWCASTLE UNITED</option>
+                        <option value="BURNLEY FC">BURNLEY FC</option>
+                        <option value="HUDDERSFIELD TWON">HUDDERSFIELD TWON</option>
+                        <option value="WEST BROMWITCH ALBION">WEST BROMWITCH ALBION</option>
+                        <option value="WATFORD FC">WATFORD FC</option>
+                        <option value="CRYSTAL PALACE">CRYSTAL PALACE</option>
+                        <option value="STOKE CITY">STOKE CITY</option>
+                        <option value="BRIGHTON AND HOVE">BRIGHTON AND HOVE ALBION</option>
+                </select>
+                <br><br>
+                
+                <p style="padding:2px 10%;border:1px dashed;border-radius:20px">SELLER CLUB TEAM</p><br>
+                <select style="width:40%" id="sell-sellername-s">
+                        <option value="LEICESTER CITY">LEICESTER CITY</option>
+                        <option value="MANCHESTER CITY">MANCHESTER CITY</option>
+                </select>
+                <br><br>
+                
+            <input type="button" value="Generate The Certificate" onclick="createsellCertificate();" id="sell-Cert-Button">
+                
+            </div>
+    
+    
     
     <div id="certific" style="display:none">
         <div class="certificate">
-            <img src="" height="130" width="130" id="Rbuytsrc"> <img src="imgs/trans.png" height="120" width="140"> <img src="" height="130" width="130" id="Rselltsrc">
-            <br>
-            <div style="text-align: left">
-            &nbsp;&nbsp;<span>Player Name : <span id="Rpname" style="font-weight:400;"></span> 
+            <div style="font-weight:bold;font-size:30px;color:#003090;text-transform:uppercase;font-family:'Concert One', cursive;">
+                <img src="imgs/leiss.png" id="seller-team-src-r" width="150" height="150" style="position:absolute;top:240px;left:160px"> 
+                <img src="imgs/man_city.png" id="buyer-team-src-r" width="150" height="150" style="position:absolute;top:240px;right:160px">
                 
-              &nbsp;&nbsp;|&nbsp;&nbsp;
-                
-            </span><span>Position : <span id="Rpos" style="font-weight:400;font-size:30px"></span></span><br><br>
-            
-            &nbsp;&nbsp;<span>Deal Value : <span id="Rval" style="font-weight:400;font-size:30px"></span> MILLION</span>
-                <span id="sub" style="font-weight:400;font-size:30px"></span>
-            
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            
-            <span>In Season <span id="Rse" style="font-weight:400;font-size:30px"></span></span>
+                <p style="position:absolute;top:458px;left:280px;" id="player-name-r">J. VARDY</p>
+                <p style="position:absolute;top:535px;left:270px;letter-spacing:2px" id="deal-value-r">163.7</p>
+                <p style="position:absolute;top:535px;left:345px;text-transform:capitalize">$ Million</p>
+                <p style="position:absolute;top:440px;right:315px;" id="player-pos-r">CF</p>
+                <p style="position:absolute;top:487px;right:313px;" id="player-pwr-r">84</p>
+                <p style="position:absolute;top:535px;right:320px;">5</p>
             </div>
-            
-            <br><hr>
-            
-            <div style="padding:15px">
-                
-            <span style="font-size:24px">Buyer Club</span>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <span style="font-size:24px"> FIFA </span>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <span style="font-size:24px">Seller Club</span>
-                
-                <br>
-                
-            <span id="Rbuyt" style="font-family: 'Pacifico', cursive;text-decoration:underline"></span>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <span style="font-family: 'Pacifico', cursive;text-decoration:underline"> ROPT </span>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <span id="Rsellt" style="font-family: 'Pacifico', cursive;text-decoration:underline"></span>
-            </div><br>
+            <div style="font-size:20px;font-family:'Shadows Into Light', cursive;text-transform:uppercase">
+                <p style="position:absolute;bottom:70px;left:210px;" id="player-signture">J. Vardy</p>
+                <p style="position:absolute;bottom:70px;left:460px;text-transform:capitalize" id="team-signture">Leicester City</p>
+                <p style="position:absolute;bottom:70px;right:285px" id="deal-date">-</p>
+            </div>
         </div>
     </div>
     <br>

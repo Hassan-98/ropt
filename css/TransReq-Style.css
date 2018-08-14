@@ -173,12 +173,6 @@ header div h1{
 .main .BoxDiv span{
     font-family: 'Allerta Stencil', sans-serif;
 }
-form{
-    background-color: black;
-    color: white;
-    border-bottom:10px dashed #fff;
-    padding-bottom:20px;
-}
 .chances p{
     font-family: 'Changa', sans-serif;
     font-size: 30px
@@ -196,14 +190,88 @@ fieldset{
     background-position: center;
     background-size: cover;
 }
-input{
+select{
     padding:5px;
-    text-align: center;
+    text-align: left;
     font-size: 25px;
     font-family: 'Bree Serif', serif;
-    width:32%;
     margin: 10px;
-    border:1px dashed;
+    border: none;
+    border-bottom: 3px solid #1C1C1C;
+    transition: all 0.5s ease-in;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase
+}
+
+input[type="radio"]{
+    padding:0px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    width:4%;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid #1C1C1C;
+    transition: all 0.5s ease-in;
+    height: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+input[type="checkbox"]{
+    padding:0px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    width:4%;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid #1C1C1C;
+    transition: all 0.5s ease-in;
+    height: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+.tabcontent p{
+    font-size: 30px;
+    display: inline ;
+}
+.tabcontent hr{
+    background: #000;
+    border-color: #000;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+input{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    width:25%;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid #1C1C1C;
+    transition: all 0.5s ease-in;
+    padding: 5px 10px;
+    height: 45px;
+    border-radius: 5px;
+    text-transform: uppercase
+}
+input:placeholder-shown{
+    transition: all 0.5s ease-out;
+    font-size: 25px;
+    text-transform: capitalize
+}
+input:hover{
+    transition: all 0.5s ease-out;
+    font-size: 20px;
+    border-color: #848484;
+}
+input:focus{
+    transition: all 0.5s ease-out;
+    font-size: 20px;
+    border-color: #848484;
 }
 label{
     padding:5px;
@@ -212,35 +280,45 @@ label{
     font-family: 'Bree Serif', serif;
     margin: 10px
 }
-input[type="button"]{
+input[type="button"],input[type="reset"]{
     cursor: url('../cursors/link.cur'), auto;
-    border:1px groove;
-    background-color: darkred;
-    border-radius: 25px;
-    font-family: 'Changa', sans-serif;
-    font-weight: bold;
-    color: #fff
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    width:25%;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid #1C1C1C;
+    transition: all 0.5s ease-in;
+    padding: 5px 10px;
+    height: 45px;
+    border-radius: 5px;
 }
 input[type="button"]:hover{
-    background-color: #eaea
-}
-#myBtn{
-    cursor: url('../cursors/link.cur'), auto;
-    border:1px groove;
-    background-color: #848484;
-    border-radius: 25px;
-    font-family: 'Changa', sans-serif;
-    font-weight: bold;
+    background-color: #000;
     color: #fff
 }
-#decision{
-    padding:5px;
-    border: 2px groove;
-    background: #fff;
-    color: #000;
-    margin: 5px;
-    font-size: 35px;
-    font-weight: bold
+input[type="reset"]:hover{
+    background-color: #000;
+    color: #fff
+}
+.par{
+    font-size: 30px;
+    padding: 5px 100px;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+    padding:2px 10%;
+    border:1px dashed;
+    border-radius:20px
+}
+.par2{
+    font-size: 30px;
+    padding: 5px 50px;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+    padding:2px 10%;
+    border:1px dashed;
+    border-radius:20px
 }
 button{
     padding:5px;
@@ -254,20 +332,22 @@ button{
 #certific{
     text-align: center;
     font-family: 'Bree Serif', serif;
-    padding: 50px
+    padding: 50px;
+    background: #fff
 }
 .certificate{
-    width:62%;
+    position: relative;
+    width:1040px;
+    height: 700px;
     font-size:27px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border:3px dashed;
-    padding:10px;
-    border-radius: 25px;
-    background:url(../imgs/cert.jpg);
+    border:2px dashed #000;
+    background:url(../imgs/Certificate.jpg) 100% 100% no-repeat;
     background-position: center;
     font-family: 'Roboto Mono', monospace;
+    padding: 5px
 }
 .certificate img{
     margin:35px
@@ -291,7 +371,6 @@ button{
     font-size:22px;
     font-family: 'Changa', sans-serif;
 }
-
 .dropbtn {
     color: black;
     padding:4px 16px;
@@ -453,6 +532,80 @@ button{
     text-decoration:none;
     color:white;
     font-size:50px
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top:20px;
+    box-shadow: 0px 2px 20px 4px rgba(0,0,0,0.5);
+    background: #070719;
+    text-align: center;
+    color: #fff
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size:23px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    width:23%
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background:#0B0B3B;
+    border-radius: 15px;
+    color:#fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+   background:linear-gradient(to right, #dc281e, #dc281e);
+    border-radius: 15px;
+    color:#fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    font-family: 'Bree Serif', serif;
+    padding:60px 20px;
+    background:linear-gradient(to right, #b70a02, #dc281e);
+    color: #fff;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
+    margin-top:3px;
+    text-align: center;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.chancess{
+    padding:5px 50px;
+    font-size:16px!important;
+    border:1px dashed;
+    border-radius:10px;
+    font-family: 'Changa', sans-serif;
+    
 }
 
 footer{

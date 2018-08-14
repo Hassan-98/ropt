@@ -5,19 +5,16 @@
 
 function callCafFunctions(){
     showCaf();
-    showCafSeason(); 
     CAFcheckSeason();
     fixedHover()
 }
 function callWcqFunctions(){
     showWcq();
-    showWcqSeason();
     WCQcheckSeason();
     fixedHover()
 }
 function callWCFunctions(){
     showWc();
-    showWcSeason(); 
     WCcheckSeason();
     fixedHover()
 }
@@ -31,24 +28,35 @@ function showCaf(){
     document.getElementById("caf").style.display = "block";
     document.getElementById("wcq").style.display = "none";
     document.getElementById("wc").style.display = "none";
+    if(document.getElementById("caf").style.display == "block"){
+       $('html, body').animate({scrollTop: $("#caf").offset().top}, 1000);
+       }
 }
 function showWcq(){
     document.getElementById("caf").style.display = "none";
     document.getElementById("wcq").style.display = "block";
     document.getElementById("wc").style.display = "none";
+    if(document.getElementById("wcq").style.display == "block"){
+       $('html, body').animate({scrollTop: $("#wcq").offset().top}, 1000);
+       }
 }
 function showWc(){
     document.getElementById("caf").style.display = "none";
     document.getElementById("wcq").style.display = "none";
     document.getElementById("wc").style.display = "block";
+    if(document.getElementById("wc").style.display == "block"){
+       $('html, body').animate({scrollTop: $("#wc").offset().top}, 1000);
+       }
 }
 
 
-         /*  SHOW SEASONS FUNCTIONS  */
 
-function showCafSeason(){
+            /* SHOW IMGs SEASONS FUNCTIONS */
+
+
+function CAFcheckSeason(){
     var selectValue = document.getElementById("cafselect").value;
-     switch (selectValue){
+    switch (selectValue){
         case "seone":
             document.getElementById("caf-season").style.display = "block";
              document.getElementById("hash").innerHTML = " One";
@@ -70,73 +78,12 @@ function showCafSeason(){
              document.getElementById("hash").innerHTML = " Five";
              break;
      }
-}
-function showWcqSeason(){
-    var selectValue = document.getElementById("wcqselect").value;
-     switch (selectValue){
-        case "seone":
-            document.getElementById("wcq-season").style.display = "block";
-             document.getElementById("hash1").innerHTML = " One";
-             break;
-        case "setwo":
-            document.getElementById("wcq-season").style.display = "block";
-             document.getElementById("hash1").innerHTML = " Two";
-             break;
-        case "sethree":
-            document.getElementById("wcq-season").style.display = "block";
-             document.getElementById("hash1").innerHTML = " Three";
-             break;
-        case "sefour":
-            document.getElementById("wcq-season").style.display = "block";
-             document.getElementById("hash1").innerHTML = " Four";
-             break;
-        case "sefive":
-            document.getElementById("wcq-season").style.display = "block";
-             document.getElementById("hash1").innerHTML = " Five";
-             break;
-     } 
-}
-function showWcSeason(){
-    var selectValue = document.getElementById("wcselect").value;
-     switch (selectValue){
-        case "seone":
-            document.getElementById("wc-season").style.display = "block";
-             document.getElementById("hash2").innerHTML = " One";
-             break;
-        case "setwo":
-            document.getElementById("wc-season").style.display = "block";
-             document.getElementById("hash2").innerHTML = " Two";
-             break;
-        case "sethree":
-            document.getElementById("wc-season").style.display = "block";
-             document.getElementById("hash2").innerHTML = " Three";
-             break;
-        case "sefour":
-            document.getElementById("wc-season").style.display = "block";
-             document.getElementById("hash2").innerHTML = " Four";
-             break;
-         case "sefive":
-            document.getElementById("wc-season").style.display = "block";
-             document.getElementById("hash2").innerHTML = " Five";
-             break;
-          
-     }  
-}
-
-
-                /* SHOW IMGs SEASONS FUNCTIONS */
-
-function CAFcheckSeason(){
-    var selectValue = document.getElementById("cafselect").value;
     switch (selectValue){
         case "seone":
             document.getElementById("draw").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
             document.getElementById("cafSlides").style.display = "none";
             document.getElementById("cafimg").src = "https://i.imgur.com/iylr2Js.png";
-            }
-            document.getElementById("nround").onclick = function(){
-            document.getElementById("cafimg").src = "https://i.imgur.com/vxXPBO1.png";
             }
             document.getElementById("gscorer").onclick = function(){
             document.getElementById("cafimg").src = "https://i.imgur.com/qFV7Xzs.png";
@@ -147,11 +94,6 @@ function CAFcheckSeason(){
             break;
         case "setwo":
             document.getElementById("draw").onclick = function(){
-            document.getElementById("cafimg").style.display = "block";
-            document.getElementById("cafSlides").style.display = "none";
-            document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
-            }
-            document.getElementById("nround").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
             document.getElementById("cafSlides").style.display = "none";
             document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
@@ -178,11 +120,6 @@ function CAFcheckSeason(){
             document.getElementById("caf-g5").src = "https://image.ibb.co/gSsiW8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_21_46_50_70_min.png";
             document.getElementById("caf-ko").src = "https://image.ibb.co/iWhHr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_43_60_min.png";
             }
-            document.getElementById("nround").onclick = function(){
-            document.getElementById("cafimg").style.display = "block";
-            document.getElementById("cafSlides").style.display = "none";
-            document.getElementById("cafimg").src = "https://image.ibb.co/n6zxr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_24_23_07_36_84_min.png";
-            }
             document.getElementById("gscorer").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
             document.getElementById("cafSlides").style.display = "none";
@@ -196,11 +133,6 @@ function CAFcheckSeason(){
             break;
         case "sefour":
             document.getElementById("draw").onclick = function(){
-            document.getElementById("cafimg").style.display = "block";
-            document.getElementById("cafSlides").style.display = "none";
-            document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
-            }
-            document.getElementById("nround").onclick = function(){
             document.getElementById("cafimg").style.display = "block";
             document.getElementById("cafSlides").style.display = "none";
             document.getElementById("cafimg").src = "https://i.imgur.com/FuQtL3S.gif";
@@ -222,12 +154,29 @@ function WCQcheckSeason(){
     var selectValue = document.getElementById("wcqselect").value;
     switch (selectValue){
         case "seone":
+            document.getElementById("wcq-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " One";
+             break;
+        case "setwo":
+            document.getElementById("wcq-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " Two";
+             break;
+        case "sethree":
+            document.getElementById("wcq-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " Three";
+             break;
+        case "sefour":
+            document.getElementById("wcq-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " Four";
+             break;
+        case "sefive":
+            document.getElementById("wcq-season").style.display = "block";
+             document.getElementById("hash1").innerHTML = " Five";
+             break;
+     } 
+    switch (selectValue){
+        case "seone":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
-            document.getElementById("wcqimg").style.display = "block";
-            document.getElementById("wcqslidediv").style.display = "none";
-            }
-            document.getElementById("nround1").onclick = function(){
             document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
@@ -250,11 +199,6 @@ function WCQcheckSeason(){
             document.getElementById("wcq-s1").src = "https://image.ibb.co/dEVThT/Untitled_1_min.png";
             document.getElementById("wcq-s2").src = "https://image.ibb.co/eWuohT/Untitled_2_min.png";
             }
-            document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://image.ibb.co/d8zJGd/Pro_Evolution_Soccer_2018_Screenshot_2018_06_30_23_58_08_45_min.png";
-            document.getElementById("wcqimg").style.display = "block";
-            document.getElementById("wcqslidediv").style.display = "none";
-            }
             document.getElementById("gscorer1").onclick = function(){
             document.getElementById("wcqimg").src = "https://i.imgur.com/sVDya45.png";
             document.getElementById("wcqimg").style.display = "block";
@@ -272,11 +216,6 @@ function WCQcheckSeason(){
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
-            document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://image.ibb.co/mHEXJo/ins_r2_min.png";
-            document.getElementById("wcqimg").style.display = "block";
-            document.getElementById("wcqslidediv").style.display = "none";
-            }
             document.getElementById("gscorer1").onclick = function(){
             document.getElementById("wcqimg").src = "https://image.ibb.co/b8reyo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_11_55_44_min.jpg";
             document.getElementById("wcqimg").style.display = "block";
@@ -290,33 +229,23 @@ function WCQcheckSeason(){
             break;
         case "sefour":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://image.ibb.co/mTOJr8/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_42_52_19_min.png";
-            document.getElementById("wcqimg").style.display = "block";
-            document.getElementById("wcqslidediv").style.display = "none";
-            }
-            document.getElementById("nround1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://image.ibb.co/c1L9yo/Pro_Evolution_Soccer_2018_Screenshot_2018_07_29_15_43_22_02_min.png";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/fxHmAp/Pro_Evolution_Soccer_2018_Screenshot_2018_08_14_14_30_59_16_min.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("gscorer1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/d5TRAp/Pro_Evolution_Soccer_2018_Screenshot_2018_08_14_14_31_01_94_min.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             document.getElementById("amaker1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
+            document.getElementById("wcqimg").src = "https://image.ibb.co/cXNKVp/Pro_Evolution_Soccer_2018_Screenshot_2018_08_14_14_31_04_84_min.png";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
             }
             break;
         case "sefive":
             document.getElementById("draw1").onclick = function(){
-            document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
-            document.getElementById("wcqimg").style.display = "block";
-            document.getElementById("wcqslidediv").style.display = "none";
-            }
-            document.getElementById("nround1").onclick = function(){
             document.getElementById("wcqimg").src = "https://i.imgur.com/uu0yH57.gif";
             document.getElementById("wcqimg").style.display = "block";
             document.getElementById("wcqslidediv").style.display = "none";
@@ -339,12 +268,30 @@ function WCcheckSeason(){
     var selectValue = document.getElementById("wcselect").value;
     switch (selectValue){
         case "seone":
+            document.getElementById("wc-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " One";
+             break;
+        case "setwo":
+            document.getElementById("wc-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " Two";
+             break;
+        case "sethree":
+            document.getElementById("wc-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " Three";
+             break;
+        case "sefour":
+            document.getElementById("wc-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " Four";
+             break;
+         case "sefive":
+            document.getElementById("wc-season").style.display = "block";
+             document.getElementById("hash2").innerHTML = " Five";
+             break;
+          
+     }  
+    switch (selectValue){
+        case "seone":
             document.getElementById("draw2").onclick = function(){
-            document.getElementById("wcimg").style.display = "block";
-            document.getElementById("wcslidediv").style.display = "none";
-            }
-            document.getElementById("nround2").onclick = function(){
-            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
             document.getElementById("wcimg").style.display = "block";
             document.getElementById("wcslidediv").style.display = "none";
             }
@@ -373,11 +320,6 @@ function WCcheckSeason(){
             document.getElementById("wc-g8").src = "https://image.ibb.co/ks2g6d/Pro_Evolution_Soccer_2018_Screenshot_2018_07_02_22_19_54_05_min.png";
             document.getElementById("wc-ko").src = "https://image.ibb.co/ik5yKy/Pro_Evolution_Soccer_2018_Screenshot_2018_07_02_22_19_15_23_min.png";
             }
-            document.getElementById("nround2").onclick = function(){
-            document.getElementById("wcimg").src = "https://i.imgur.com/OxUmMxL.gif";
-            document.getElementById("wcimg").style.display = "block";
-            document.getElementById("wcslidediv").style.display = "none";
-            }
             document.getElementById("gscorer2").onclick = function(){
             document.getElementById("wcimg").src = "https://image.ibb.co/fkXpRd/Pro_Evolution_Soccer_2018_Screenshot_2018_07_02_22_19_21_83_min.png";
             document.getElementById("wcimg").style.display = "block";
@@ -394,11 +336,6 @@ function WCcheckSeason(){
             document.getElementById("wcimg").style.display = "block";
             document.getElementById("wcslidediv").style.display = "none";
             }
-            document.getElementById("nround2").onclick = function(){
-            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
-            document.getElementById("wcimg").style.display = "block";
-            document.getElementById("wcslidediv").style.display = "none";
-            }
             document.getElementById("gscorer2").onclick = function(){
             document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
             document.getElementById("wcimg").style.display = "block";
@@ -412,11 +349,6 @@ function WCcheckSeason(){
             break;
         case "sefour":
             document.getElementById("draw2").onclick = function(){
-            document.getElementById("wcimg").style.display = "block";
-            document.getElementById("wcslidediv").style.display = "none";
-            }
-            document.getElementById("nround2").onclick = function(){
-            document.getElementById("wcimg").src = "https://i.imgur.com/YfhFeBy.gif";
             document.getElementById("wcimg").style.display = "block";
             document.getElementById("wcslidediv").style.display = "none";
             }
@@ -546,3 +478,14 @@ function showSlidesas(nas) {
   slidesas[slideIndexas-1].style.display = "block";  
   dotsas[slideIndexas-1].className += " active";
 }
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 4000);

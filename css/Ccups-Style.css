@@ -215,10 +215,30 @@ header div h1{
     font-family: 'Bree Serif', serif;
     cursor: url('../cursors/link.cur'), auto;
 }
+.pl{
+    background: linear-gradient(to right, #3F1052, #3F1052);
+}
+.fac{
+    background: linear-gradient(to right, #001749, #001749, #d81921, #d81921);
+}
+.cs{
+    background: linear-gradient(to right, #e40520, #e40520);
+}
+.ucl{
+    background: linear-gradient(to right, #001558, #020d36);
+}
+.uel{
+    background: linear-gradient(to right, #f7941e, #f7941e);
+}
+.usc{
+    background: linear-gradient(to right, #353535, #353535);
+}
+.fcwc{
+    background: linear-gradient(to right, #cd8b2a, #cd8b2a);
+}
 .Hidden-PL{
     font-family: 'Bree Serif', serif;
-    padding:60px 20px;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding:30px 20px;
     box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.5);
 }
 .Hidden-PL h2{
@@ -258,39 +278,87 @@ header div h1{
     box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.5);
     padding:5px
 }
+.h-header{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5);
+    padding: 20px;
+    position:relative;
+}
+.header-p{
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: #3d083e;
+    background: #fff;
+    width: 435px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    position:relative;
+    z-index: 2;
+    box-shadow:inset 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.header-img{
+    background: #eee;
+    border-radius:30%;
+    padding:25px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    position:relative;
+    z-index: 2;
+    box-shadow:inset 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.m-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+    height:100%;
+    width:100%;
+    z-index: 1
+}
+.m-overlay:hover{
+    background: rgba(0,0,0,0.4);
+}
 .result img{
     width:100%;
     height:800px;
     box-shadow: 3px 4px 4px 4px rgba(0,0,0,0.5);
-    border: 2px groove #000
+    border: 2px groove #000;
 }
 .result button{
-    width:24.7%;
-    height:50px;
-    padding:3px;
-    font-size:23px;
+    width:33%;
+    padding:8px;
+    font-size:30px;
+    font-weight: bold;
     font-family: 'Bree Serif', serif;
     cursor: url('../cursors/link.cur'), auto;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    color:#fff;
-    border-radius:5px;
+    background: linear-gradient(to right, #ece9e6, #fff);
+    color:#000;
+    border-radius:25px;
+    border: 3px inset;
+    box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,0.3);
 }
 .result .buttonc{
-    width:16.4%;
-    height:50px;
-    padding:3px;
-    font-size:23px;
+    width:19.7%;
+    padding:5px;
+    font-size:26px;
     font-family: 'Bree Serif', serif;
     cursor: url('../cursors/link.cur'), auto;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    color:#fff;
-    border-radius:5px;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color:#000;
+    border-radius:25px;
+    border: 3px inset;
+    box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,0.3);
 }
 .result button:hover{
-    background:#000
+    background:#000;
+    color: #fff
 }
 .result .buttonc:hover{
-    background:#000
+    background:#000;
+    color: #fff
 }
 
 .mySlides {display: none}

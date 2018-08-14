@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Changa|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -40,7 +40,6 @@
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
-                    <a href="transfer-rules.html">Transfer Rules</a>
                   </div>
                 </div>
             </li>
@@ -94,9 +93,13 @@
 
         <section class="Hidden-PL" id="caf" style="display:none">
 
-            <div class="hidden-header">
-                <img src="imgs/caf.png" alt="caf" id="imageHiddenCup">
-            </div><br><br>
+            <div class="h-header" style="background: url('imgs/hheader-caf.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/caff.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#026931;font-size:37px">AFRICA CUP OF NATIONS</p>
+                <div class="m-overlay"></div>
+            </div>
 
             <div class="hidden-content">
                 <div>
@@ -131,7 +134,7 @@
                 <div>
                     <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Season :</h2>
                     <form>
-                        <select id="cafselect" onchange="callCafFunctions()">
+                        <select id="cafselect" onchange="CAFcheckSeason()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
                                 <option value="sethree">Season Three</option>
@@ -142,8 +145,6 @@
                             </select>
                     </form>
                 </div>
-                <hr>
-
                 <!-- START SEASON -->
 
                 <div class="SeasonShow" id="caf-season" style="display: none">
@@ -153,7 +154,6 @@
                     <div class="result"><br>
                         <div>
                             <button id="draw">General Draw</button>
-                            <button id="nround">Next Round</button>
                             <button id="gscorer">Goal Scorers</button>
                             <button id="amaker">Assist Makers</button>
                         </div><br>
@@ -226,12 +226,16 @@
         <!-- Start Section WCQ -->
 
         <section class="Hidden-PL" id="wcq" style="display:none">
-
-            <div class="hidden-header">
-                <img src="imgs/wcq.png" alt="wcq" id="imageHiddenCup">
-            </div><br><br>
+            <div class="h-header" style="background: url('imgs/hheader-wcq.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/wcqq.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#d20a11;font-size:36px">WORLD CUP QUALIFIERS</p>
+                <div class="m-overlay"></div>
+            </div>
 
             <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%">
                 <div>
                     <h2><i class="fa fa-quote-right" style="font-size:24px"></i> Details :</h2><br><span style="font-size:20px">A Group Tournament Starts with a Preliminary Home And Away Matches in a Season, Then A Single Final Group of 10 Teams in the Next two Seasons, Qualifying teams are the top five teams of the Final Group.<br>
                     <br><strong style="font-size:23px">Timing of Play ::</strong><br><br> 
@@ -267,7 +271,7 @@
                 <div>
                     <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Season :</h2>
                     <form>
-                        <select id="wcqselect" onchange="callWcqFunctions()">
+                        <select id="wcqselect" onchange="WCQcheckSeason()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
                                 <option value="sethree">Season Three</option>
@@ -278,7 +282,209 @@
                             </select>
                     </form>
                 </div>
-                <hr>
+                </div>
+                
+                                        <!-- WCQ NEXT & LAST MATCHES -->
+                
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                    <br>
+                    <h1 style="font-size:40px">Next &amp; Last Matches</h1>
+                    <hr>
+                     <!-- Start Match -->
+                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                       التصفيات الافريقية لكأس العالم , الجولة 5 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب برج العرب  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:24%">مـصـر</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">الجـزائـر</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/alg-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span>0 - 1</span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/egy-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                
+                <!-- Start Match -->
+                                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        التصفيات الافريقية لكأس العالم , الجولة 5 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب كوماسي  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:24%">غـانـا</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">أوغندا</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/UGANDA.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span>0 - 5</span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/gha-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                    <hr>
+                    <!-- Start Match -->
+                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                       التصفيات الافريقية لكأس العالم , الجولة 6 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب تونس  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:24%">تونس</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">غـانـا</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/gha-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span> - </span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/tun-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                
+                <!-- Start Match -->
+                                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        التصفيات الافريقية لكأس العالم , الجولة 6 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب نيجيريا  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:24%">نيجيريا</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">مـصـر</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/egy-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span> - </span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/nig-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                
+                    <hr>
+                  <!-- Start Match -->
+                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                       التصفيات الافريقية لكأس العالم , الجولة 7 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب ساحل العاج  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:22%">ساحل العاج</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">مـصـر</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/egy-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span> - </span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/cote-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                
+                <!-- Start Match -->
+                                
+                <div style="text-align: center">
+                    <p style="font-size:9px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold;direction:rtl">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        التصفيات الافريقية لكأس العالم , الجولة 7 
+                        &nbsp;|&nbsp; 
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب نيجيريا  
+                    </p>
+                </div>
+                <div class="back" style="background:url(imgs/ncups-header.jpg);width:85%;height:30px;margin:0px auto 45px;position:relative;border-radius:50px">
+
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:24%">نيجيريا</span>
+                    <span style="color:#fff;font-size:15px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:24%">غـانـا</span>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;left:10px">
+                        <img src="imgs/clubs/gha-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                    <div style="position:absolute;top:0px;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:18px;text-align:center">
+                     <span> - </span>
+                    </div>
+
+                    <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:40px;height:40px;padding:10px;position: absolute;top:-15px;right:10px">
+                        <img src="imgs/clubs/nig-min.png" height="40" width="40" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                    </div>
+
+                </div>
+                
+                <!-- End Match -->
+                </div>
+                
+                <div style="clear: both"></div>
 
                 <!-- START SEASON -->
 
@@ -289,7 +495,6 @@
                     <div class="result"><br>
                         <div>
                             <button id="draw1">General Draw</button>
-                            <button id="nround1">Next Round</button>
                             <button id="gscorer1">Goal Scorers</button>
                             <button id="amaker1">Assist Makers</button>
                         </div><br>
@@ -336,9 +541,13 @@
 
         <section class="Hidden-PL" id="wc" style="display:none">
 
-            <div class="hidden-header">
-                <img src="imgs/wc.png" alt="wc" id="imageHiddenCup">
-            </div><br><br>
+            <div class="h-header" style="background: url('imgs/hheader-wc.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/wcc.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#d20a11;font-family: 'Dusha V5';letter-spacing:1.5px">FIFA WORLD CUP</p>
+                <div class="m-overlay"></div>
+            </div>
 
             <div class="hidden-content">
                 <div>
@@ -373,7 +582,7 @@
                 <div>
                     <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> Choose Cup Season :</h2>
                     <form>
-                        <select id="wcselect" onchange="callWCFunctions()">
+                        <select id="wcselect" onchange="WCcheckSeason()">
                                 <option value="seone">Season One</option>
                                 <option value="setwo">Season Two</option>
                                 <option value="sethree">Season Three</option>
@@ -395,7 +604,6 @@
                     <div class="result"><br>
                         <div>
                             <button id="draw2">General Draw</button>
-                            <button id="nround2">Next Round</button>
                             <button id="gscorer2">Goal Scorers</button>
                             <button id="amaker2">Assist Makers</button>
                         </div><br>
@@ -503,6 +711,9 @@
         </footer>
         <!-- End Footer -->
     </div>
+    
+    <!-- JS Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="Js/Ncups-Scripts.js"></script>
 </body>
 
