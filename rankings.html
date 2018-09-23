@@ -6,10 +6,10 @@
     <title>ROPT | Rankings</title>
     <link rel="shortcut icon" href="imgs/logo.png" />
     <link rel="stylesheet" href="css/rankings-Style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Changa|Bree+Serif|Cabin+Sketch|Poor+Story" rel="stylesheet">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   var OneSignal = window.OneSignal || [];
@@ -25,39 +25,32 @@
 
     <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li class="Clicked">
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown Clicked">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
     <!-- End  Nav -->
 
     <div class="container">
-
-        <!-- Start Header -->
-        <header>
-            <img src="imgs/header.jpg" alt="header">
-            <div>
-                <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
-            </div>
-        </header>
-        <!-- End Header -->
-
+        
         <!-- Start Section -->
 
         <section class="main">
@@ -66,15 +59,25 @@
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif">The rankings of clubs and national teams of the game in all seasons</span>
             </div>
+            <div class="main-overlay"></div>
         </section>
 
         <!-- End Section -->
 
-        <!-- Start Section -->
-        <section style="display: flex">
+        <!-- Start Section Rules -->
+        <section style="display:flex">
             <div class="main1">
                 <div class="BoxDiv">
                     <a href="rankings-system.html"> Rankings System </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Rules -->
+        <!-- Start Section Rules -->
+        <section style="display:flex">
+            <div class="main1" style="height:100px;background:#8b0000">
+                <div class="BoxDiv" style="padding:20px">
+                    <a href="rankings-old.html" style="font-size:40px"> SEE THE OLD RANKINGS [PES18] </a>
                 </div>
             </div>
         </section>
@@ -86,305 +89,335 @@
         </div>
         
         <div id="ctr" class="tabcontent">
+            <h2 style="font-size:35px;text-align:center;padding:15px;box-shadow:0px 0px 10px 1px #ccc;margin:10px 0">MAIN PRIEMER LEAGUE RANKING</h2>
             <table>
                 <tr>
-                    <th colspan="2">#</th>
+                    <th>Rank</th>
+                    <th style="text-align:left">POS.</th>
                     <th>LOGO</th>
-                    <th>TEAM</th>
-                    <th>TOTAL POINTs</th>
+                    <th style="text-align:left;letter-spacing:5px">TEAM</th>
+                    <th>Previous PTS</th>
+                    <th>Current PTS</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/lei.svg" width="75" height="75"></td>
                     <td>LEICESTER CITY</td>
-                    <td style="font-size:35px">1150</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/manutd.svg" width="75" height="75"></td>
                     <td>MANCHESTER UNITED</td>
-                    <td style="font-size:35px">774</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/che.svg" width="75" height="75"></td>
                     <td>CHELSEA FC</td>
-                    <td style="font-size:35px">765</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/ars.svg" width="75" height="75"></td>
                     <td>ARSENAL FC</td>
-                    <td style="font-size:35px">695</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/tot.svg" width="75" height="75"></td>
                     <td>TOTENHAM HOTSPUR</td>
-                    <td style="font-size:35px">652</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/liv.svg" width="75" height="75"></td>
                     <td>LIVERPOOL FC</td>
-                    <td style="font-size:35px">578</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/west.svg" width="75" height="75"></td>
                     <td>WEST HAM UNITED</td>
-                    <td style="font-size:35px">346</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/mancity.svg" width="75" height="75"></td>
                     <td>MANCHESTER CITY</td>
-                    <td style="font-size:35px">341</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/eve.svg" width="75" height="75"></td>
                     <td>EVERTON FC</td>
-                    <td style="font-size:35px">340</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/south.svg" width="75" height="75"></td>
                     <td>SOUTHAMPTON FC</td>
-                    <td style="font-size:35px">330</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>11</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/swa.svg" width="75" height="75"></td>
-                    <td>SWANSEA CITY AFC</td>
-                    <td style="font-size:35px">283</td>
+                    <td><img src="imgs/clubs/wat.svg" width="75" height="75"></td>
+                    <td>WATFORD FC</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>12</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/wat.svg" width="75" height="75"></td>
-                    <td>WATFORD FC</td>
-                    <td style="font-size:35px">240</td>
+                    <td><img src="imgs/clubs/cry.svg" width="75" height="75"></td>
+                    <td>CRYSTAL PALACE</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>13</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/cry.svg" width="75" height="75"></td>
-                    <td>CRYSTAL PALACE</td>
-                    <td style="font-size:35px">218</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/broun.svg" width="75" height="75"></td>
+                    <td>AFC BOURNEMOUTH</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>14</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/broun.svg" width="75" height="75"></td>
-                    <td>AFC BOURNEMOUTH</td>
-                    <td style="font-size:35px">215</td>
+                    <td><img src="imgs/clubs/burn.svg" width="75" height="75"></td>
+                    <td>BURNLEY FC</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>15</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/west%20brom.svg" width="75" height="75"></td>
-                    <td>WEST BROMWITCH ALBION</td>
-                    <td style="font-size:35px">207</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/new%20catle.svg" width="75" height="75"></td>
+                    <td>NEW CASTLE UNITED</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>16</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/stoke.svg" width="75" height="75"></td>
-                    <td>STOKE CITY</td>
-                    <td style="font-size:35px">201</td>
+                    <td><img src="imgs/clubs/brighton.svg" width="75" height="75"></td>
+                    <td>BRIGHTON AND HOVE ALBION</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>17</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/burn.svg" width="75" height="75"></td>
-                    <td>BURNLEY FC</td>
-                    <td style="font-size:35px">135</td>
+                    <td><img src="imgs/clubs/hudder.svg" width="75" height="75"></td>
+                    <td>HUDDERSFIELD TOWN</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>18</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/new%20catle.svg" width="75" height="75"></td>
-                    <td>NEW CASTLE UNITED</td>
-                    <td style="font-size:35px">88</td>
+                    <td><img src="imgs/clubs/Wol.svg" width="75" height="75"></td>
+                    <td>WOLVERHAMPTON WANDERERS</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>19</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/brighton.svg" width="75" height="75"></td>
-                    <td>BRIGHTON AND HOVE ALBION</td>
-                    <td style="font-size:35px">61</td>
+                    <td><img src="imgs/clubs/Ful.svg" width="75" height="75"></td>
+                    <td>FULHAM FC</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>20</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/hudder.svg" width="75" height="75"></td>
-                    <td>HUDDERSFIELD TOWN</td>
-                    <td style="font-size:35px">41</td>
+                    <td><img src="imgs/clubs/Car.png" width="75" height="75"></td>
+                    <td>CARDIFF CITY</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <h2 style="font-size:35px;text-align:center;padding:15px;box-shadow:0px 0px 10px 1px #ccc;margin:10px 0">DROPED TEAMS RANKING</h2>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th style="text-align:left">POS.</th>
+                    <th>LOGO</th>
+                    <th style="text-align:left;letter-spacing:5px">TEAM</th>
+                    <th>Previous PTS</th>
+                    <th>Current PTS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/swa.svg" width="75" height="75"></td>
+                    <td>SWANSEA CITY AFC</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/stoke.svg" width="75" height="75"></td>
+                    <td>STOKE CITY</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/west%20brom.svg" width="75" height="75"></td>
+                    <td>WEST BROMWITCH ALBION</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
             </table>
         </div>
         <div id="ntr" class="tabcontent">
             <table class="p">
                 <tr>
-                    <th colspan="2">#</th>
+                    <th>Rank</th>
+                    <th style="text-align:left">POS.</th>
                     <th>LOGO</th>
-                    <th>NATIONAL TEAM NAME</th>
-                    <th>TOTAL POINTs</th>
+                    <th style="text-align:left;letter-spacing:5px">TEAM</th>
+                    <th>Previous PTS</th>
+                    <th>Current PTS</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/gha-min.png" width="65" height="90"></td>
                     <td>GHANA</td>
-                    <td style="font-size:35px">140</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/alg-min.png" width="75" height="75"></td>
                     <td>ALGERIA</td>
-                    <td style="font-size:35px">87</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/tun-min.png" width="75" height="75"></td>
                     <td>TUNISIA</td>
-                    <td style="font-size:35px">72</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/sen-min.png" width="75" height="75"></td>
                     <td>SENEGAL</td>
-                    <td style="font-size:35px">72</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/egy-min.png" width="75" height="75"></td>
                     <td>EGYPT</td>
-                    <td style="font-size:35px">52</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/cote-min.png" width="70" height="85"></td>
                     <td>COTE D'IVORE</td>
-                    <td style="font-size:35px">48</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/Bfa-min.png" width="85" height="70"></td>
                     <td>BURKINA FASO</td>
-                    <td style="font-size:35px">35</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>8</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td><img src="imgs/clubs/nig-min.png" width="75" height="75"></td>
                     <td>NIGERIA</td>
-                    <td style="font-size:35px">28</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>9</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/Gabon.png" width="80" height="75"></td>
-                    <td>GABON</td>
-                    <td style="font-size:35px">24</td>
+                    <td><img src="imgs/clubs/mor-min.png" width="75" height="85"></td>
+                    <td>MOROCCO</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/mor-min.png" width="75" height="85"></td>
-                    <td>MOROCCO</td>
-                    <td style="font-size:35px">14</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/cam-min.png" width="75" height="80"></td>
+                    <td>CAMEROON</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>11</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/cam-min.png" width="75" height="80"></td>
-                    <td>CAMEROON</td>
-                    <td style="font-size:35px">12</td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td><img src="imgs/clubs/mali-min.png" width="75" height="75"></td>
+                    <td>MALI</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>12</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/CongoDR.png" width="80" height="75"></td>
-                    <td>CONGO DR</td>
-                    <td style="font-size:35px">8</td>
+                    <td><img src="imgs/clubs/gui-min.png" width="75" height="80"></td>
+                    <td>GUINIA</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>13</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/mali-min.png" width="75" height="75"></td>
-                    <td>MALI</td>
-                    <td style="font-size:35px">6</td>
+                    <td><img src="imgs/clubs/saf-min.png" width="85" height="75"></td>
+                    <td>SOUTH AFRICA</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>14</td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/gui-min.png" width="75" height="80"></td>
-                    <td>GUINIA</td>
-                    <td style="font-size:35px">3</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td><img src="imgs/up.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/UGANDA.png" width="75" height="80"></td>
-                    <td>UGANDA</td>
-                    <td style="font-size:35px">2</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/saf-min.png" width="85" height="75"></td>
-                    <td>SOUTH AFRICA</td>
-                    <td style="font-size:35px">2</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/Cape_Verde.png" width="75" height="75"></td>
-                    <td>CAPE VERDE</td>
-                    <td style="font-size:35px">0</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td><img src="imgs/down.png" width="35" height="35"></td>
                     <td><img src="imgs/clubs/zam-min.png" width="75" height="80"></td>
                     <td>ZAMBIA</td>
-                    <td style="font-size:35px">0</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
-                <tr>
-                    <td>19</td>
-                    <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/Benin.png" width="75" height="75"></td>
-                    <td>BENIN</td>
-                    <td style="font-size:35px">0</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td><img src="imgs/clubs/Kenya.png" width="85" height="75"></td>
-                    <td>KENYA</td>
-                    <td style="font-size:35px">0</td>
-                </tr>
-                
-                
             </table>  
         </div>
 

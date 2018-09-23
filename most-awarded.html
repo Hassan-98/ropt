@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>ROPT | Most Awarded</title>
-    <link rel="shortcut icon" href="imgs/logo.png" />
-    <link rel="stylesheet" href="css/MostAwarded-Style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
-    });
-  });
-</script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>ROPT | Most Awarded</title>
+        <link rel="shortcut icon" href="imgs/logo.png" />
+        <link rel="stylesheet" href="css/MostAwarded-Style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+        });
+      });
+    </script>
+    </head>
 
 <body>
 
     <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li class="Clicked">
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown Clicked">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
     <!-- End  Nav -->
 
     <div class="container">
-
-        <!-- Start Header -->
-        <header>
-            <img src="imgs/header.jpg" alt="header">
-            <div>
-                <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
-            </div>
-        </header>
-        <!-- End Header -->
-
+        
         <!-- Start Section -->
-
         <section class="main">
             <div class="BoxDiv">
-                <h1><i class="fa fa-star" aria-hidden="true"></i>&nbsp; FIFA MOST AWARDED &nbsp;<i class="fa fa-star" aria-hidden="true"></i></h1>
+                <h1><i class="fa fa-star" style="font-size:50px"></i> THE BEST &amp; MOST AWARDED <i class="fa fa-star" style="font-size:50px"></i></h1>
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif">The statstics of the most awarded for the best soccer teams and players of the last season</span>
             </div>
+            <div class="main-overlay"></div>
         </section>
-
         <!-- End Section -->
 
         <!-- Start Section -->
         <section style="display: flex">
             <div class="main1">
-                <div class="BoxDiv" onclick="window.location.href='tas.html'">
+                <div class="BoxDiv" onclick="window.location.href='teams-awards-system.html'">
                     <p> Teams Awards System </p>
                     <div class="m-overlay"></div>
                 </div>
             </div>
             <div class="main1">
-                <div class="BoxDiv" onclick="window.location.href='pas.html'">
+                <div class="BoxDiv" onclick="window.location.href='players-awards-system.html'">
                     <p> Players Awards System </p>
                     <div class="m-overlay"></div>
                 </div>
@@ -108,15 +100,17 @@
                         <img src="imgs/fa-cup.png" width="60" height="60">
                         <img src="imgs/cs-cup.png" width="60" height="60">
                         <img src="imgs/ucl-cup.png" width="60" height="60">
+                        <img src="imgs/fcwc-cup.png" width="60" height="60">
                         <img src="imgs/usc-cup.png" width="60" height="60">
                         <br>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">2</span>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">1</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">4</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">3</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">4</span>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">3</span>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">1</span>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">2</span>
                     </td>
-                    <td style="font-size:40px">8</td>
+                    <td style="font-size:40px">17</td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -155,17 +149,17 @@
                         <img src="imgs/uel-cup.png" width="63" height="63">
                         <img src="imgs/usc-cup.png" width="60" height="60">
                         <br>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">1</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">2</span>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
-                    <td style="font-size:40px">2</td>
+                    <td style="font-size:40px">3</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>TOTENHAM HOTSPUR</td>
                     <td>
                         <img src="imgs/pl-cup.png" width="60" height="60">
-                        
+
                         <br>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
@@ -176,7 +170,7 @@
                     <td>AC MILAN</td>
                     <td>
                         <img src="imgs/uel-cup.png" width="60" height="60">
-                        
+
                         <br>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
@@ -187,7 +181,7 @@
                     <td>MANCHESTER UNITED</td>
                     <td>
                         <img src="imgs/fa-cup.png" width="60" height="60">
-                        
+
                         <br>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
@@ -198,7 +192,7 @@
                     <td>SEVILLA FC</td>
                     <td>
                         <img src="imgs/uel-cup.png" width="60" height="60">
-                        
+
                         <br>
                         <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
@@ -207,16 +201,17 @@
             </table>
             <div class="exp">
                 <img src="imgs/pl-cup.png" width="58" height="58">
-                        <img src="imgs/fa-cup.png" width="58" height="58">
-                        <img src="imgs/cs-cup.png" width="58" height="58">
-                        <img src="imgs/ucl-cup.png" width="58" height="58">
-                        <img src="imgs/uel-cup.png" width="58" height="58">
-                        <img src="imgs/usc-cup.png" width="58" height="58">
-                        <img src="imgs/fcwc-cup.png" width="58" height="58">
-                        <br>
-                        PL &nbsp;|&nbsp; FA &nbsp;|&nbsp; CS &nbsp;|&nbsp; UC &nbsp;|&nbsp; UE &nbsp;|&nbsp; US &nbsp;|&nbsp; WC
+                <img src="imgs/fa-cup.png" width="58" height="58">
+                <img src="imgs/cs-cup.png" width="58" height="58">
+                <img src="imgs/ucl-cup.png" width="58" height="58">
+                <img src="imgs/uel-cup.png" width="58" height="58">
+                <img src="imgs/usc-cup.png" width="58" height="58">
+                <img src="imgs/fcwc-cup.png" width="58" height="58">
+                <br>
+                PL &nbsp;|&nbsp; FA &nbsp;|&nbsp; CS &nbsp;|&nbsp; UC &nbsp;|&nbsp; UE &nbsp;|&nbsp; US &nbsp;|&nbsp; WC
             </div>
         </div>
+
         <div id="pma" class="tabcontent">
             <table border="5" class="p">
                 <tr>
@@ -224,7 +219,7 @@
                     <th>PLAYER</th>
                     <th>POSITION</th>
                     <th>TEAM</th>
-                    <th>AWARDS ACHIVED</th>
+                    <th style="width:300px">AWARDS ACHIVED</th>
                     <th>GLOBAL AWARDS ACHIVED</th>
                     <th>TOTAL AWARDS</th>
                 </tr>
@@ -233,25 +228,29 @@
                     <td>J. VARDY</td>
                     <td style="color:red">CF</td>
                     <td>LEICESTER CITY</td>
-                    <td><img src="imgs/players-awards/pl-sb.png" width="50" height="50">
+                    <td style="width:500px"><img src="imgs/players-awards/pl-sb.png" width="50" height="50">
                         <img src="imgs/players-awards/pl-gs.png" width="50" height="50">
                         <img src="imgs/players-awards/fa-gs.png" width="50" height="50">
                         <img src="imgs/players-awards/cs-gs.png" width="50" height="50">
+                        <img src="imgs/players-awards/fcwc-gs.png" width="50" height="50">
+                        <img src="imgs/players-awards/fcwc-as.png" width="50" height="50">
                         <img src="imgs/players-awards/ucl-gs.png" width="50" height="50">
                         <br>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">2</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">4</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">6</span>
                         <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">4</span>
                         <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">2</span>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">2</span>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">2</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">4</span>
                     </td>
                     <td><img src="imgs/players-awards/gb-1st.png" width="60" height="60">
                         <img src="imgs/players-awards/bd-1st.png" width="60" height="60">
                         <br>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">2</span>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);">1</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:28px">4</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);">3</span>
                     </td>
-                    <td style="font-size:35px">15</td>
+                    <td style="font-size:35px">29</td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -261,23 +260,43 @@
                     <td><img src="imgs/players-awards/pl-as.png" width="50" height="50">
                         <img src="imgs/players-awards/fa-as.png" width="50" height="50">
                         <img src="imgs/players-awards/cs-as.png" width="50" height="50">
+                        <img src="imgs/players-awards/cs-gs.png" width="50" height="50">
                         <img src="imgs/players-awards/ucl-as.png" width="50" height="50">
                         <img src="imgs/players-awards/usc-as.png" width="50" height="50">
                         <br>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">4</span>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">5</span>
                         <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">2</span>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">3</span>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">2</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">5</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">2</span>
                     </td>
                     <td><img src="imgs/players-awards/ma-1st.png" width="60" height="60">
                         <br>
-                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);">2</span>
+                        <span style="padding:0px 10px 4px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);">4</span>
                     </td>
-                    <td style="font-size:35px">13</td>
+                    <td style="font-size:35px">21</td>
                 </tr>
                 <tr>
                     <td>3</td>
+                    <td>A. AYEW</td>
+                    <td style="color:red">LWF</td>
+                    <td>LEICESTER CITY</td>
+                    <td><img src="imgs/players-awards/pl-as.png" width="50" height="50">
+                        <img src="imgs/players-awards/usc-gs.png" width="50" height="50">
+                        <img src="imgs/players-awards/ucl-gs.png" width="50" height="50">
+                        <img src="imgs/players-awards/fa-as.png" width="50" height="50">
+                        <br>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
+                    </td>
+                    <td><img src="imgs/still.svg" width="35" height="35"></td>
+                    <td style="font-size:35px">4</td>
+                </tr>
+                <tr>
+                    <td>4</td>
                     <td>L. MESSI</td>
                     <td style="color:red">RWF</td>
                     <td>FC BARCELONA</td>
@@ -292,21 +311,21 @@
                     <td style="font-size:35px">2</td>
                 </tr>
                 <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>C. ERIKSEN</td>
                     <td style="color:green">AMF</td>
                     <td>TOTENHAM HOTSPUR</td>
                     <td><img src="imgs/players-awards/pl-sb.png" width="50" height="50">
                         <img src="imgs/players-awards/uel-as.png" width="50" height="50">
                         <br>
-                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">3</span>
+                        <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);margin-right:20px">1</span>
                         <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td style="font-size:35px">2</td>
                 </tr>
                 <tr>
-                    <td>5</td>
+                    <td>6</td>
                     <td>T. COURTOIS</td>
                     <td style="color:darkgoldenrod">GK</td>
                     <td>CHELSEA FC</td>
@@ -318,7 +337,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>6</td>
+                    <td>7</td>
                     <td>A. MUSA</td>
                     <td style="color:red">LWF</td>
                     <td>LEICESTER CITY</td>
@@ -330,7 +349,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>7</td>
+                    <td>8</td>
                     <td>IAGO FALQUE</td>
                     <td style="color:red">RWF</td>
                     <td>TORINO FC</td>
@@ -342,7 +361,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>8</td>
+                    <td>9</td>
                     <td>ILLARRAMENDI</td>
                     <td style="color:green">DMF</td>
                     <td>REAL SOCIEDAD</td>
@@ -354,7 +373,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>9</td>
+                    <td>10</td>
                     <td>S. AGUERO</td>
                     <td style="color:red">CF</td>
                     <td>MANCHESTER CITY</td>
@@ -366,7 +385,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>11</td>
                     <td>R. STERLING</td>
                     <td style="color:red">RWF</td>
                     <td>MANCHESTER CITY</td>
@@ -378,7 +397,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>11</td>
+                    <td>12</td>
                     <td>A. NORONHA</td>
                     <td style="color:green">CMF</td>
                     <td>GREMIO</td>
@@ -390,7 +409,7 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>12</td>
+                    <td>13</td>
                     <td>H. KANE</td>
                     <td style="color:red">CF</td>
                     <td>TOTENHAM HOTSPUR</td>
@@ -402,25 +421,13 @@
                     <td style="font-size:35px">1</td>
                 </tr>
                 <tr>
-                    <td>13</td>
+                    <td>14</td>
                     <td>M. CARRICK</td>
                     <td style="color:green">DMF</td>
                     <td>MANCHESTER UNITED</td>
                     <td><img src="imgs/players-awards/fa-as.png" width="50" height="50">
                         <br>
                         <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
-                    </td>
-                    <td><img src="imgs/still.svg" width="35" height="35"></td>
-                    <td style="font-size:35px">1</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>A. AYEW</td>
-                    <td style="color:red">LWF</td>
-                    <td>LEICESTER CITY</td>
-                    <td><img src="imgs/players-awards/ucl-gs.png" width="50" height="50">
-                        <br>
-                       <span style="padding:0px 8px 3px;border-radius: 50%;box-shadow:inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3)">1</span>
                     </td>
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td style="font-size:35px">1</td>
@@ -473,7 +480,7 @@
                     <td><img src="imgs/still.svg" width="35" height="35"></td>
                     <td style="font-size:35px">1</td>
                 </tr>
-            </table> 
+            </table>
             <div class="exp">
                 <img src="imgs/players-awards/bd-1st.png" width="65" height="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <img src="imgs/players-awards/gb-1st.png" width="65" height="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

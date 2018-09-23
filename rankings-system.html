@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Changa|Bree+Serif|Poor+Story" rel="stylesheet">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   var OneSignal = window.OneSignal || [];
@@ -25,38 +25,31 @@
 
     <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li class="Clicked">
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown Clicked">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
     <!-- End  Nav -->
 
     <div class="container">
-
-        <!-- Start Header -->
-        <header>
-            <img src="imgs/header.jpg" alt="header">
-            <div>
-                <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
-            </div>
-        </header>
-        <!-- End Header -->
 
         <!-- Start Section -->
 
@@ -66,6 +59,7 @@
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif">The System of clubs and national teams rankings in only Premier League and Africa</span>
             </div>
+            <div class="main-overlay"></div>
         </section>
 
         <!-- End Section -->
@@ -77,41 +71,32 @@
 
                 <div class="rules-content">
                     <div>
+                        <br>
                         <h2> نظام التصنيف للاندية و المنتخبات </h2>
                         <br>
                         <h3> تصنيف الاندية </h3>
-                        <br>                        
-                        <br>
                         <div class="rules-div" style="font-size: 25px;">
                             <p> يقتصر التصنيف على أندية الدوري الانجليزي فقط</p><hr>
                             <p> يتم تحديث التصنيف بعد انتهاء الموسم الكروي للاندية</p><hr>
                             <p> يعتمد التصنيف على مجموع النقاط التى يحصدها كل فريق في الدوري عن طريق النظام الاتي</p><hr>
-                            <p>   الفوز في الدوري : 5 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في الدوري : 2 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في الدوري : -3 نقاط </p><hr>
-                            <p>   الفوز في مجموعات دوري الابطال : 5 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في مجموعات دوري الابطال : 2 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في مجموعات دوري الابطال : -3 نقاط </p><hr>
-                            <p>   الفوز في تصفية دوري الابطال : 8 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في تصفية دوري الابطال : 3 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في تصفية دوري الابطال : -2 نقاط </p><hr>
-                            <p>   الفوز في مجموعات الدوري الاوروبي : 4 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في مجموعات الدوري الاوروبي : 2 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في مجموعات الدوري الاوروبي : -3 نقاط </p><hr>
-                            <p>   الفوز في تصفية الدوري الاوروبي : 6 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في تصفية الدوري الاوروبي : 2 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في تصفية الدوري الاوروبي : -4 نقاط </p><hr>
-                            <p>   الفوز في كأس العالم للاندية : 4 نقاط </p><hr>
-                            <p>   الفوز في الكأس : 4 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الهزيمة في الكأس : -2 نقاط </p><hr>
-                            <p>   الفوز في السوبر المحلى : 4 نقاط  </p><hr>
-                            <p>   الفوز في السوبر الاوروبي : 6 نقاط  </p><hr>
-                            <p> الهزيمة في مباريات كأس العالم للاندية وكأسي السوبر والمباريات النهائية للكؤوس لا تؤثر </p>
-                        </div><br>
-                        
-                        <h3 class="yellow"> تصنيف المنتخبات </h3>
-                        <br>                        
+                            <p> النقاط التى يحصدها الفريق كل مباراة = نقاط المباراة × أهمية المباراة × تصنيف الفريق </p><hr>
+                            <p> نقاط المباراة :: الفوز = 3 | التعادل = 1 | الهزيمة = -1 </p><hr>
+                            <p> أهمية المباراة :: الدوري الانجليزي , كأس الاتحاد , كأس الرابطة = 1 | الدوري الاوروبي , الكأس الدولية , كأس العالم للاندية = 1.5 | دوري أبطال أوروبا = 2 </p><hr>
+                            <p> تصنيف الفريق :: من 1 حتى 10 = 0.5 | من 11 حتى 20 = 2/3 </p><hr>
+                            <p> الهزيمة لا تتأثر بنقاط التصنيف لكنها تتأثر بأهمية المباراة </p>
+                        </div>
                         <br>
+                        <h3 class="yellow"> تصنيف المنتخبات </h3>
                         <div class="rules-div">
                             <p> يقتصر التصنيف على منتخبات قارة إفريقيا فقط</p><hr>
-                            <p> يتم تحديث التصنيف بعد انتهاء كل كأس</p><hr>
-                            <p>   الفوز في كأس إفريقيا : 8 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في كأس إفريقيا :4 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الخسارة في كأس إفريقيا : -4 نقاط </p><hr>
-                            <p>   الفوز في تصفيات كأس العالم -التمهيدية- : 2 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في تصفيات كأس العالم -التمهيدية- : 1 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الخسارة في تصفيات كأس العالم -التمهيدية- : -2 نقاط </p><hr>
-                            <p>   الفوز في تصفيات كأس العالم -النهائية- : 6 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في تصفيات كأس العالم -النهائية-  : 3 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الخسارة في تصفيات كأس العالم -النهائية-  : -3 نقاط </p><hr>
-                            <p>   الفوز في مجموعات كأس العالم : 12 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; التعادل في مجموعات كأس العالم : 6 نقاط &nbsp;&nbsp;|&nbsp;&nbsp; الخسارة في مجموعات كأس العالم : -2 نقاط </p><hr>
-                            <p>   الفوز في تصفية كأس العالم : 20 نقاط </p><hr>
-                            <p> الهزيمة في المباريات النهائية للكؤوس و مباريات تصفية كأس العالم لا تؤثر على التصنيف </p>
+                            <p> يتم تحديث التصنيف بعد انتهاء الموسم الكروي للمنتخبات</p><hr>
+                            <p> يعتمد التصنيف على مجموع النقاط التى يحصدها كل منتخب عن طريق النظام الاتي</p><hr>
+                            <p> النقاط التى يحصدها المنتخب كل مباراة = نقاط المباراة × أهمية المباراة × تصنيف المنتخب </p><hr>
+                            <p> نقاط المباراة :: الفوز = 3 | التعادل = 1 | الهزيمة = -1 </p><hr>
+                            <p> أهمية المباراة :: كأس الامم , دوري الامم , تصفيات كأس العالم = 1 | كأس القارات = 2 | كأس العالم = 3 </p><hr>
+                            <p> تصنيف الفريق :: من 1 حتى 7 = 0.5 | من 8 حتى 14 = 2/3 </p><hr>
+                            <p> الهزيمة لا تتأثر بنقاط التصنيف لكنها تتأثر بأهمية المباراة </p>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -6,10 +6,10 @@
     <title>Results Of PES Trophies</title>
     <link rel="shortcut icon" href="imgs/logo.png" />
     <link rel="stylesheet" href="css/Index-Style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Khand|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Allerta+Stencil|Bree+Serif|Chicle|Khand|Poor+Story" rel="stylesheet">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   var OneSignal = window.OneSignal || [];
@@ -23,24 +23,28 @@
 
 <body>
 
-    <!-- Start Nav -->
+   <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+            <span style="position:absolute;top:53%;right:49%;font-size:6px;letter-spacing:2px;font-weight:400;font-family:sans-serif">Since Apr,2018</span>
+        </div>
         <ul>
             <li class="Clicked"><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li>
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
@@ -50,10 +54,11 @@
 
         <!-- Start Header -->
         <header>
-            <img src="imgs/header.jpg" alt="header">
+            <img src="imgs/header.png" alt="header">
             <div>
                 <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
+                <p style="font-family: 'Quicksand', sans-serif;">A Special Sports Website designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2019</p>
+                <button onclick="window.location.href='index.html'">Explore Our Features</button>
             </div>
         </header>
         <!-- End Header -->
@@ -111,31 +116,31 @@
             <div class="Cups">
                 <h2>Available Trophies</h2>
                 <div>
-                    <img src="imgs/pll.png" alt="pl" onclick="window.location.href='ccups.html'">
-                    <p onclick="window.location.href='ccups.html'" id="ResponsiveP">Premier League</p>
+                    <img src="imgs/pll.png" alt="pl" onclick="window.location.href='club-cups.html'">
+                    <p onclick="window.location.href='club-cups.html'" id="ResponsiveP">Premier League</p>
                 </div>
                 <div>
-                    <img src="imgs/emfa.png" alt="emfa" onclick="window.location.href='ccups.html'">
-                    <p onclick="window.location.href='ccups.html'" id="ResponsiveP">Emirates FA Cup</p>
+                    <img src="imgs/emfa.png" alt="emfa" onclick="window.location.href='club-cups.html'">
+                    <p onclick="window.location.href='club-cups.html'" id="ResponsiveP">Emirates FA Cup</p>
                 </div>
                 <div>
-                    <img src="imgs/facom.png" alt="facom" onclick="window.location.href='ccups.html'">
-                    <p onclick="window.location.href='ccups.html'" id="ResponsiveP">Communtiy Shield</p>
+                    <img src="imgs/facom.png" alt="facom" onclick="window.location.href='club-cups.html'">
+                    <p onclick="window.location.href='club-cups.html'" id="ResponsiveP">Communtiy Shield</p>
                 </div>
             </div>
             <br>
             <div class="Cups">
                 <div>
-                    <img src="imgs/ucl.svg" alt="ucl" onclick="window.location.href='ccups.html'">
-                    <p style="font-size:17px" onclick="window.location.href='ccups.html'" id="ResponsiveP">UEFA Champions League</p>
+                    <img src="imgs/ucl.svg" alt="ucl" onclick="window.location.href='club-cups.html'">
+                    <p style="font-size:17px" onclick="window.location.href='club-cups.html'" id="ResponsiveP">UEFA Champions League</p>
                 </div>
                 <div>
-                    <img src="imgs/uel.svg" alt="ufl" onclick="window.location.href='ccups.html'">
-                    <p style="font-size:21px;" onclick="window.location.href='ccups.html'" id="ResponsiveP">UEFA Europa League</p>
+                    <img src="imgs/uel.svg" alt="ufl" onclick="window.location.href='club-cups.html'">
+                    <p style="font-size:21px;" onclick="window.location.href='club-cups.html'" id="ResponsiveP">UEFA Europa League</p>
                 </div>
                 <div>
-                    <img src="imgs/uscc.png" alt="usc" onclick="window.location.href='ccups.html'">
-                    <p onclick="window.location.href='ccups.html'" id="ResponsiveP">UEFA Super Cup</p>
+                    <img src="imgs/uscc.png" alt="usc" onclick="window.location.href='club-cups.html'">
+                    <p onclick="window.location.href='club-cups.html'" id="ResponsiveP">UEFA Super Cup</p>
                 </div>
             </div>
             <br><br><br>
@@ -163,16 +168,16 @@
             <div class="Cups">
                 <h2>Available Trophies</h2>
                 <div>
-                    <img src="imgs/caff.png" alt="caf" onclick="window.location.href='ncups.html'">
-                    <p id="ResponsiveP" onclick="window.location.href='ncups.html'">Africa Cup of Nations</p>
+                    <img src="imgs/caff.png" alt="caf" onclick="window.location.href='national-cups.html'">
+                    <p id="ResponsiveP" onclick="window.location.href='national-cups.html'">Africa Cup of Nations</p>
                 </div>
                 <div>
-                    <img src="imgs/wcqq.png" alt="wcq" onclick="window.location.href='ncups.html'">
-                    <p id="ResponsiveP" onclick="window.location.href='ncups.html'">World Cup Qualifiers</p>
+                    <img src="imgs/wcqq.png" alt="wcq" onclick="window.location.href='national-cups.html'">
+                    <p id="ResponsiveP" onclick="window.location.href='national-cups.html'">World Cup Qualifiers</p>
                 </div>
                 <div>
-                    <img src="imgs/wcc.png" alt="wc" onclick="window.location.href='ncups.html'">
-                    <p id="ResponsiveP" onclick="window.location.href='ncups.html'">World Cup of Nations</p>
+                    <img src="imgs/wcc.png" alt="wc" onclick="window.location.href='national-cups.html'">
+                    <p id="ResponsiveP" onclick="window.location.href='national-cups.html'">World Cup of Nations</p>
                 </div>
             </div>
         </section>
@@ -240,7 +245,7 @@
 
         <section class="contact">
             <div class="form">
-                <form name="contact">
+                <form name="contact" method="post" netlify>
                     <h2><ins>Get In Touch</ins></h2><br>
                     <input type="text" placeholder="Your Name" name="first"><br>
                     <input type="text" placeholder="E-mail Address" name="email"><br>

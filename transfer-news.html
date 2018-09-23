@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/TransNews-Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -25,38 +25,31 @@
     
     <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li class="Clicked">
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown Clicked">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
     <!-- End  Nav -->
 
     <div class="container">
-
-        <!-- Start Header -->
-        <header>
-            <img src="imgs/header.jpg" alt="header">
-            <div>
-                <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
-            </div>
-        </header>
-        <!-- End Header -->
 
         <!-- Start Section -->
         <section class="main">
@@ -65,15 +58,16 @@
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif;font-size:28px">The Latest News about players transfers and deals , with the recorded transfers certificates</span>
             </div>
+            <div class="main-overlay"></div>
         </section>
         <!-- End Section -->
         
         
         <div id="myModal" class="modal">
-                  <span class="close">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
         
         <section class="seasons-section">
             <div class="tab">
@@ -81,9 +75,9 @@
                 <button class="tablinks" onclick="openCity(event, 'one')">Season One</button>
                 <button class="tablinks" onclick="openCity(event, 'two')">Season Two</button>
                 <button class="tablinks" onclick="openCity(event, 'three')">Season Three</button>
-                <button class="tablinks" onclick="openCity(event, 'four')" id="clicked">Season Four</button>
-                <button class="tablinks" onclick="openCity(event, 'five')" disabled>Season Five</button>
-                <button class="tablinks" onclick="openCity(event, 'six')" disabled>Season Six</button>
+                <button class="tablinks" onclick="openCity(event, 'four')">Season Four</button>
+                <button class="tablinks" onclick="openCity(event, 'five')">Season Five</button>
+                <button class="tablinks" onclick="openCity(event, 'six')" id="clicked">Season Six</button>
                 <button class="tablinks" onclick="openCity(event, 'seven')" disabled>Season Seven</button>
             </div>
 
@@ -284,13 +278,68 @@
             <!--   Season FIVE    -->
 
             <div id="five" class="tabcontent">
-                
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/danjFz/auba.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/byF4Fz/belleren.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/iWGdaz/berndardesci.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/cuyfoK/c_bravo.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/eOtrvz/candreva.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/f00h2e/de_gea.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/g5paNe/dragovic.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/enTrvz/g_jesus.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/bWy22e/h_llors.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/ggy22e/huth.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/eWqh2e/j_evans.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/d0njFz/k_trapp.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/cOWphe/kante.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/ipDwTK/m_james.png" class="myImg" onclick="ceritificates(this);">
+                </div><div class="certdiv">
+                    <img src="https://image.ibb.co/iV7ehe/pogba.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/dPYKhe/strootman.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/ccJ8az/t_party.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/cHVAoK/y_benlyan.png" class="myImg" onclick="ceritificates(this);">
+                </div>
+                <div class="certdiv">
+                    <img src="https://image.ibb.co/d67qoK/zieych.png" class="myImg" onclick="ceritificates(this);">
+                </div>
             </div>
 
             <!--   Season SIX    -->
 
             <div id="six" class="tabcontent">
-                
+                <p style="font-size:45px">THE TRANSFERs SYSTEM DID NOT APPLIED IN THIS SEASON DUE TO A FULLY GAME TRANSFER TO PES 2019</p>
             </div>
 
             <!--   Season SEVEN    -->

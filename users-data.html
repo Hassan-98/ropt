@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Users Data</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/Usrdata-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Allerta+Stencil|Changa|Lalezar|Cabin+Sketch|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+    
+    <!-- Start Nav -->
+    <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li class="Clicked"><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                  </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+    <div class="container">
+
+        <!-- Start Section -->
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fa fa-user-circle-o" style="font-size:40px"></i> Users Data &amp; Records <i class="fa fa-user-circle-o" style="font-size:40px"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">The records here contain all the data of the players participating in the competitions and all the statistics for their record in the game</span>
+            </div>
+            <div class="main-overlay"></div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section -->
+        <section class="users-section">
+            <div class="users">
+                <h2>Participating Users</h2>
+                <div>
+                    <img src="imgs/nasser.jpg" alt="naser" onclick="showNdata()" id="image1">
+                    <p onclick="showNdata()" id="paragraph1">Moustafa Naser</p>
+                </div>
+                <div>
+                    <img src="imgs/hassan.jpg" alt="hassan" onclick="showHdata()" id="image2">
+                    <p onclick="showHdata()" style="font-size:36px;padding-right:90px;padding-left:90px" id="paragraph2">Hassan Ali</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        
+     
+        <!-- Start Hassan Section -->
+
+        <section class="Hidden-PL" id="HassanSection" style="display:none">
+
+            <div class="hidden-header">
+                <img src="imgs/hassan.jpg" alt="hassan">
+                <p style="font-size:40px">Hassan's Data</p>
+            </div><br><br>
+            
+            <!-- START SECTION CHOOSEN CLUBS -->
+            
+            <div class="choosen">
+                <div class="hidden-content-main" style="border-top-left-radius:25px">
+                    <div class="header">
+                        <p>CHOOSEN CLUB TEAM</p>
+                    </div>
+                    <hr>
+                    <div class="club">
+                        <img src="imgs/clubs/lei.svg" width="110" height="110" style="margin:20px auto 0">
+                        <span style="margin:5px;color:#003090">LEICETSER CITY</span>
+                    </div>
+                </div>
+                <div class="hidden-content-main" style="border-top-right-radius:25px">
+                    <div class="header">
+                        <p>CHOOSEN NAT. TEAM</p>
+                    </div>  
+                    <hr>
+                    <div class="club">
+                        <img src="imgs/clubs/gha-min.png" width="105" height="120" style="margin:20px auto 0">
+                        <span style="margin:5px;color:#FFE500">GHANA FA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- END SECTION CHOOSEN CLUBS -->
+            
+            
+            <!-- START SECTION TOURS -->
+            
+            <div class="hidden-content">
+                
+                <!-- START TOURS HEADER -->
+                
+                <div style="text-align:center" class="hidden-content">
+                    <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-glass" style="font-size:45px"></i> إحصائيات البطولات <i class="fa fa-glass" style="font-size:45px"></i>
+                        </span>
+                </div>
+                <br>
+                <div class="hidden-contentss">
+                    <span class="total"> العدد الكلى للبطولات المحققة :: &#91; 19 &#93; بطولة </span>
+                </div>
+                
+                <!-- END TOURS HEADER -->
+                
+                <!-- Start Section cups-->
+                
+                <section class="Cups-section">
+                    <div class="Cups">
+                        <div class="hidden-contentsss">
+                            <h2>البطولات المـحلـيـة</h2>
+                            <div>
+                                <img src="imgs/pll.png" alt="pl">
+                                <p>عدد مرات الفوز - &#91; 4 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 6 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/emfa.png" alt="emfa">
+                                <p>عدد مرات الفوز - &#91; 3 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 5 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/EFL%20Cup.png" alt="facom">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/facom.png" alt="facom">
+                                <p>عدد مرات الفوز - &#91; 4 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 4 مرة &#93;</span></p>
+                            </div>
+                        </div>
+                        <div class="hidden-contentsss">
+                            <h2>البطولات الــقــاريــة</h2>
+                            <div>
+                                <img src="imgs/ucl.svg" alt="ucl" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 3 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 5 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/uel.svg" alt="uel" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/uscc.png" alt="usc">
+                                <p>عدد مرات الفوز - &#91; 2 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/ICC.png" alt="icc" style="width: 100px">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/fcwcc.png" alt="fcwc">
+                                <p>عدد مرات الفوز - &#91; 1 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 1 مرة &#93;</span></p>
+                            </div>
+                        </div>
+                        <div class="hidden-contentsss">
+                            <h2>بطولات المـنـتـخـبـات</h2>
+                            <div>
+                                <img src="imgs/caff.png" alt="caf" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 2 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 3 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/CNL.png" alt="wcq" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/CSC.png" alt="wc" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/wcqq.png" alt="wcq" class="editimg">
+                                <p>عدد مرات التأهل - &#91; 2 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/wcc.png" alt="wc" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                            </div>
+                            <div>
+                                <img src="imgs/CC.png" alt="wc" class="editimg">
+                                <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                            </div>
+                    </div>
+                </div>
+                </section>
+                
+            <!-- End Section cups-->
+                
+            </div>
+            
+            <!-- END SECTION TOURS -->
+            
+            <br>
+            
+            <!-- START SECTION MATCHES -->
+            
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-users" style="font-size:45px"></i> إحصائيات المباريات <i class="fa fa-users" style="font-size:45px"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="width:97%;font-family: 'Changa', sans-serif">
+                        <span style="font-size:28px;font-weight: 800;padding:10px;color:#D80004"> إجمالى عدد المباريات الملعوبة :: &#91; 371 مباراة &#93;</span><br><hr><br>
+                        <div>
+                    <h3 class="progress-title">إجمالى الانتصارات ::: [ 276 ] إنتصار</h3>
+                    <br>
+                    <div class="progress">
+             <div class="progress-bar" style="width:74.39%;background: #04B404;">
+                            <div class="progress-value">74.39%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">إجمالى التعادلات ::: [ 63 ] تعادل</h3>
+                    <br>
+                    <div class="progress">
+             <div class="progress-bar" style="width:16.98%; background:#585858;">
+                            <div class="progress-value">16.98%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">إجمالى الهزائم ::: [ 32 ] هزيمة</h3>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:8.62%; background:#FF0000;">
+                            <div class="progress-value">8.62%</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            
+            <!-- END SECTION MATCHES -->
+            
+            <br>
+            
+            <!-- START SECTION GOALS -->
+            
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-bullseye" style="font-size:45px"></i> إحصائيات الاهداف <i class="fa fa-bullseye" style="font-size:45px"></i>
+                        </span>
+                    </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 1410 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 1056 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold">  354  </span>
+                        </div>
+                    </div>
+                    <div class="hidden-content" style="text-align: center">
+                            <div class="progress-2" style="background-color:#920002;height:60px">
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 74.89%</span>
+                                <div class="progress-bar-2" style="width:25.11%;background:#3000B3">
+                                    <div class="progress-value-2"></div>
+                                    <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 25.11%</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- END SECTION GOALs -->
+            
+            <br>
+            
+            <!-- START SECTION LEI-MCI -->
+            
+            <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/leiss.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-family: 'Lalezar', cursive;">مواجهات ليستر - مانشيستر</span>
+                        <img src="imgs/man_city.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                    <div class="hidden-contentss">
+                        <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 15 مباراة &#93;</span>
+                    </div><br>
+                <div class="flex3">
+                    <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                        <span style="color:#037814;font-size:40px;font-weight:bold">الانتصارات</span><br>
+                        <span style="font-size:24px"> إجمالى الانتصارات : &#91; 11 &#93; </span>
+                        <br> <br>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:73.33%;background: #04B404;">
+                                <div class="progress-value">73.33%</div>
+                            </div>
+                        </div>
+                            <hr style="margin:5px 0">
+                        <span>
+                            انتصارات داخل ملعبة : &#91; 4 &#93; <br> انتصارات خارج ملعبة : &#91; 5 &#93; 
+                        </span>
+                    </div>
+                <br>
+                    <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                        <span style="color:#A6A7A8;font-size:40px;font-weight:bold">التعادلات </span><br>
+                        <span style="font-size:24px"> إجمالى التعادلات : &#91; 3 &#93;</span>
+                        <br> <br>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:20.0%;background: #585858;">
+                                <div class="progress-value">20.0%</div>
+                            </div>
+                        </div>
+                            <hr style="margin:5px 0">
+                        <span>
+                            تعادلات داخل ملعبة : &#91; 2 &#93; <br> تعادلات خارج ملعبة : &#91; 1 &#93; 
+                        </span>
+                    </div>
+                <br>
+                    <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                        <span style="color:#920002;font-size:40px;font-weight:bold">الهزائم </span><br>
+                        <span style="font-size:24px">إجمالى الهزائم : &#91; 1 &#93;</span>
+                        <br> <br>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:6.67%;background: #FF0000;">
+                                <div class="progress-value">6.67%</div>
+                            </div>
+                        </div>
+                            <hr style="margin:5px 0">
+                        <span>
+                            هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 0 &#93;
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <div class="flex3">
+                    <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                        <hr>
+                        <span style="font-size:60px;font-weight:bold"> 55 </span>
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                        <hr>
+                        <span style="font-size:60px;font-weight:bold"> 38 </span>
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                        <hr>
+                        <span style="font-size:60px;font-weight:bold">  17  </span>
+                    </div>
+                </div>
+                    <div class="hidden-content" style="text-align: center">
+                        <div class="progress-2" style="background-color:#920002;height:60px">
+                            <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 69.10%</span>
+                            <div class="progress-bar-2" style="width:30.90%;background:#3000B3">
+                                <div class="progress-value-2"></div>
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 30.90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="hidden-content" style="text-align:center">
+                        
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;font-family: 'Changa', sans-serif;">أبرز مواجهات الفريقين</h2>
+                            <hr>
+                        <p style="font-size:16px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>  الدوري الانجليزي , الموسم التمهيدي , الجولة 31 &nbsp;|&nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i>
+                         ملعب الاتحاد  
+                        </p>
+                        
+                        <div class="back" style="background:#0757a2;width:80%;height: 50px;margin:0px auto 20px;border-bottom-left-radius:40px;border-top-right-radius:40px;position:relative;box-shadow:0 0 10px 2px">
+                        
+                            <span style="color:#fff;font-size:26px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:21%">مانشيستر سيتي</span>
+                            <span style="color:#fff;font-size:26px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:21%">ليستـر سيتي</span>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;left:45px">
+                                <img src="imgs/leiss.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                            <div style="position:absolute;top:0;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:35px;text-align:center">
+                             1 - 5
+                            </div>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;right:45px">
+                                <img src="imgs/man_city.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+            
+            <!-- END SECTION LEI-MCI -->
+            
+            <br>
+            
+            <!-- START SECTION GHA-EGY -->
+            
+        <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/Ghana.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-family: 'Lalezar', cursive;">مواجهات غانا - مصر</span>
+                        <img src="imgs/Egypt.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 6 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:40px;font-weight:bold">الانتصارات</span><br>
+                            <span style="font-size:24px"> إجمالى الانتصارات : &#91; 3 &#93; </span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:50%;background: #04B404;">
+                                    <div class="progress-value">50%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                انتصارات داخل ملعبة : &#91; 0 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:40px;font-weight:bold">التعادلات </span><br>
+                            <span style="font-size:24px"> إجمالى التعادلات : &#91; 1 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:16.67%;background: #585858;">
+                                    <div class="progress-value">16.67%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                تعادلات داخل ملعبة : &#91; 0 &#93; <br> تعادلات خارج ملعبة : &#91; 1 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:40px;font-weight:bold">الهزائم </span><br>
+                            <span style="font-size:24px">إجمالى الهزائم : &#91; 2 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:33.33%;background: #FF0000;">
+                                    <div class="progress-value">33.33%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 1 &#93;
+                            </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 20 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 11 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold">  9  </span>
+                        </div>
+                    </div>
+                    <div class="hidden-content" style="text-align: center">
+                            <div class="progress-2" style="background-color:#920002;height:60px">
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 55.0%</span>
+                                <div class="progress-bar-2" style="width:45%;background:#3000B3">
+                                    <div class="progress-value-2"></div>
+                                    <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 45.0%</span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="hidden-content" style="text-align:center">
+                        
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;font-family: 'Changa', sans-serif;">أبرز مواجهات الفريقين</h2>
+                            <hr>
+                        <p style="font-size:16px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>  مباريات التحضير لكأس العالم , الموسم الثاني , المباراة الثالثة &nbsp;|&nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i>
+                         ملعب برج العرب , مصر  
+                        </p>
+                        
+                        <div class="back" style="background:#b40709;width:80%;height: 50px;margin:0px auto 20px;border-bottom-left-radius:40px;border-top-right-radius:40px;position:relative;box-shadow:0 0 10px 2px">
+                            <span style="color:#fff;font-size:28px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:25%">غــانــا</span>
+                            <span style="color:#fff;font-size:28px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:25%">مــصــر</span>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;left:45px">
+                                <img src="imgs/egypt.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                            <div style="position:absolute;top:0;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:35px;text-align:center">
+                             4 - 1
+                            </div>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;right:45px">
+                                <img src="imgs/ghana.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </section>
+        
+    <!-- End Section -->
+        
+        
+        
+        
+        
+
+                                                                    <!-- Start Section Naser Data -->
+        
+        
+        
+        
+
+    <section class="Hidden-PL" id="NaserSection" style="display:none">
+
+        <div class="hidden-header">
+            <img src="imgs/nasser.jpg" alt="naser">
+            <p class="firstp" style="font-size:36px">Moustafa's Data</p>
+        </div><br><br>
+            
+            <!-- START SECTION CHOOSEN CLUBS -->
+            
+            <div class="choosen">
+                <div class="hidden-content-main" style="border-top-left-radius:25px">
+                    <div class="header">
+                        <p>CHOOSEN CLUB TEAM</p>
+                    </div>
+                    <hr>
+                    <div class="club">
+                        <img src="imgs/clubs/mancity.svg" width="110" height="110" style="margin:20px auto 0">
+                        <span style="margin:5px;color:#7AB2E1">MANCESTER CITY</span>
+                    </div>
+                </div>
+                <div class="hidden-content-main" style="border-top-right-radius:25px">
+                    <div class="header">
+                        <p>CHOOSEN NAT. TEAM</p>
+                    </div>  
+                    <hr>
+                    <div class="club">
+                        <img src="imgs/clubs/egy-min.png" width="110" height="110" style="margin:20px auto 0">
+                        <span style="margin:5px;color:#E31E27">EGYPT FA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- END SECTION CHOOSEN CLUBS -->
+
+        <div class="hidden-content">
+                <div style="text-align:center" class="hidden-content">
+                    <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-glass" style="font-size:45px"></i> إحصائيات البطولات <i class="fa fa-glass" style="font-size:45px"></i>
+                        </span>
+                </div><br>
+                <div class="hidden-contentss">
+                            <span class="total"> العدد الكلى للبطولات المحققة :: &#91; 1 &#93; بطولة </span>
+                        </div>
+                    <!-- Start Section -->
+            <section class="Cups-section">
+                <div class="Cups">
+                    <div class="hidden-contentsss">
+                        <h2>البطولات المـحلـيـة</h2>
+                        <div>
+                            <img src="imgs/pll.png" alt="pl">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93;  <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 6 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/emfa.png" alt="emfa">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 5 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/EFL%20Cup.png" alt="facom">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/facom.png" alt="facom">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                    </div>
+                    <div class="hidden-contentsss">
+                        <h2>البطولات الــقــاريــة</h2>
+                        <div>
+                            <img src="imgs/ucl.svg" alt="ucl" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 1 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/uel.svg" alt="ufl" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/uscc.png" alt="usc">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/ICC.png" alt="icc" style="width:100px">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/fcwcc.png" alt="fcwc">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                    </div>
+                    <div class="hidden-contentsss">
+                        <h2>بطولات المـنـتـخـبـات</h2>
+                        <div>
+                            <img src="imgs/caff.png" alt="caf" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 1 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 3 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/CNL.png" alt="wcq" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/CSC.png" alt="wc" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/wcqq.png" alt="wcq" class="editimg">
+                            <p>عدد مرات التأهل - &#91; 2 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/wcc.png" alt="wc" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 2 مرة &#93;</span></p>
+                        </div>
+                        <div>
+                            <img src="imgs/CC.png" alt="wc" class="editimg">
+                            <p>عدد مرات الفوز - &#91; 0 مرة &#93; <span style="border-top:1px solid #ccc;"> <br>  عدد مرات المشاركة - &#91; 0 مرة &#93;</span></p>
+                        </div>
+                </div>
+            </div>
+            </section>
+            <!-- End Section -->
+            </div>
+            
+            <br>
+            
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-users" style="font-size:45px"></i> إحصائيات المباريات <i class="fa fa-users" style="font-size:45px"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="hidden-contents2" style="width:97%;font-family: 'Changa', sans-serif">
+                        <span style="font-size:28px;font-weight: 800;padding:10px;color:#D80004"> إجمالى عدد المباريات الملعوبة :: &#91; 321 مباراة &#93;</span><br><hr><br>
+                        <div>
+                    <h3 class="progress-title">إجمالى الانتصارات ::: [ 119 ] إنتصار</h3>
+                    <br>
+                    <div class="progress">
+             <div class="progress-bar" style="width:37.07%;background: #04B404;">
+                            <div class="progress-value">37.07%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">إجمالى التعادلات ::: [ 79 ] تعادل</h3>
+                    <br>
+                    <div class="progress">
+             <div class="progress-bar" style="width:24.61%; background:#585858;">
+                            <div class="progress-value">24.61%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">إجمالى الهزائم ::: [ 123 ] هزيمة</h3>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:38.31%; background:#FF0000;">
+                            <div class="progress-value">38.31%</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            
+            <div class="hidden-content" dir="rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <span style="font-size:50px;font-weight:bold;font-family: 'Lalezar', cursive;">
+                            <i class="fa fa-bullseye" style="font-size:45px"></i> إحصائيات الاهداف <i class="fa fa-bullseye" style="font-size:45px"></i>
+                        </span>
+                    </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 847 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 416 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold">  431  </span>
+                        </div>
+                    </div>
+                    <div class="hidden-content" style="text-align: center">
+                            <div class="progress-2" style="background-color:#920002;height:60px">
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 49.12%</span>
+                                <div class="progress-bar-2" style="width:50.88%;background:#3000B3">
+                                    <div class="progress-value-2"></div>
+                                    <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 50.88%</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+            <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/man_city.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-family: 'Lalezar', cursive;">مواجهات مانشيستر - ليستر</span>
+                        <img src="imgs/leiss.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 15 مباراة &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:40px;font-weight:bold">الانتصارات</span><br>
+                            <span style="font-size:24px"> إجمالى الانتصارات : &#91; 1 &#93; </span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:6.67%;background: #04B404;">
+                                    <div class="progress-value">6.67%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                انتصارات داخل ملعبة : &#91; 0 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:40px;font-weight:bold">التعادلات </span><br>
+                            <span style="font-size:24px"> إجمالى التعادلات : &#91; 3 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:20.0%;background: #585858;">
+                                    <div class="progress-value">20.0%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                تعادلات داخل ملعبة : &#91; 1 &#93; <br> تعادلات خارج ملعبة : &#91; 2 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:40px;font-weight:bold">الهزائم </span><br>
+                            <span style="font-size:24px">إجمالى الهزائم : &#91; 11 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:73.33%;background: #FF0000;">
+                                    <div class="progress-value">73.33%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                هزائم داخل ملعبة : &#91; 5 &#93; <br> هزائم خارج ملعبة : &#91;4 &#93;
+                            </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 55 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 17 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold">  38  </span>
+                        </div>
+                    </div>
+                    <div class="hidden-content" style="text-align: center">
+                            <div class="progress-2" style="background-color:#920002;height:60px">
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 30.90%</span>
+                                <div class="progress-bar-2" style="width:69.10%;background:#3000B3">
+                                    <div class="progress-value-2"></div>
+                                    <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 69.10%</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="hidden-content" style="text-align:center">
+                        
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;font-family: 'Changa', sans-serif;">أبرز مواجهات الفريقين</h2>
+                            <hr>
+                        <p style="font-size:16px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>  الدوري الانجليزي , الموسم التمهيدي , الجولة 31 &nbsp;|&nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i>
+                         ملعب الاتحاد  
+                        </p>
+                        
+                        <div class="back" style="background:#0757a2;width:80%;height: 50px;margin:0px auto 20px;border-bottom-left-radius:40px;border-top-right-radius:40px;position:relative;box-shadow:0 0 10px 2px">
+                        
+                            <span style="color:#fff;font-size:26px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:21%">مانشيستر سيتي</span>
+                            <span style="color:#fff;font-size:26px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:21%">ليستـر سيتي</span>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;left:45px">
+                                <img src="imgs/leiss.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                            <div style="position:absolute;top:0;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:35px;text-align:center">
+                             1 - 5
+                            </div>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;right:45px">
+                                <img src="imgs/man_city.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+    </div>
+            <br>
+        <div class="hidden-content" style="font-family: 'Changa', sans-serif;direction:rtl">
+                <div>
+                    <div style="text-align:center" class="hidden-content">
+                        <img src="imgs/egypt.png" style="width:80px;height:80px;margin-left:30px;margin-bottom:-30px">
+                        <span style="font-size:60px;font-family: 'Lalezar', cursive;">مواجهات مصر - غانا</span>
+                        <img src="imgs/ghana.png" style="width:80px;height:80px;margin-right:30px;margin-bottom:-30px">
+                    </div>
+                    <br>
+                        <div class="hidden-contentss">
+                            <span style="font-size:35px;font-weight:bold;padding:10px;color:#D80004"> العدد الكلى للمواجهات :: &#91; 6 مباريات &#93;</span>
+                        </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#037814;font-size:40px;font-weight:bold">الانتصارات</span><br>
+                            <span style="font-size:24px"> إجمالى الانتصارات : &#91; 2 &#93; </span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:40%;background: #04B404;">
+                                    <div class="progress-value">33.33%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                انتصارات داخل ملعبة : &#91; 1 &#93; <br> انتصارات خارج ملعبة : &#91; 0 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#A6A7A8;font-size:40px;font-weight:bold">التعادلات </span><br>
+                            <span style="font-size:24px"> إجمالى التعادلات : &#91; 1 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:16.67%;background: #585858;">
+                                    <div class="progress-value">16.67%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                تعادلات داخل ملعبة : &#91; 1 &#93; <br> تعادلات خارج ملعبة : &#91; 0 &#93; 
+                            </span>
+                        </div>
+                    <br>
+                        <div class="hidden-contents" style="font-family: 'Changa', sans-serif">
+                            <span style="color:#920002;font-size:40px;font-weight:bold">الهزائم </span><br>
+                            <span style="font-size:24px">إجمالى الهزائم : &#91; 3 &#93;</span>
+                            <br> <br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:50%;background: #FF0000;">
+                                    <div class="progress-value">50%</div>
+                                </div>
+                            </div>
+                                <hr style="margin:5px 0">
+                            <span>
+                                هزائم داخل ملعبة : &#91; 0 &#93; <br> هزائم خارج ملعبة : &#91; 0 &#93;
+                            </span>
+                        </div>
+                </div><br>
+                    <div class="flex3">
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px">إجمالى الاهداف</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 20 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#920002">الاهداف المسجلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold"> 9 </span>
+                        </div>
+                        <br>
+                        <div class="hidden-contents2" style="font-family: 'Changa', sans-serif">
+                            <h2 style="text-align: center;font-size:35px;margin-bottom:10px;color:#3000B3">الاهداف المستقبلة</h2>
+                            <hr>
+                            <span style="font-size:60px;font-weight:bold">  11  </span>
+                        </div>
+                    </div>
+                    <div class="hidden-content" style="text-align: center">
+                            <div class="progress-2" style="background-color:#920002;height:60px">
+                                <span style="font-family: 'Changa', sans-serif;color:#fff;font-size:22px;position:absolute;top:10px;right:8px;line-height:20px;text-align:center"> الاهداف المسجلة <br> 45.0%</span>
+                                <div class="progress-bar-2" style="width:55%;background:#3000B3">
+                                    <div class="progress-value-2"></div>
+                                    <span style="font-family: 'Changa', sans-serif;color:#fff;position:absolute;top:10px;left:8px;font-size:22px"> الاهداف المستقبلة <br> 55.0%</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="hidden-content" style="text-align:center">
+                        
+                        <h2 style="text-align: center;font-size:35px;margin-bottom:10px;font-family: 'Changa', sans-serif;">أبرز مواجهات الفريقين</h2>
+                            <hr>
+                        <p style="font-size:16px;margin-top:25px;font-family: 'Changa', sans-serif;font-weight:bold">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>  مباريات التحضير لكأس العالم , الموسم الثاني , المباراة الثالثة &nbsp;|&nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i>
+                         ملعب برج العرب , مصر  
+                        </p>
+                        
+                        <div class="back" style="background:#b40709;width:80%;height: 50px;margin:0px auto 20px;border-bottom-left-radius:40px;border-top-right-radius:40px;position:relative;box-shadow:0 0 10px 2px">
+                            <span style="color:#fff;font-size:28px;font-weight:bold;font-family: 'Changa', sans-serif;float:right;margin-right:25%">غــانــا</span>
+                            <span style="color:#fff;font-size:28px;font-weight:bold;font-family: 'Changa', sans-serif;float:left;margin-left:25%">مــصــر</span>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;left:45px">
+                                <img src="imgs/egypt.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                            <div style="position:absolute;top:0;left:45%;width:10%;height:100%;background:#000;color:#fff;font-size:35px;text-align:center">
+                             4 - 1
+                            </div>
+                            
+                            <div style="background:rgba(0,0,0,0.2);border-radius:50%;width:70px;height:70px;padding:15px;position: absolute;top:-25px;right:45px">
+                                <img src="imgs/ghana.png" height="70" width="70" style="background:#fff;padding:5px;border-radius: 50%;margin:-5px">
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </section>
+    <!-- End Section -->
+
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="social">
+            <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+            <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+            <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+            <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+            <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+            <i class="fa fa-youtube-square" style="font-size:40px"></i>
+        </div>
+        <div class="copyrights">
+            <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    </div>
+    
+     <!-- JS Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Js/Usrs-Scripts.js"></script>
+                                                                                          
+</body>
+
+</html>

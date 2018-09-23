@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/Seasons-Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Allerta+Stencil|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Revalia|Allerta+Stencil|Bree+Serif|Permanent+Marker|Chicle|Poor+Story" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -25,22 +25,25 @@
     
     <!-- Start Nav -->
     <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Highlights</a></li>
-            <li><a href="ccups.html">Club Trophies</a></li>
-            <li><a href="ncups.html">National Trophies</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
             <li class="Clicked"><a href="seasons.html">Seasons</a></li>
-            <li><a href="usrdata.html">Users Data</a></li>
-            <li>
-                <div class="dropdown">
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown">
                   <a class="dropbtn">More</a>
                   <div class="dropdown-content">
                     <a href="rankings.html">Rankings</a>
                     <a href="most-awarded.html">Most Awarded</a>
                     <a href="transfer-market.html">Transfer Market</a>
                   </div>
-                </div>
             </li>
         </ul>
     </nav>
@@ -48,25 +51,21 @@
 
     <div class="container">
 
-        <!-- Start Header -->
-        <header>
-            <img src="imgs/header.jpg" alt="header">
-            <div>
-                <h1>Results OF PES Trophies</h1>
-                <p style="font-family: 'Quicksand', sans-serif">This Website is specially designed for reviewing and recording all the<br> results of cups, tournaments and seasons in PES 2018</p>
-            </div>
-        </header>
-        <!-- End Header -->
-
         <!-- Start Section -->
+        
         <section class="main">
             <div class="BoxDiv">
                 <h1><i class="fa fa-bar-chart" style="font-size:40px"></i> Seasons Full Statstics <i class="fa fa-bar-chart" style="font-size:40px"></i></h1>
                 <br>
                 <span style="font-family: 'Quicksand', sans-serif;font-size:28px">The records here contain all the data of the Seasons played in the competitions and all the statistics &amp; record in the game</span>
             </div>
+            <div class="main-overlay"></div>
         </section>
+        
         <!-- End Section -->
+        
+        <!-- Start Section -->
+        
         <section class="seasons-section">
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'pre')">Season Pre</button>
@@ -74,11 +73,17 @@
                 <button class="tablinks" onclick="openCity(event, 'two')">Season Two</button>
                 <button class="tablinks" onclick="openCity(event, 'three')">Season Three</button>
                 <button class="tablinks" onclick="openCity(event, 'four')" id="clicked">Season Four</button>
-                <button class="tablinks" onclick="openCity(event, 'five')" disabled>Season Five</button>
-                <button class="tablinks" onclick="openCity(event, 'six')" disabled>Season Six</button>
-                <button class="tablinks" onclick="openCity(event, 'seven')" disabled>Season Seven</button>
+                <button class="tablinks" onclick="openCity(event, 'five')">Season Five</button>
+                <button class="tablinks" onclick="openCity(event, 'six')">Season Six</button>
             </div>
-
+            
+            <div style="text-align: center;padding:100px;font-family: 'Permanent Marker', cursive;font-size:40px;color:#c9d6ff;background:#09172C;position: relative">
+                <div style="border-radius:50%;padding:175px 60px;margin:25px auto;width:30%;background:#fff;animation:7s commingsoon infinite;background: linear-gradient(to right, #c9d6ff, #e2e2e2);">
+                    <p style="text-shadow:5px 5px 15px #000">C O M M I N G <br> S O O N</p>
+                </div>
+                <p style="text-shadow:3px 3px 10px #000;font-family: 'Quicksand', cursive;font-size:35px;margin-top:70px;font-weight:900">THE PAGE IS UNDER UPDATES <br> WILL NOT BE AVAILABLE IN THIS ROPT VERSION</p>
+            </div>
+<!--
             <div id="pre" class="tabcontent pre">
                 <div style="display: flex">
                 <div class="seccenter">
@@ -108,7 +113,7 @@
             </div>
 
 
-            <!--   Season One    -->
+            <!--   Season One    
 
             <div id="one" class="tabcontent">
                 <div style="display: flex">
@@ -353,7 +358,7 @@
             </div>
 
 
-            <!--   Season Two    -->
+            <!--   Season Two    
 
 
             <div id="two" class="tabcontent">
@@ -641,7 +646,7 @@
             </div>
             </div>
 
-            <!--   Season Three    -->
+            <!--   Season Three    
 
             <div id="three" class="tabcontent">
                 <div style="display: flex">
@@ -904,7 +909,7 @@
             </div>
             </div>
 
-            <!--   Season Four    -->
+            <!--   Season Four   
 
             <div id="four" class="tabcontent">
                 <div style="display: flex">
@@ -1145,7 +1150,7 @@
             </div>
             </div>
 
-            <!--   Season FIVE    -->
+            <!--   Season FIVE    
 
             <div id="five" class="tabcontent">
                 <div style="display: flex">
@@ -1454,7 +1459,7 @@
             </div>
             </div>
 
-            <!--   Season SIX    -->
+            <!--   Season SIX    
 
             <div id="six" class="tabcontent">
                 <div style="display: flex">
@@ -1501,230 +1506,10 @@
                             <span style="margin-left:47px;font-size:22px">Running</span><br>
                         </div>
                     </div>
-
                     <div class="R">
                         <div class="hidden-header">
-                            <img src="imgs/facom.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">FA Communtiy Shield</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
-                            <span style="margin-left:79px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="secL">
-                    <div class="L">
-                        <div class="hidden-header">
-                            <img src="imgs/ucl.svg" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">UEFA Champions League</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
-                            <span style="margin-left:79px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                    <div class="L">
-                        <div class="hidden-header">
-                            <img src="imgs/uel.svg" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">UEFA Europa League</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
-                            <span style="margin-left:79px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                    <div class="L">
-                        <div class="hidden-header">
-                            <img src="imgs/uscc.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">UEFA Super Cup</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
-                            <span style="margin-left:79px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                    <div class="L">
-                        <div class="hidden-header">
-                            <img src="imgs/fcwcc.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">FIFA CLUB WORLD CUP</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
-                            <span style="margin-left:79px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="flex2" style="display: flex">
-                <div class="secRd">
-                    <div class="R">
-                        <div class="hidden-header1">
-                            <img src="imgs/leis.jpg" alt="pl" class="imglei">
-                        </div>
-                        <div class="details"><br>
-                            <h2>Team Achivements :</h2><hr><br>
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Premier League :: 
-                               <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Emirates FA Cup :: 
-                                <span style="margin-left:10px;font-size:18px;color: black">Running</span>        
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Communtiy Shield :: 
-                                <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Champions League :: 
-                            <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Europa League :: 
-                           <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Super Cup :: 
-                           <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br><br>
-                            <h2>Players Achivements :</h2><hr><br>
-                            <span style="font-size:23px;padding:10px;color:red"> Top scorer in the season :: 
-                               <span style="margin-left:5px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            <span style="font-size:23px;padding:10px;color:green"> Top Asisst Maker in the season  :: 
-                            <span style="margin-left:5px;font-size:18px;color: black">Running</span>
-                            </span><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="secLd">
-                    <div class="L">
-                        <div class="hidden-header1">
-                            <img src="imgs/cityy.jpg" alt="pl">
-                        </div>
-                       <div class="details"><br>
-                            <h2>Team Achivements :</h2><hr><br>
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Premier League :: 
-                               <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Emirates FA Cup :: 
-                                <span style="margin-left:10px;font-size:18px;color: black">Running</span>        
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> Communtiy Shield :: 
-                                <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Champions League :: 
-                            <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Europa League :: 
-                           <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            
-                            <span style="font-size:20px;padding:10px;color:darkblue"> UEFA Super Cup :: 
-                           <span style="margin-left:10px;font-size:18px;color: black">Running</span>
-                            </span><br><br><br>
-                            <h2>Players Achivements :</h2><hr><br>
-                            <span style="font-size:23px;padding:10px;color:red"> Top scorer in the season :: 
-                               <span style="margin-left:5px;font-size:18px;color: black">Running</span>
-                            </span><br><br>
-                            <span style="font-size:23px;padding:10px;color:green"> Top Asisst Maker in the season  :: 
-                            <span style="margin-left:5px;font-size:18px;color: black">Running</span>
-                            </span><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <!--   Season SEVEN    -->
-
-            <div id="seven" class="tabcontent">
-                <div style="display: flex">
-                <div class="secR">
-                    <div class="R">
-                        <div class="hidden-header">
-                            <img src="imgs/pll.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">Premier League</p>
-                        </div>
-                        <hr>
-                        <div class="details"><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
-                            <span style="font-size:28px;color:#3431E6"> League Winner : </span>
-                            <span style="margin-left:42px;font-size:22px">Running</span><br>
-                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
-                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
-                            <span style="margin-left:100px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
-                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
-                            <span style="margin-left:84px;font-size:22px">Running</span><br>
-                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
-                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
-                            <span style="margin-left:67px;font-size:22px">Running</span><br>
-                        </div>
-                    </div>
-                    <div class="R">
-                        <div class="hidden-header">
-                            <img src="imgs/emfa.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">Emirates FA Cup</p>
+                            <img src="imgs/EFL%20Cup.png" alt="pl" id="imageHiddenCup">
+                            <p id="paragraphHiddenCup">EFL Cup</p>
                         </div>
                         <hr>
                         <div class="details"><br>
@@ -1742,7 +1527,6 @@
                             <span style="margin-left:47px;font-size:22px">Running</span><br>
                         </div>
                     </div>
-
                     <div class="R">
                         <div class="hidden-header">
                             <img src="imgs/facom.png" alt="pl" id="imageHiddenCup">
@@ -1766,8 +1550,29 @@
                     </div>
                     <div class="R">
                         <div class="hidden-header">
-                            <img src="imgs/fcwcc.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">FIFA CLUB WORLD CUP</p>
+                            <img src="imgs/CNL.png" alt="pl" id="imageHiddenCup">
+                            <p id="paragraphHiddenCup">CAF NATIONS LEAGUE</p>
+                        </div>
+                        <hr>
+                        <div class="details"><br>
+                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
+                            <span style="font-size:28px;color:#3431E6"> League Winner : </span>
+                            <span style="margin-left:40px;font-size:22px">Running</span><br>
+                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
+                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
+                            <span style="margin-left:100px;font-size:22px">Running</span><br>
+                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
+                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
+                            <span style="margin-left:84px;font-size:22px">Running</span><br>
+                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
+                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
+                            <span style="margin-left:67px;font-size:22px">Running</span><br>
+                        </div>
+                    </div>
+                    <div class="R">
+                        <div class="hidden-header">
+                            <img src="imgs/CSC.png" alt="pl" id="imageHiddenCup">
+                            <p id="paragraphHiddenCup">CAF SUPER CUP</p>
                         </div>
                         <hr>
                         <div class="details"><br>
@@ -1850,11 +1655,31 @@
                             <span style="margin-left:67px;font-size:22px">Running</span><br>
                         </div>
                     </div>
-
                     <div class="L">
                         <div class="hidden-header">
-                            <img src="imgs/caff.png" alt="pl" id="imageHiddenCup">
-                            <p id="paragraphHiddenCup">African Cup of Nations</p>
+                            <img src="imgs/fcwcc.png" alt="pl" id="imageHiddenCup">
+                            <p id="paragraphHiddenCup">FIFA CLUB WORLD CUP</p>
+                        </div>
+                        <hr>
+                        <div class="details"><br>
+                            <i class="fa fa-glass" style="font-size:24px;color:#3431E6"></i>
+                            <span style="font-size:28px;color:#3431E6"> Cup Winner : </span>
+                            <span style="margin-left:79px;font-size:22px">Running</span><br>
+                            <i class="fa fa-glass" style="font-size:24px;color:#6182DA"></i>
+                            <span style="font-size:28px;color:#6182DA"> RunnerUp : </span>
+                            <span style="margin-left:100px;font-size:22px">Running</span><br>
+                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#1BD121"></i>
+                            <span style="font-size:28px;color:#1BD121"> Goal Scorer : </span>
+                            <span style="margin-left:84px;font-size:22px">Running</span><br>
+                            <i class="fa fa-soccer-ball-o" style="font-size:24px;color:#E83333"></i>
+                            <span style="font-size:28px;color:#E83333">Assist Maker : </span>
+                            <span style="margin-left:67px;font-size:22px">Running</span><br>
+                        </div>
+                    </div>
+                    <div class="L">
+                        <div class="hidden-header">
+                            <img src="imgs/ICC.png" alt="pl" id="imageHiddenCup" style="padding:15px 40px;width:135px">
+                            <p id="paragraphHiddenCup">International Champions Cup</p>
                         </div>
                         <hr>
                         <div class="details"><br>
@@ -1958,6 +1783,7 @@
             </div>
             </div>
 
+-->
 
         </section>
 

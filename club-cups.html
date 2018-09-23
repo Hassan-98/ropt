@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROPT | Club Trophies</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/Ccups-Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Changa|Lalezar|Revalia|Allerta+Stencil|Changa|Bree+Serif|Chicle|Poor+Story" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c2eeca83-31c8-4721-bd32-2e464fa0f99b",
+    });
+  });
+</script>
+</head>
+
+<body>
+
+    <!-- Start Nav -->
+    <nav>
+        <div class="logo">
+            <span>RESULTS OF</span>
+            <img src="imgs/logo.png" width="70" height="70">
+            <span>PES TROPHIES</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li class="Clicked"><a href="club-cups.html">Club Trophies</a></li>
+            <li><a href="national-cups.html">National Trophies</a></li>
+            <li><a href="seasons.html">Seasons</a></li>
+            <li><a href="users-data.html">Users Data</a></li>
+            <li class="dropdown">
+                  <a class="dropbtn">More</a>
+                  <div class="dropdown-content">
+                    <a href="rankings.html">Rankings</a>
+                    <a href="most-awarded.html">Most Awarded</a>
+                    <a href="transfer-market.html">Transfer Market</a>
+                  </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End  Nav -->
+
+    <div class="container">
+
+        <!-- Start Section -->
+        <section class="main">
+            <div class="BoxDiv">
+                <h1><i class="fas fa-trophy fa-sm"></i> Club Trophies &amp; Tournaments <i class="fas fa-trophy fa-sm"></i></h1>
+                <br>
+                <span style="font-family: 'Quicksand', sans-serif">Cups are local and continental that are held between the clubs chosen by the players and the rest of the clubs in the competitions of the Cup or League</span>
+            </div>
+            <div class="main-overlay"></div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section -->
+        <section class="Cups-section">
+            <div class="Cups">
+                <h2>Available Trophies</h2>
+                <div id="image1">
+                    <img src="imgs/pll.png" alt="pl" onclick="callPlFunctions()">
+                    <p onclick="callPlFunctions()">الدوري الانجليزي</p>
+                </div>
+                <div id="image2">
+                    <img src="imgs/emfa.png" alt="emfa" onclick="callFaFunctions()">
+                    <p onclick="callFaFunctions()">كأس الاتحاد الانجليزي</p>
+                </div>
+                <div id="image8">
+                    <img src="imgs/EFL%20Cup.png" alt="fcwc" onclick="callEflFunctions()">
+                    <p onclick="callEflFunctions()">كأس الرابطة الانجليزية</p>
+                </div>
+                <div id="image3">
+                    <img src="imgs/facom.png" alt="facom" onclick="callCsFunctions()">
+                    <p onclick="callCsFunctions()">كأس الدرع الخيرية</p>
+                </div>
+            </div>
+            <br>
+            <div class="Cups">
+                <div id="image4">
+                    <img src="imgs/ucl.svg" alt="ucl" onclick="callUclFunctions()">
+                    <p  onclick="callUclFunctions()">دوري أبطال أوروبا</p>
+                </div>
+                <div id="image5">
+                    <img src="imgs/uel.svg" alt="ufl" onclick="callUelFunctions()">
+                    <p  onclick="callUelFunctions()">الدوري الاوروبي</p>
+                </div>
+                <div id="image6">
+                    <img src="imgs/uscc.png" alt="usc" onclick="callUscFunctions()">
+                    <p onclick="callUscFunctions()">كأس السوبر الاوروبي</p>
+                </div>
+            </div>
+            <br>
+            <div class="Cups">
+                <div id="image7" style="width:285px">
+                    <img src="imgs/fcwcc.png" alt="fcwc" style="height:220px" onclick="callFcwcFunctions()">
+                    <p onclick="callFcwcFunctions()">كأس العالم للاندية</p>
+                </div>
+                <div id="image9" style="width:285px">
+                    <img src="imgs/ICC.png" alt="fcwc" style="height:220px;width:150px" onclick="callIccFunctions()">
+                    <p onclick="callIccFunctions()" style="text-transform:uppercase;">الكأس الدولية للابطال</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section PL -->
+        <section class="Hidden-PL pl" id="pleague" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-pl.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/pll.png" class="header-img">
+                </div>
+                <p class="header-p">الدوري الانجليزي</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%;padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">الدوري الانجليزي , بطولة بنظام الدوري مكونة من 20 فريق إنجليزي , بمجمل مباريات ذهاب و إياب 38 مباراة , الفائز بالبطولة يتأهل للعب مبارة الدرع الخيرية أمام بطل كأس الاتحاد , كذلك أصحاب المراكز الاربعة الاولى يتأهلون لدوري أبطال أوروبا , والمراكز من الـ5 حتى الـ7 يتأهلون للدوري الاوروبي , كذلك يتأهل أصحاب المراكز الـ3 الاولى للكأس الدولية للابطال</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> تقام مبارياتها على نظام صعوبة لاعب ممتاز<br>
+                         <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق على نظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br>
+                    <div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً بالبطولة : </span><span style="color:brown">ليستر سيتي | 4 مرة </span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">ليستر سيتي &#91;8-0&#93; بيرنلي | الموسم الرابع </span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر عدد من الاهداف للاعب في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 72 هدف | الموسم الرابع</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف للاعب في موسم واحد : </span><span style="color:brown"> رياض محرز | 38 صناعة | الموسم الخامس </span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> إحراز أكبر عدد من النقاط في موسم واحد : </span><span style="color:brown"> ليستر سيتي |  101 نقطة | الموسم الثاني</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> أختيار الموسم :</h2>
+                    <form>
+                        <select id="plselect" onchange="PLcheckSeason()">
+                                <option value="sepre">الموسم التمهيدي</option>
+                                <option value="seone">الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive">الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                                        <!-- PL NEXT & LAST MATCHES -->
+
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                    <br>
+                    <h1 style="font-size:30px;text-align:center">المباريات السابقة والقادمة</h1>
+                    <hr>
+
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+
+                <!-- Start Match -->
+
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#3f1052;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#05f88b;color:#000">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+
+                <!-- End Match -->
+                </div>
+
+                <div style="clear: both"></div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="pl-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div style="text-align: center">
+                            <button id="draw" class="buttonc">جدول البطولة</button>
+                            <button id="gscorer" class="buttonc">قائمة الهدافين</button>
+                            <button id="amaker" class="buttonc">صانعوا الاهداف</button>
+                            <button id="steam" class="buttonc">فريق الموسم</button>
+                            <button id="sbeast" class="buttonc">الافضل في الموسم</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="plimg">
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+
+                                                                        <!-- Start Section FA -->
+
+
+        <section class="Hidden-PL fac" id="facup" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-fa.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/emfa.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#d81921">كأس الاتحاد الانجليزي</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%;padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة بنظام خروج المغلوب تلعب موسميا بمشاركة جميع الاندية الانجليزية الدرجة الاولى و بعض أندية الدرجة الثانية , تبدأ من دور الـ32 , الفائز بالبطولة يتأهل للعب مبارة الدرع الخيرية أمام بطل الدوري , وكذلك يتأهل مع الوصيف للكأس الدولية للابطال
+                    <br>
+                    تقام المباريات في الجولات : 7 - 14 - 24 - 30 - 37</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ليستر سيتي | 3 مرات</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">ليستر سيتي &#91;11-1&#93; بورنيموث &#40; الموسم الخامس &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 17 هدف | الموسم الاول</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> أندرية أيو | 7 صناعة | الموسم الخامس</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="faselect" onchange="FAcheckSeason()">
+                                <option value="seone">الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive">الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                                        <!-- FA NEXT & LAST MATCHES -->
+
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                    <br>
+                    <h1 style="font-size:40px;text-align:center">المباريات السابقة والقادمة</h1>
+                    <hr>
+
+                 <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الاتحاد الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001749">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الاتحاد الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001749">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الاتحاد الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001749">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الاتحاد الانجليزي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001749">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                </div>
+
+                <div style="clear: both"></div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="fa-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash1"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw1">جدول البطولة</button>
+                            <button id="gscorer1">قائمة الهدافين</button>
+                            <button id="amaker1">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="faimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+
+                                                                        <!-- Start Section EFL -->
+
+
+        <section class="Hidden-PL efl" id="efl" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-efl.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/EFL%20Cup.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#001489">كأس الرابطة الانجليزية</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%;padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة بنظام خروج المغلوب و مبارايتها بنظام الذهاب والاياب تلعب موسميا بمشاركة الاندية الانجليزية صاحبة المراكز الـ16 الاولى في التصنيف , تبدأ من دور الـ16 , الفائز بالبطولة يتأهل للكأس الدولية للابطال
+                    <br>
+                    تقام المباريات في الجولات : 6 - 8 - 16 - 18 - 26 - 28 - 37</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">-</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">- &#91;0-0&#93; - &#40; الموسم - &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> - | - هدف | الموسم -</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> - | - صناعة | الموسم -</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="eflselect" onchange="EFLcheckSeason()">
+                                <option value="seone" disabled>الموسم الاول</option>
+                                <option value="setwo" disabled>الموسم الثاني</option>
+                                <option value="sethree" disabled>الموسم الثالث</option>
+                                <option value="sefour" disabled>الموسم الرابع</option>
+                                <option value="sefive" disabled>الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                                        <!-- EFL NEXT & LAST MATCHES -->
+
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                    <br>
+                    <h1 style="font-size:40px;text-align:center">المباريات السابقة والقادمة</h1>
+                    <hr>
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الرابطة الانجليزية , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001489">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الرابطة الانجليزية , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001489">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الرابطة الانجليزية , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001489">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       كأس الرابطة الانجليزية , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#d81921;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#001489">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                </div>
+
+                <div style="clear: both"></div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="efl-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash7"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw7">جدول البطولة</button>
+                            <button id="gscorer7">قائمة الهدافين</button>
+                            <button id="amaker7">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="eflimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section CS-->
+
+        <section class="Hidden-PL cs" id="cscup" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-cs.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/facom.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#e40520;font-size:38px">كأس الدرع الخيرية</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة السوبر الانجليزي , تقام بين بطل الدوري الانجليزي و بطل كأس الاتحاد الانجليزي في مباراة واحدة قبل بداية الموسم وبعد الكأس الدولية للابطال</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المباراة على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة المباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ليستر سيتي | 4 مرات</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">ليستر سيتي &#91;2-0&#93; تشيلسي &#40; الموسم الاول &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 3 أهدف | الموسم الثالث</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> ويليان | 2 صناعة | الموسم الثالث</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="csselect" onchange="CScheckSeason()">
+                                <option value="seone">الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive" selected>الموسم الخامس</option>
+                                <option value="sesix" disabled>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="cs-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash2"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw2">جدول البطولة</button>
+                            <button id="gscorer2">قائمة الهدافين</button>
+                            <button id="amaker2">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="csimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section UCL -->
+
+        <section class="Hidden-PL ucl" id="uclcup" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-ucl.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/ucl.svg" class="header-img">
+                </div>
+                <p class="header-p" style="color:#231f20;font-size:35px">دوري أبطال أوروبا</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%;padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة بنظام المجموعات ثم تصفية خروج المغلوب بنظام الذهاب والاياب تلعب موسميا بمشاركة الاندية أبطال الدوريات الاوروبية , تبدأ من دور الـ32 على 8 مجموعات يتأهل منها الاول والثاني , الفائز بالبطولة يتأهل لكأس العالم للاندية
+                    <br>
+                    تقام مباريات المجموعات في الجولات : 3 - 6 - 9 - 12 - 15 - 18
+                    <br>
+                    تقام مباريات التصفية في الجولات : 21 - 23 - 26 - 28 - 31 - 33 | النهائي : 38</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ليستر سيتي | 3 مرات</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">كوبينهاجن &#91;0-7&#93; ليستر سيتي &#40; الموسم الاول &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 31 هدف | الموسم الاول</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> رياض محرز | 15 صناعة | الموسم الخامس</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="uclselect" onchange="UCLcheckSeason()">
+                                <option value="seone">الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive">الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                                        <!-- UCL NEXT & LAST MATCHES -->
+
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                    <br>
+                    <h1 style="font-size:40px;text-align:center">المباريات السابقة والقادمة</h1>
+                    <hr>
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       دوري أبطال أوروبا , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#020f36;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#fff;color:#000;border:1px solid #020f36;box-sizing:border-box">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       دوري أبطال أوروبا , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#020f36;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#fff;color:#000;border:1px solid #020f36;box-sizing:border-box">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       دوري أبطال أوروبا , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#020f36;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#fff;color:#000;border:1px solid #020f36;box-sizing:border-box">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       دوري أبطال أوروبا , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب -
+                    </p>
+                </div>
+                <div class="back" style="background:#020f36;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score" style="background:#fff;color:#000;border:1px solid #020f36;box-sizing:border-box">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                </div>
+
+                <div style="clear: both"></div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="ucl-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash3"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw3">جدول البطولة</button>
+                            <button id="gscorer3">قائمة الهدافين</button>
+                            <button id="amaker3">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="uclimg">
+                            <div id="uclslidediv" style="display:none">
+                                <div class="slideshow-container">
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">1 /12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g1">
+                                      <div class="text">Group One</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">2 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g2">
+                                      <div class="text">Group Two</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">3 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g3">
+                                      <div class="text">Group Three</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">4 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g4">
+                                      <div class="text">Group Four</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">5 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g5">
+                                      <div class="text">Group Five</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">6 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g6">
+                                      <div class="text">Group Six</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">7 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g7">
+                                      <div class="text">Group seven</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">8 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-g8">
+                                      <div class="text">Group Eight</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">9 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-r16">
+                                      <div class="text">Round of 16</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">10 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-r8">
+                                      <div class="text">Quarter Final</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">11 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-r4">
+                                      <div class="text">Semi-Final</div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                      <div class="numbertext">12 / 12</div>
+                                      <img src="https://i.imgur.com/6HrDL0Q.gif" id="ucl-f">
+                                      <div class="text">Final</div>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                      <span class="dot" onclick="currentSlide(1)"></span>
+                                      <span class="dot" onclick="currentSlide(2)"></span>
+                                      <span class="dot" onclick="currentSlide(3)"></span>
+                                      <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                      <span class="dot" onclick="currentSlide(6)"></span>
+                                      <span class="dot" onclick="currentSlide(7)"></span>
+                                      <span class="dot" onclick="currentSlide(8)"></span>
+                                        <span class="dot" onclick="currentSlide(9)"></span>
+                                      <span class="dot" onclick="currentSlide(10)"></span>
+                                      <span class="dot" onclick="currentSlide(11)"></span>
+                                      <span class="dot" onclick="currentSlide(12)"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section UEL -->
+
+        <section class="Hidden-PL uel" id="uelcup" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-uel.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/uel.svg" class="header-img">
+                </div>
+                <p class="header-p" style="color:#f7941e;font-size:35px">الدوري الاوروبي</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="float:left;width:65%;padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة بنظام المجموعات ثم تصفية خروج المغلوب بنظام الذهاب والاياب تلعب موسميا بمشاركة الاندية أبطال الدوريات الاوروبية , تبدأ من دور الـ32 على 8 مجموعات يتأهل منها الاول والثاني , الفائز بالبطولة يتأهل لكأس العالم للاندية
+                    <br>
+                    تقام مباريات المجموعات في الجولات : 3 - 6 - 9 - 12 - 15 - 18
+                    <br>
+                    تقام مباريات التصفية في الجولات : 20 - 22 - 24 - 26 - 28 - 30 - 32 - 34 | النهائي : 38</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ميلان - مارسيليا - إشبيلية | 1 مرة</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">شالكة &#91;1-5&#93; إنتر ميلان &#40; الموسم الثاني &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> هاري كين | 13 هدف | الموسم الثالث</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> إيريكسن | 8 صناعة | الموسم الثالث</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="uelselect" onchange="UELcheckSeason()">
+                                <option value="seone" disabled>الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive">الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                                        <!-- UEL NEXT & LAST MATCHES -->
+
+                <div class="nlmatches" style="float:right;width:34.5%;border-left:1px solid">
+                <br>
+                <h1 style="font-size:40px;text-align:center">المباريات السابقة والقادمة</h1>
+                <hr>
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الاوروبي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#f5931e;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الاوروبي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#f5931e;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                <hr>
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الاوروبي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#f5931e;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+
+                <!-- Start Match -->
+                <div class="Info">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>
+                       الدوري الاوروبي , الجولة ن
+                        &nbsp;|&nbsp;
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ملعب محايد
+                    </p>
+                </div>
+                <div class="back" style="background:#f5931e;">
+
+                    <span style="float:right;margin-right:24%">-</span>
+                    <span style="float:left;margin-left:24%">-</span>
+
+                    <div class="Left-Team">
+                        <img src="imgs/clubs/lei.svg" height="40" width="40">
+                    </div>
+
+                    <div class="Score">
+                     <span>0 - 0</span>
+                    </div>
+
+                    <div class="Right-Team">
+                        <img src="imgs/clubs/mancity.svg" height="40" width="40">
+                    </div>
+
+                </div>
+                <!-- End Match -->
+                </div>
+
+                <div style="clear: both"></div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="uel-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash4"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw4">جدول البطولة</button>
+                            <button id="gscorer4">قائمة الهدافين</button>
+                            <button id="amaker4">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="uelimg">
+                            <div id="uelslidediv" style="display:none">
+                                <div class="slideshow-container">
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">1 /18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g1">
+                                      <div class="text">Group One</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">2 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g2">
+                                      <div class="text">Group Two</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">3 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g3">
+                                      <div class="text">Group Three</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">4 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g4">
+                                      <div class="text">Group Four</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">5 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g5">
+                                      <div class="text">Group Five</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">6 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g6">
+                                      <div class="text">Group Six</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">7 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g7">
+                                      <div class="text">Group seven</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">8 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g8">
+                                      <div class="text">Group Eight</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">9 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g9">
+                                      <div class="text">Group Nine</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">10 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g10">
+                                      <div class="text">Group Ten</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">11 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g11">
+                                      <div class="text">Group Eleven</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">12 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-g12">
+                                      <div class="text">Group Twelve</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">13 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-r321">
+                                      <div class="text">Round of 32 [1]</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">14 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-r322">
+                                      <div class="text">Round of 32 [2]</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">15 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-r16">
+                                      <div class="text">Round of 16</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">16 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-r8">
+                                      <div class="text">Quarter Final</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">17 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-r4">
+                                      <div class="text">Semi-Final</div>
+                                    </div>
+
+                                    <div class="mySlidesa fade">
+                                      <div class="numbertext">18 / 18</div>
+                                      <img src="https://i.imgur.com/h1QybZ9.gif" id="uel-f">
+                                      <div class="text">Final</div>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlidesa(1)">&#10095;</a>
+
+                                    </div>
+                                    <br>
+
+                                    <div style="text-align:center">
+                                      <span class="dota" onclick="currentSlide(1)"></span>
+                                      <span class="dota" onclick="currentSlide(2)"></span>
+                                      <span class="dota" onclick="currentSlide(3)"></span>
+                                      <span class="dota" onclick="currentSlide(4)"></span>
+                                    <span class="dota" onclick="currentSlide(5)"></span>
+                                      <span class="dota" onclick="currentSlide(6)"></span>
+                                      <span class="dota" onclick="currentSlide(7)"></span>
+                                      <span class="dota" onclick="currentSlide(8)"></span>
+                                        <span class="dota" onclick="currentSlide(9)"></span>
+                                      <span class="dota" onclick="currentSlide(10)"></span>
+                                      <span class="dota" onclick="currentSlide(11)"></span>
+                                      <span class="dota" onclick="currentSlide(12)"></span>
+                                      <span class="dota" onclick="currentSlide(13)"></span>
+                                        <span class="dota" onclick="currentSlide(14)"></span>
+                                      <span class="dota" onclick="currentSlide(15)"></span>
+                                      <span class="dota" onclick="currentSlide(16)"></span>
+                                      <span class="dota" onclick="currentSlide(17)"></span>
+                                        <span class="dota" onclick="currentSlide(18)"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section USC -->
+
+        <section class="Hidden-PL usc" id="usccup" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-usc.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/uscc.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#353535;font-size:42px">كأس السوبر الاوروبي</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة السوبر الاوروبي , تقام بين بطل دوري أبطال أوروبا و بطل الدوري الاوروبي في مباراة واحدة قبل بداية الموسم وبعد الكأس الدولية للابطال</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المباراة على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة المباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ليستر سيتي | 2 مرتان</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">ليستر سيتي &#91;4-0&#93; ليفربول &#40; الموسم الاول &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> أندرية أيو | 3 أهدف | الموسم الرابع</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> رياض محرز | 3 صناعة | الموسم الرابع</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="uscselect" onchange="USCcheckSeason()">
+                                <option value="seone">الموسم الاول</option>
+                                <option value="setwo" disabled>الموسم الثاني</option>
+                                <option value="sethree" disabled>الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive" selected>الموسم الخامس</option>
+                                <option value="sesix" disabled>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="usc-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash5"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw5">جدول البطولة</button>
+                            <button id="gscorer5">قائمة الهدافين</button>
+                            <button id="amaker5">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="uscimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Start Section FCWC -->
+
+        <section class="Hidden-PL fcwc" id="fcwc" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-fcwc.png') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/fcwcc.png" class="header-img">
+                </div>
+                <p class="header-p" style="color:#cd8b2a;font-size:40px">كأس العالم للاندية</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">كأس العالم للاندية , بطولة تقام موسمياً في فترة منتصف الموسم , تقام بنظام خروج المغلوب بين الاندية الـ12 أبطال القارات , بطل دوري الابطال وبطل الدوري الاوروبي و بطلي إفريقيا و بطلي أسيا و بطلي الكوبا ليبيرتادوريس وبطل أستراليا و بطل أمريكا الشمالية و المستضيف و بطل الكأس الدولية للابطال</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة المباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">ليستر سيتي - برشلونة - تشيلسي | 1 مرة</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">ليستر سيتي &#91;6-1&#93; وي يونايتيد &#40; الموسم الرابع &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 4 أهدف | الموسم الرابع</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> جيمي فاردي | 2 صناعة | الموسم الرابع</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="fcwcselect" onchange="FcwccheckSeason()">
+                                <option value="seone" disabled>الموسم الاول</option>
+                                <option value="setwo">الموسم الثاني</option>
+                                <option value="sethree">الموسم الثالث</option>
+                                <option value="sefour">الموسم الرابع</option>
+                                <option value="sefive" disabled>الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+                <hr>
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="fcwc-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash6"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw6">جدول البطولة</button>
+                            <button id="gscorer6">قائمة الهدافين</button>
+                            <button id="amaker6">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="fcwcimg">
+                        </div>
+                    </div>
+                </div>
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+
+                                                                        <!-- Start Section ICC -->
+
+
+        <section class="Hidden-PL icc" id="icc" style="display: none">
+
+            <div class="h-header" style="background: url('imgs/hheader-icc.jpg') fixed;background-size:cover;">
+                <div style="text-align: center">
+                    <img src="imgs/ICC.png" class="header-img" style="width:190px;padding: 25px 60px;border-radius:20%">
+                </div>
+                <p class="header-p" style="color:#1a315c">الكأس الدولية للابطال</p>
+                <div class="m-overlay"></div>
+            </div>
+
+            <div class="hidden-content">
+                <div class="cup-details" style="padding:10px;box-sizing:border-box;">
+                <div>
+                    <h2><i class="fa fa-quote-right" style="font-size:24px"></i> معلومات :</h2><br><div style="font-size:20px">بطولة بنظام خروج المغلوب تلعب موسميا بمشاركة الاندية الابطال من مختلف دول العالم , تبدأ من دور الـ32 وتحتوى على مباراة فاصلة لتحديد المركز الثالث , الفائز بالبطولة يتأهل لكأس العالم للاندية ,
+                    تقام المباريات قبل بداية الموسم الجديد</div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-edit" style="font-size:24px"></i> قوانين :</h2><br><div style="font-size:20px">
+                        <i class="fa fa-gavel" style="font-size:20px"></i> صعوبة المبارايات على مستوى لاعب ممتاز<br>
+                        <i class="fa fa-gavel" style="font-size:20px"></i> مدة كل مباراة 10 دقائق بنظام اللعبة
+                        </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-bullseye" style="font-size:24px"></i> النتائج القياسية :</h2><br><div style="font-size:20px">
+                        <span><i class="fa fa-glass" style="font-size:20px"></i> أكثر الاندية فوزاً باللقب : </span><span style="color:brown">- | -</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> أكبر نتيجة في مباراة : </span><span style="color:brown">- &#91;0-0&#93;  - &#40; الموسم - &#41;</span><hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صاحب أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> - | - هدف | الموسم -</span>
+                    <hr>
+
+                    <span><i class="fa fa-dot-circle-o" style="font-size:20px"></i> صناعة أكبر عدد من الاهداف في موسم واحد : </span><span style="color:brown"> - | - صناعة | الموسم -</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2><i class="fa fa-calendar-o" style="font-size:24px"></i> إختيار الموسم :</h2>
+                    <form>
+                        <select id="iccselect" onchange="ICCcheckSeason()">
+                                <option value="seone" disabled>الموسم الاول</option>
+                                <option value="setwo" disabled>الموسم الثاني</option>
+                                <option value="sethree" disabled>الموسم الثالث</option>
+                                <option value="sefour" disabled>الموسم الرابع</option>
+                                <option value="sefive" disabled>الموسم الخامس</option>
+                                <option value="sesix" selected>الموسم السادس</option>
+                                <option value="seseven" disabled>الموسم السابع</option>
+                            </select>
+                    </form>
+                </div>
+                </div>
+
+                <!-- START SEASON -->
+
+                <div class="SeasonShow" id="icc-season" style="display: none">
+                    <div class="s-header">
+                        <h1><i class="fa fa-calendar-check-o" style="font-size:45px"></i> الموسم <span id="hash8"></span></h1>
+                    </div>
+                    <div class="result"><br>
+                        <div>
+                            <button id="draw8">جدول البطولة</button>
+                            <button id="gscorer8">قائمة الهدافين</button>
+                            <button id="amaker8">صانعوا الاهداف</button>
+                        </div><br>
+                        <div style="text-align:center">
+                            <img src="https://i.imgur.com/6SQ4Dvr.png" alt="Season IMG Is Not Available" id="iccimg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END SEASON -->
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+
+        <!-- Start Footer -->
+
+        <footer>
+            <div class="social">
+                <i class="fa fa-facebook-official" style="font-size:40px" onclick="window.location.href='https://www.facebook.com/hassan2231998'"></i>
+                <i class="fa fa-github" style="font-size:40px" onclick="window.location.href='https://github.com/Hassan-GitHub1998'"></i>
+                <i class="fa fa-google" style="font-size:40px" onclick="window.location.href='https://plus.google.com/u/0/105771750059567994677'"></i>
+                <i class="fa fa-chrome" style="font-size:37px" onclick="window.location.href='http://about-me1998.bitballoon.com/'"></i>
+                <i class="fa fa-linkedin" style="font-size:40px" onclick="window.location.href='https://www.linkedin.com/in/hassan1998/'"></i>
+                <i class="fa fa-youtube-square" style="font-size:40px"></i>
+            </div>
+            <div class="copyrights">
+                <span>&copy;Copyrights&copy;2018 Design By : Hassan Inc. &nbsp;&nbsp;|&nbsp;&nbsp; All rights Reserved</span>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+    </div>
+
+     <!-- JS Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Js/Ccups-Scripts.js"></script>
+</body>
+
+</html>
