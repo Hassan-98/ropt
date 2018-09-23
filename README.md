@@ -1,18 +1,18 @@
-#### v3.5 Update-Pack 5 - log
+## v3.5 Update-Pack 5 - log
 
--New Navigation Bar Style With LOGO
--New Website Main Header Image Home Page Only
--Remove Main Header from other pages
--Transfers ccups & ncups 'CUPs details' to Arabic
--Support Responsive Size 1280px
--Fully Transfer To PES 2019
--New Styles In All Pages
--New Cup "EFL Cup"
--New Cup "International Champions Cup"
--New Cup "Confedraions Cup"
--New Cup "CAF NATIONS LEAGUE"
--New Cup "CAF SUPER CUP"
--Disable Seasons Page Temporary
+-New Navigation Bar Style With LOGO <br>
+-New Website Main Header Image Home Page Only <br> 
+-Remove Main Header from other pages <br>
+-Transfers ccups & ncups 'CUPs details' to Arabic <br>
+-Support Responsive Size 1280px <br>
+-Fully Transfer To PES 2019 <br>
+-New Styles In All Pages <br>
+-New Cup "EFL Cup" <br>
+-New Cup "International Champions Cup" <br>
+-New Cup "Confedraions Cup" <br>
+-New Cup "CAF NATIONS LEAGUE" <br>
+-New Cup "CAF SUPER CUP" <br>
+-Disable Seasons Page Temporary <br>
 
 ## v3.5 Update-Pack 4 - log
 
